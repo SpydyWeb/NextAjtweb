@@ -38,4 +38,18 @@ export interface SiteConfig {
     twitter: string;
     github: string;
   };
+  
 }
+ export interface NavLink  {
+  label: string;
+  path: string;
+};
+
+export interface NavSection  {
+  title: string;
+  links: NavLink[];
+};
+
+export interface NavData  {
+  [key: string]: NavSection;
+};

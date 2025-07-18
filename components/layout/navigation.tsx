@@ -12,7 +12,7 @@ export function Navigation() {
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
+    { name: 'About', href: '/aboutus' },
     { name: 'Products', href: '/products' },
     { name: 'Contact', href: '/contact' },
   ];

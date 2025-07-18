@@ -4,7 +4,7 @@ import { Stats } from '@/components/sections/stats';
 
 export default function Home() {
   return (
-    <div className="space-y-16">
+    <div className="space-y-1">
       <Hero />
       <Features />
       <Stats />
