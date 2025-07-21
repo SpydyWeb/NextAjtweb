@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import {individualproducts} from '@/lib/utilities';
 import Link from "next/link";
 import Contactus from "../layout/Contactus";
-const Individualproducts = () => {
+const IndividualSection = () => {
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
 
   const handleProductClick = (productTitle: string) => {
@@ -92,4 +92,4 @@ const Individualproducts = () => {
   );
 };
 
-export default Individualproducts;
+export default IndividualSection;
