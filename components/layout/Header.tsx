@@ -8,6 +8,10 @@ import {utilitiesData }from "@/lib/utilities";
 // import { IconButton } from "@/components/ui/button"; // or from your design system
 import { MagnifyingGlassIcon } from "@heroicons/react/24/outline"; 
 import { BsSearch } from 'react-icons/bs';
+import Image from 'next/image'
+import logo from '../../assets/Images/logo.png'
+import AboutUs from '../Newcomponets/AboutUs'
+ 
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -36,13 +40,18 @@ const Header = () => {
   };
 
   return (
+    <>
 <header className="bg-white shadow-sm w-full px-6 py-3">
-  <div className="max-w-7xl mx-auto flex items-center justify-between">
+  <div className="max-w-[100rem] mx-auto flex items-center justify-between">
     {/* Left: Logo */}
     <Link href="/">
-      <img src="/logo.png" alt="Logo" className="h-[3rem]  cursor-pointer" />
+    <Image  
+    src={logo} 
+     width={300}
+    height={300}
+    alt="AlJAZIRA TAKAFUL"
+    />
     </Link>
-
     {/* Center: Navigation Links */}
     <div className="flex gap-6 items-center">
       {Object.entries(navData).map(([key, section]) => (
@@ -71,7 +80,7 @@ const Header = () => {
 
     {/* Right: Auth, Language Toggle */}
     <div className="flex items-center gap-4 text-lg text-[#2e3b55]">
-      <Link href="/login" className="underline hover:text-blue-600">
+      <Link href="/AboutUs" className="underline hover:text-blue-600">
        Login
       </Link>
 
@@ -97,10 +106,13 @@ const Header = () => {
       <MagnifyingGlassIcon className="w-5 h-5 text-black" />
     </button> */}
 <BsSearch/>
+
     </div>
   </div>
 </header>
 
+    <AboutUs/>
+</>
   );
 };
 

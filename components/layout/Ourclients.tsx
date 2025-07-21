@@ -2,8 +2,7 @@
 import React, { useRef } from 'react';
 
 import { logos } from '@/lib/utilities';
-
-
+import LatestNews from '../layout/LatestNews';
 const Ourclients = () => {
  const scrollRef = useRef<HTMLDivElement | null>(null);
 
@@ -17,6 +16,7 @@ const Ourclients = () => {
     }
   };
   return (
+    <>
     <section className="text-center py-12 px-4">
       <h3 className="text-xl sm:text-2xl font-bold text-[#10426C] mb-0">
         OUR CLIENTS
@@ -78,6 +78,9 @@ const Ourclients = () => {
         VIEW ALL
       </button>
     </section>
+
+    <LatestNews/>
+    </>
   );
 };
 
