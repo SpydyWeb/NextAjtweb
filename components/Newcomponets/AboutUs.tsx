@@ -12,8 +12,10 @@ const AboutUs = () => {
       <section className="px-6 md:px-20 xl:px-[20rem] py-12">
         <div className="text-center mb-12">
           <h1 className="text-2xl font-bold mb-2 text-[#10426C]">About Us</h1>
-          <p className="text-base text-gray-600">
-            Al-Jazira Takaful Taawuni Company is a Saudi joint stock company regulated and supervised by Insurance Authority.
+          <p className="text-base text-black-600">
+            Al-Jazira Takaful Taawuni Company is a Saudi joint stock company 
+            <br/>
+            Regulated and supervised by Insurance Authority.
           </p>
         </div>
 

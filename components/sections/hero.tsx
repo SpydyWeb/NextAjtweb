@@ -13,7 +13,8 @@ export function Hero() {
 
       const images = [logo, globelogImg, logo, logo];
   return (
-    <section className="relative bg-gradient-to-b from-blue-50 to-white">
+    // <section className="relative bg-gradient-to-b from-blue-50 to-white">
+     <section className="relative">
       <div className="w-full">
       <div className="max-w-screen-xl mx-auto px-6 py-2 flex flex-wrap items-center justify-between gap-6">
         {/* Select Dropdown */}

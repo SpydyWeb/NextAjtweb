@@ -10,7 +10,6 @@ import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { BsSearch } from 'react-icons/bs';
 import Image from 'next/image'
 import logo from '../../assets/Images/logo.png'
-import AboutUs from '../Newcomponets/AboutUs'
  
 
 const Header = () => {
@@ -80,12 +79,12 @@ const Header = () => {
 
     {/* Right: Auth, Language Toggle */}
     <div className="flex items-center gap-4 text-lg text-[#2e3b55]">
-      <Link href="/AboutUs" className="underline hover:text-blue-600">
+      <Link href="/aboutuspage" className="underline hover:text-blue-600">
        Login
       </Link>
 
       <Link
-        href="/signup"
+        href="/createaccounts"
         className="bg-[#002c60] hover:bg-[#001a3c] text-white px-4 py-1.5 rounded-full font-medium"
       >
         SignUp
@@ -111,7 +110,6 @@ const Header = () => {
   </div>
 </header>
 
-    <AboutUs/>
 </>
   );
 };

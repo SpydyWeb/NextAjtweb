@@ -16,7 +16,7 @@ export function Footer() {
   
   const footerLinks = {
     company: [
-      { name: 'About', href: '/about' },
+      { name: 'About', href: '/aboutuspage' },
       { name: 'E-Service', href: '/E-Service' },
       { name: 'FAQs', href: '/FAQs' },
       { name: 'Download Center', href: '/DownloadCenter' },
@@ -45,113 +45,110 @@ export function Footer() {
 
 
   return (
-    <>
-    <hr/>
-    <footer className="bg-[#ffffff] text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-5">
-          <div className="lg:col-span-2">
-             <Link href="/" className="flex items-center gap-2 mb-4">
-              <Image
-                src={logo}
-                alt="Company Logo"
-                width={300}
-                height={300}
-                className=" object-contain"
-              />
-            </Link>
-            <p className="mb-6 max-w-md text-[#10426c]">
-            We aim to be the leading company in the field of Islamic Sharia-compliant insurance in the Kingdom of Saudi Arabia and the
-             Middle East region by providing innovative, high-quality 
-            insurance solutions in a way that achieves the maximum benefit for our customers, shareholders and employees.
-            </p>
-          </div>
-          <div className='gap-2'>
-            <h3 className="text-xl font-semibold mb-4 text-[#10426c]">Contact US</h3>
-            <ul className="space-y-3">
-              {footerLinks?.resources.map((link) => (
-                <li key={link.name}>
-                  <Link href={link.href} className="text-[#10426c] flex items-center gap-2">
-                    {link.icon}
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="font-bold mb-4 text-xl text-[#10426c]">Quick Links</h3>
-            <ul className="space-y-3">
-              {footerLinks.company.map((link) => (
-                <li key={link.name}>
+     <>
+      <hr />
+      <footer className="bg-white text-[#10426c]">
+        <div className="max-w-7xl mx-auto px-4 py-12">
+          <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            {/* Logo + Description */}
+            <div className="lg:col-span-2 space-y-4">
+              <Link href="/" className="inline-block">
+                <Image
+                  src={logo}
+                  alt="Company Logo"
+                  width={200}
+                  height={200}
+                  className="object-contain"
+                />
+              </Link>
+              <p className="text-sm max-w-md">
+                We aim to be the leading company in the field of Islamic
+                Sharia-compliant insurance in the Kingdom of Saudi Arabia and
+                the Middle East region by providing innovative, high-quality
+                insurance solutions in a way that achieves the maximum benefit
+                for our customers, shareholders and employees.
+              </p>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+              <ul className="space-y-3">
+                {footerLinks.resources.map((link) => (
+                  <li key={link.name}>
+                    <Link
+                      href={link.href}
+                      className="flex items-start gap-2 text-sm hover:text-sky-600"
+                    >
+                      {link.icon}
+                      <span>{link.name}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+              <ul className="space-y-3 text-sm">
+                {footerLinks.company.map((link) => (
+                  <li key={link.name}>
+                    <Link href={link.href} className="hover:text-sky-600">
+                      {link.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Social & App Links */}
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Follow Us Now</h3>
+              <div className="flex items-center gap-4 mb-6">
+                {socialLinks.slice(0, 3).map((social) => (
                   <Link
-                    href={link.href}
-                    className="text-[#10426c] transition-colors"
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.name}
+                    className="w-6 h-6"
                   >
-                    {link.name}
+                    <Image
+                      src={social.icon}
+                      alt={social.name}
+                      className="w-full h-full object-contain filter invert sepia saturate-500 hue-rotate-[175deg] brightness-110"
+                    />
                   </Link>
-                </li>
-              ))}
-            </ul>
+                ))}
+              </div>
+              <p className="text-sm font-medium mb-3 leading-tight">
+                Download Medical <br />
+                Insurance NextCare <br />
+                Application
+              </p>
+              <div className="space-y-3">
+                {socialLinks.slice(3).map((store) => (
+                  <Link
+                    key={store.name}
+                    href={store.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src={store.icon}
+                      alt={store.name}
+                      className="w-[140px] h-auto"
+                    />
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
-        <div>
-  <h3 className="font-semibold mb-4 text-xl text-[#10426c]">Follow Us Now</h3>
-<div className="flex space-x-4">
-  {socialLinks.slice(0, 3).map((social) => (
-    <Link
-      key={social.name}
-      href={social.href}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={social.name}
-      className="w-6 h-6"
-    >
-      <Image
-        src={social.icon}
-        alt={social.name}
-        className="w-full h-full object-contain filter invert sepia saturate-500 hue-rotate-[175deg] brightness-110"
-      />
-    </Link>
-        ))}
-      </div>
-            <div className="pt-4">
-           <Link
-              href="https://apps.apple.com/us/app/mynextcare/id1039800748"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sky-400 font-bold text-sm block mb-4 leading-snug"
-            >
-               <p className="text-[#009ee2] font-semibold text-base leading-tight">
-          Download Medical <br />
-          Insurance NextCare <br />
-          Application
-        </p>
-          </Link>
-      </div>
-
-      <div className="space-y-2 pt-2">
-        {socialLinks.slice(3).map((store) => (
-          <Link
-            key={store.name}
-            href={store.href}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              src={store.icon}
-              alt={store.name}
-              className="w-[140px] h-auto "
-            />
-          </Link>
-        ))}
-      </div>
-
-</div>
-     </div>
-      </div>
-    </footer>
-   <FooterCard/>
+        </div>
+      </footer>
+      <FooterCard />
     </>
   );
 }

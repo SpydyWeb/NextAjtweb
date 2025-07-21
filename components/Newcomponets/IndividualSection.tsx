@@ -16,14 +16,16 @@ const IndividualSection = () => {
 
   return (
     <>
-    <div className="mt-12 w-full border-b border-gray-200 bg-white">
+    <div className="mt-4 w-full  border-gray-200 bg-white">
       <section className="px-4 py-12 md:px-16 text-center">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold text-[#10426C] mb-4">
-          Individual Insurance
+          Retail Insurance
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto mb-10 text-sm md:text-base">
-          Discover our wide range of insurance products tailored to meet corporate needs.
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
         </p>
 
         {/* Subheading */}
@@ -35,7 +37,7 @@ const IndividualSection = () => {
         </p>
 
         {/* Product Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6 max-w-7xl mx-auto">
            {individualproducts.map((product, idx) => (
               <ProductCard
                 key={idx}

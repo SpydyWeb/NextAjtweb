@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import globelogImg from '../../assets/Images/globelogoImg.png';
-import Ourclients from '../layout/Ourclients';
 
 export function Stats() {
   return (
@@ -31,7 +30,6 @@ export function Stats() {
           </div>
         </div>
       </section>
-      <Ourclients />
     </>
   );
 }

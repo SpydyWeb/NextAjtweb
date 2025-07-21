@@ -2,7 +2,6 @@
 import React, { useRef } from 'react';
 
 import { logos } from '@/lib/utilities';
-import LatestNews from '../layout/LatestNews';
 const Ourclients = () => {
  const scrollRef = useRef<HTMLDivElement | null>(null);
 
@@ -78,8 +77,6 @@ const Ourclients = () => {
         VIEW ALL
       </button>
     </section>
-
-    <LatestNews/>
     </>
   );
 };

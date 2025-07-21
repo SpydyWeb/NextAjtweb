@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useRef, useState } from 'react';
-import Contactus from '../layout/Contactus'
 // import { DatePicker } from 'antd';
 // import { CalendarOutlined } from '@ant-design/icons';
 // import dayjs from 'dayjs';
@@ -76,7 +75,6 @@ const LatestNews = () => {
         VIEW ALL
       </button>
     </section>
-    <Contactus/>
     </>
   );
 };

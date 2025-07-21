@@ -10,8 +10,6 @@ import Image8 from '../../assets/Images/Commite/08-Yahya-Al-Mansour.jpg'
 import Image9 from '../../assets/Images/Commite/09-SAGR.jpg'
 import WitnessIcon from '../../assets/Images/witness.png'
 import Image from 'next/image'
-import Corporateproducts from '../Newcomponets/Corporateproducts'
-import IndividualSection from "./IndividualSection";
 const BoardMembers = () => {
   const boardMembers = [
     { name: "Eng. Abdul Majeed Al Sultan", role: "Chairman", image:Image1 },
@@ -92,31 +90,36 @@ const BoardMembers = () => {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-6 justify-items-center">
+<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-6 justify-items-center">
   {boardMembers.map((member, index) => (
-    <div
-      key={index}
-      className="flex flex-col items-center text-center"
-    >
-      {/* Gray shadow background wrapper */}
-      <div className="bg-gray-200 rounded-full p-2 shadow-lg">
-        <Image
-          src={member.image}
-          alt={member.name}
-          className="w-[250px] h-[250px] rounded-full border-8 border-[#002c60] object-cover"
-        />
+    <div key={index} className="flex flex-col items-center text-center">
+      
+      {/* Gray halo + blue ring */}
+      <div className="relative w-[250px] h-[250px] flex items-center justify-center">
+        <div className="w-[240px] h-[240px] rounded-full border-[6px] border-[#002c60] overflow-hidden bg-white shadow-[0_0_25px_8px_rgba(0,0,0,0.15)]">
+          <Image
+            src={member.image}
+            alt={member.name}
+            width={240}
+            height={240}
+            className="object-cover w-full h-full rounded-full"
+          />
+        </div>
       </div>
-      <div className="mt-3">
-        <span className="block font-bold text-base text-[#1e3a8a]">{member.name}</span>
+
+      <div className="mt-4">
+        <span className="block font-bold text-base text-[#10426C]">{member.name}</span>
         <span className="block text-sm text-gray-600">{member.role}</span>
       </div>
     </div>
   ))}
 </div>
 
+
+
+
+
     </div>
-    <Corporateproducts/>
-    <IndividualSection/>
     </>
   );
 };

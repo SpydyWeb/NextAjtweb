@@ -2,12 +2,13 @@
 'use client';
 import React from "react";
 import Image from "next/image";
-
+import Link from "next/link";
 interface ProductCardProps {
   product: {
     title: string;
     description: string;
     icon: string;
+    url:string;
   };
   isSelected: boolean;
   onProductClick: (productTitle: string) => void;
@@ -47,13 +48,14 @@ const ProductCard: React.FC<ProductCardProps> = ({
           Insure now
         </button>
       ) : (
-        <span
+        <Link href={product?.url}
           className={`mt-auto font-medium text-sm underline ${
             isSelected ? 'text-white' : 'text-[#1e3a8a]'
           } hover:no-underline`}
+          
         >
           Learn More
-        </span>
+        </Link>
       )}
 
       {/* Bottom Accent */}
