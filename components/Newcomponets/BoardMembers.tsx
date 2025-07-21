@@ -11,7 +11,7 @@ import Image9 from '../../assets/Images/Commite/09-SAGR.jpg'
 import WitnessIcon from '../../assets/Images/witness.png'
 import Image from 'next/image'
 import Corporateproducts from '../Newcomponets/Corporateproducts'
-import Individualproducts from "./Individualproducts";
+import IndividualSection from "./IndividualSection";
 const BoardMembers = () => {
   const boardMembers = [
     { name: "Eng. Abdul Majeed Al Sultan", role: "Chairman", image:Image1 },
@@ -116,7 +116,7 @@ const BoardMembers = () => {
 
     </div>
     <Corporateproducts/>
-    <Individualproducts/>
+    <IndividualSection/>
     </>
   );
 };
