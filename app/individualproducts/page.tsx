@@ -1,12 +1,9 @@
 import IndividualSection from "@/components/Newcomponets/IndividualSection";
-export const Individualproducts = () => {
-
-
+export default function Individualproducts () {
   return (
     <>
-  <IndividualSection/>
+      <IndividualSection />
     </>
   );
 };
 
-export default Individualproducts;
