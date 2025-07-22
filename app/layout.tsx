@@ -5,6 +5,7 @@ import { Navigation } from '@/components/layout/navigation';
 import { Footer } from '@/components/layout/footer';
 import Header from '@/components/layout/Header';
 import "../i18n";
+import { I18nProvider } from './I18nProvider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -24,7 +25,7 @@ export default function RootLayout({
           {/* <Navigation /> */}
           <Header />
           <main className="flex-1">
-            {children}
+             <I18nProvider>{children}</I18nProvider>
           </main>
           <Footer />
         </div>
