@@ -45,28 +45,34 @@ const Header = () => {
           </Link>
           {/* Center: Navigation Links */}
           <div className="flex gap-6 items-center">
-            {Object.entries(NavigationData).map(([key, section]: [string, any]) => (
-              <div key={key} className="relative group">
-                <button className="text-lg font-medium text-[#10426c] hover:text-blue-700 transition">
-                  {t(getLocalizedText(section.title, lang))}
-                </button>
-                {/* Dropdown */}
-                <div className="absolute hidden group-hover:block bg-white border mt-2 rounded shadow-md p-3 z-50 min-w-52">
-                  <ul className="space-y-1">
-                    {section.items.map((i: any, link: any) => (
-                      <li key={i}>
-                        <a
-                          onClick={() => handleNavigation(link.path)}
-                          className="cursor-pointer text-gray-700 hover:text-blue-600 block text-sm"
-                        >
-                          {t(getLocalizedText(link.label, lang))}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
+            {Object.entries(NavigationData).map(
+              ([key, section]: [string, any]) => (
+                <div key={key} className="relative group">
+                  <button className="text-lg font-medium text-[#10426c] hover:text-blue-700 transition">
+                    {t(getLocalizedText(section.title, lang))}
+                  </button>
+                  {/* Dropdown */}
+                  <div className="absolute hidden group-hover:block bg-white border mt-2 rounded shadow-md p-3 z-50 min-w-52">
+                    <ul className="space-y-1">
+                      {section.items.length > 0 ? (
+                        section.items.map((i: any, link: any) => (
+                          <li key={i}>
+                            <a
+                              onClick={() => handleNavigation(link.path)}
+                              className="cursor-pointer text-gray-700 hover:text-blue-600 block text-sm"
+                            >
+                              {t(getLocalizedText(link.label, lang))}
+                            </a>
+                          </li>
+                        ))
+                      ) : (
+                        <></>
+                      )}
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            )}
           </div>
 
           {/* Right: Auth, Language Toggle */}
