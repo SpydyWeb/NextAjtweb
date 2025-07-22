@@ -50,13 +50,13 @@ const Header = () => {
                 ([key, section]: [string, any]) => (
                   <div key={key} className="relative group">
                     <button className="text-lg font-medium text-[#10426c] hover:text-blue-700 transition">
-                      {t(getLocalizedText(section.title, lang))}
+                      {t(getLocalizedText(section[key].title, lang))}
                     </button>
                     {/* Dropdown */}
                     <div className="absolute hidden group-hover:block bg-white border mt-2 rounded shadow-md p-3 z-50 min-w-52">
                       <ul className="space-y-1">
-                        {section.items.length > 0 ? (
-                          section.items.map((i: any, link: any) => (
+                        {section[key].items.length > 0 ? (
+                          section[key].items.map((i: any, link: any) => (
                             <li key={i}>
                               <a
                                 onClick={() => handleNavigation(link.path)}
