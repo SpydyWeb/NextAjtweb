@@ -1,11 +1,12 @@
+// app/layout.tsx
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { Navigation } from '@/components/layout/navigation';
 import { Footer } from '@/components/layout/footer';
 import Header from '@/components/layout/Header';
-import "../i18n";
+import '../i18n';
 import { I18nProvider } from './I18nProvider';
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -21,14 +22,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="min-h-screen flex flex-col">
-          {/* <Navigation /> */}
-          <Header />
-          <main className="flex-1">
-             <I18nProvider>{children}</I18nProvider>
-          </main>
-          <Footer />
-        </div>
+        <I18nProvider>
+          <div className="min-h-screen flex flex-col">
+            <Header /> {/* now wrapped correctly */}
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+        </I18nProvider>
       </body>
     </html>
   );
