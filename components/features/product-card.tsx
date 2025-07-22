@@ -5,10 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 interface ProductCardProps {
   product: {
-    title: string;
+    label: { en: string; ar: string } | undefined; 
+    path: string;
     description: string;
-    icon: string;
-    url:string;
   };
   isSelected: boolean;
   onProductClick: (productTitle: string) => void;

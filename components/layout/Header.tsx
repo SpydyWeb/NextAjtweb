@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { NavData } from "@/types";
 import utilities from "@/Utilities.json";
-import { BsSearch } from "react-icons/bs";
+import { BsSearch,BsCaretDownFill } from "react-icons/bs";
 import Image from "next/image";
 import logo from "@/assets/Images/logo.png";
 import { getLocalizedText } from "@/lib/utils";
@@ -25,11 +25,16 @@ const Header = () => {
     document.documentElement.setAttribute("lang", lang);
   };
 
-  const handleLanguageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const lang = e.target.checked ? "ar" : "en";
-    setLangAr(e.target.checked);
-    changeLanguage(lang);
-  };
+  // const handleLanguageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   const lang = e.target.checked ? "ar" : "en";
+  //   setLangAr(e.target.checked);
+  //   changeLanguage(lang);
+  // };
+const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  const lang = e.target.value;
+  setLangAr(lang === "ar");
+  changeLanguage(lang);
+};
 
   const handleNavigation = (path: string) => {
     router.push(path);
@@ -50,7 +55,7 @@ const Header = () => {
                   ([key, section]: [string, any]) => (
                     <div key={key} className="relative group">
                       <button className="text-lg font-medium text-[#10426c] hover:text-blue-700 transition">
-                        {t(getLocalizedText(section.title, lang))}{" "}
+                        {(getLocalizedText(section.title, lang))}{" "}
                       </button>
                       <div className="absolute hidden group-hover:block bg-white border mt-2 rounded shadow-md p-3 z-50 min-w-52">
                         <ul className="space-y-1">
@@ -61,7 +66,7 @@ const Header = () => {
                                   onClick={() => handleNavigation(link.path)}
                                   className="cursor-pointer text-gray-700 hover:text-blue-600 block text-sm"
                                 >
-                                  {t(getLocalizedText(link.label, lang))}
+                                  {(getLocalizedText(link.label, lang))}
                                 </a>
                               </li>
                             )
@@ -88,16 +93,19 @@ const Header = () => {
             </Link>
 
             {/* Language Toggle */}
-            <div className="flex items-center">
-              <span className="mr-2">{t("left")}</span>
-              <input
-                type="checkbox"
-                checked={isLangAr}
-                onChange={handleLanguageChange}
-                className="toggle-checkbox accent-blue-600"
-              />
-              <span className="ml-2">{t("right")}</span>
-            </div>
+           <div className="relative text-base w-fit">
+  <select
+    value={isLangAr ? "ar" : "en"}
+    onChange={handleLanguageChange}
+    className="appearance-none cursor-pointer rounded px-4 py-2 text-[#10426c] pr-8 focus:outline-none focus:ring-2 focus:ring-blue-400"
+  >
+    <option value="en">EN</option>
+    <option value="ar">AR</option>
+  </select>
+
+  {/* Icon overlay */}
+  <BsCaretDownFill className="ml-2 absolute top-1/2 right-3 -translate-y-1/2 pointer-events-none text-[#10426c]" />
+</div>
 
             <BsSearch />
           </div>

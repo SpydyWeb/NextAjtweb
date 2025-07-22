@@ -1,10 +1,15 @@
 'use client';
-import React, { useRef } from 'react';
-
+import React, { useState,useRef } from 'react';
+import utilities from "@/Utilities.json";
 import { logos } from '@/lib/utilities';
+import { getLocalizedText } from "@/lib/utils";
+import Image from "next/image";
 const Ourclients = () => {
  const scrollRef = useRef<HTMLDivElement | null>(null);
-
+  const [isLangAr, setLangAr] = useState<boolean>(
+    (typeof window !== "undefined" && localStorage.getItem("lang") === "ar") ||
+      false
+  );
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
       const scrollAmount = 300;
@@ -14,6 +19,8 @@ const Ourclients = () => {
       });
     }
   };
+    const { logos } = utilities;
+   const lang: string = isLangAr ? "ar" : "en";
   return (
     <>
     <section className="text-center py-12 px-4">
@@ -51,13 +58,13 @@ const Ourclients = () => {
               key={idx}
               className="flex-none w-36 sm:w-40 h-28 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center p-4 text-center"
             >
-              <img
+              <Image
                 src={logo.src}
-                alt={logo.name}
+                alt={getLocalizedText(logo.name, lang)}
                 className="max-h-10 mb-2 object-contain"
               />
               <div className="text-sm font-medium text-gray-700">
-                {logo.name}
+           {getLocalizedText(logo.name, lang)}
               </div>
             </div>
           ))}

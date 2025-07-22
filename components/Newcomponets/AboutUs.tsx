@@ -1,10 +1,18 @@
 'use client'
-import React from 'react';
+import React,{useState} from 'react';
 import VisionImg from '../../assets/Images/vision2030.jpg';
 import Image from 'next/image';
 import { Steps } from '@/lib/utilities';
+import utilities from "@/Utilities.json";
+import { getLocalizedText } from "@/lib/utils";
 import BoardMembers from '../Newcomponets/BoardMembers'
 const AboutUs = () => {
+  const [isLangAr, setLangAr] = useState<boolean>(
+      (typeof window !== "undefined" && localStorage.getItem("lang") === "ar") ||
+        false
+    );
+  const { steps } = utilities;
+   const lang: string = isLangAr ? "ar" : "en";
   return (
     <>
     <div className="flex flex-col min-h-screen font-sans text-[#1c1c1c] bg-white mt-4">
@@ -61,7 +69,7 @@ const AboutUs = () => {
         </svg>
 
         <div className="relative z-10 flex flex-wrap justify-between gap-y-32 md:gap-y-0">
-        {Steps.map((step, index) => (
+        {steps.map((step, index) => (
             <div
             key={step.id}
             className={`flex flex-col items-center w-full md:w-1/4 px-4 ${
@@ -72,10 +80,10 @@ const AboutUs = () => {
                 {step.id}
             </div>
             <h3 className="text-lg font-bold text-[#002c60] mt-12 mb-2 text-center">
-                {step.title}
+                {(getLocalizedText(step.title, lang))}
             </h3>
             <p className="text-sm text-gray-700 max-w-[250px] text-center">
-                {step.text}
+                {(getLocalizedText(step.text, lang))}
             </p>
             </div>
         ))}

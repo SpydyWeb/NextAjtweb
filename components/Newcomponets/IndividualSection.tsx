@@ -7,13 +7,19 @@ import {individualproducts} from '@/lib/utilities';
 import Link from "next/link";
 import Contactus from "../layout/Contactus";
 import ProductCard from "../features/product-card";
+import { getLocalizedText } from "@/lib/utils";
+import utilities from "@/Utilities.json";
 const IndividualSection = () => {
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
-
+ const [isLangAr, setLangAr] = useState<boolean>(
+    (typeof window !== "undefined" && localStorage.getItem("lang") === "ar") ||
+      false
+  );
   const handleProductClick = (productTitle: string) => {
     setSelectedProduct(productTitle);
   };
-
+    const { NavigationData } = utilities;
+  const lang: string = isLangAr ? "ar" : "en";
   return (
     <>
     <div className="mt-4 w-full  border-gray-200 bg-white">

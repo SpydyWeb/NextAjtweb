@@ -71,6 +71,7 @@
 import { useState } from "react";
 import { Car,Stethoscope,ShieldAlert, Home,Gavel,Plane,PiggyBank,} from "lucide-react";
 import {products1,products2}from "@/lib/utilities";
+import Image from 'next/image'
 export function Features() {
    const [products,setProducts] =useState('Retail');
   const [selectedCategory, setSelectedCategory] = useState("Retail");
@@ -125,7 +126,7 @@ export function Features() {
 
   {/* Foreground content */}
   <div className="relative z-10">
-    <img
+    <Image
       src={icon}
       alt={title}
       className={`h-[60px] mb-4 mx-auto object-contain transition duration-200 
@@ -183,7 +184,7 @@ export function Features() {
 
   {/* Foreground content */}
   <div className="relative z-10">
-    <img
+    <Image
       src={icon}
       alt={title}
       className={`h-[60px] mb-4 mx-auto object-contain transition duration-200 ${

@@ -23,7 +23,7 @@ const Contactus = () => {
           placeholder="ENTER YOUR EMAIL"
           className="flex-1 px-4 py-3 text-sm text-gray-800 outline-none border-none"
         />
-        <button className="bg-[#1e3a8a] text-white px-6 py-3 text-sm font-semibold w-full sm:w-auto">
+        <button className="bg-[#1e3a8a] rounded-[20px] text-white px-6 py-3 text-sm font-semibold w-full sm:w-auto">
           CONTACT US
         </button>
       </div>

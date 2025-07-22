@@ -11,56 +11,88 @@
             "en": "Motor",
             "ar": "السيارات"
           },
-          "path": "/IndividualProducts/Motor"
+          "path": "/IndividualProducts/Motor",
+            "description": {
+            "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+            "ar": "نوفر تغطية طبية شاملة تلبي احتياجاتك وأسرتك بأفضل المعايير العالمية"
+          }
         },
         {
           "label": {
             "en": "Medical Malpractice",
             "ar": "الأخطاء الطبية"
           },
-          "path": "/IndividualProducts/Malpractise"
+          "path": "/IndividualProducts/Malpractise",
+            "description": {
+            "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+            "ar": "نوفر تغطية طبية شاملة تلبي احتياجاتك وأسرتك بأفضل المعايير العالمية"
+          }
         },
         {
           "label": {
             "en": "Visit Visa Extension",
             "ar": "تمديد تأشيرة الزيارة"
           },
-          "path": "/IndividualProducts/VisitVisa"
+          "path": "/IndividualProducts/VisitVisa",
+            "description": {
+            "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+            "ar": "نوفر تغطية طبية شاملة تلبي احتياجاتك وأسرتك بأفضل المعايير العالمية"
+          }
         },
         {
           "label": {
             "en": "Householder",
             "ar": "رب المنزل"
           },
-          "path": "/IndividualProducts/Householder"
+          "path": "/IndividualProducts/Householder",
+            "description": {
+            "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+            "ar": "نوفر تغطية طبية شاملة تلبي احتياجاتك وأسرتك بأفضل المعايير العالمية"
+          }
         },
         {
           "label": {
             "en": "Protection & Savings",
             "ar": "الحماية والادخار"
           },
-          "path": "/IndividualProducts/ProtectionSaving"
+          "path": "/IndividualProducts/ProtectionSaving",
+            "description": {
+            "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+            "ar": "نوفر تغطية طبية شاملة تلبي احتياجاتك وأسرتك بأفضل المعايير العالمية"
+          }
         },
         {
           "label": {
             "en": "Medical Domestic Helper Insurance",
             "ar": "تأمين العاملة المنزلية الطبي"
           },
-          "path": "/IndividualProducts/DomesticHelper"
+          "path": "/IndividualProducts/DomesticHelper",
+            "description": {
+            "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+            "ar": "نوفر تغطية طبية شاملة تلبي احتياجاتك وأسرتك بأفضل المعايير العالمية"
+          }
         },
         {
           "label": {
             "en": "Travel Insurance",
             "ar": "تأمين السفر"
           },
-          "path": "/IndividualProducts/Travel"
+          "path": "/IndividualProducts/Travel",
+            "description": {
+            "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+            "ar": "نوفر تغطية طبية شاملة تلبي احتياجاتك وأسرتك بأفضل المعايير العالمية"
+          }
         },
         {
           "label": {
             "en": "Craftsmen Insurance",
             "ar": "تأمين الحرفيين"
           },
-          "path": "/IndividualProducts/Craftsmen"
+          "path": "/IndividualProducts/Craftsmen",
+            "description": {
+            "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+            "ar": "نوفر تغطية طبية شاملة تلبي احتياجاتك وأسرتك بأفضل المعايير العالمية"
+          }
         }
       ]
     },
@@ -278,49 +310,49 @@
   },
   "logos": [
     {
-      "src": "/logos/client1.png",
+      "src": "",
       "name": {
         "en": "logoipsum",
         "ar": "شعار العميل الأول"
       }
     },
     {
-      "src": "/logos/client2.png",
+      "src": "",
       "name": {
         "en": "logoipsum",
         "ar": "شعار العميل الثاني"
       }
     },
     {
-      "src": "/logos/client3.png",
+      "src": "",
       "name": {
         "en": "logoipsum",
         "ar": "شعار العميل الثالث"
       }
     },
     {
-      "src": "/logos/client4.png",
+      "src": "",
       "name": {
         "en": "logoipsum",
         "ar": "شعار العميل الرابع"
       }
     },
     {
-      "src": "/logos/client5.png",
+      "src": "",
       "name": {
         "en": "LOGOIPSUM",
         "ar": "شعار العميل الخامس"
       }
     },
     {
-      "src": "/logos/client6.png",
+      "src": "",
       "name": {
         "en": "Logoipsum",
         "ar": "شعار العميل السادس"
       }
     },
     {
-      "src": "/logos/client7.png",
+      "src": "",
       "name": {
         "en": "logoipsum",
         "ar": "شعار العميل السابع"
@@ -398,361 +430,6 @@
         "ar": "النتائج المالية الإيجابية التي حققتها الشركة بناءً على استراتيجيتها المتوازنة، شجعت التوسع في خطوط أعمال التأمين الأخرى مثل التأمين العام والطبي حيث تثق الشركة أن هذا النمو سيساهم في تلبية تطلعات جميع المساهمين."
       }
     }
-  ],
-  "products1": [
-    {
-      "title": {
-        "en": "Medical",
-        "ar": "الطبي"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-        "ar": "نوفر تغطية طبية شاملة تلبي احتياجاتك وأسرتك بأفضل المعايير العالمية"
-      }
-    },
-    {
-      "title": {
-        "en": "Motor",
-        "ar": "السيارات"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-        "ar": "تأمين شامل للمركبات يوفر الحماية الكاملة ضد جميع المخاطر والحوادث"
-      }
-    },
-    {
-      "title": {
-        "en": "Marine",
-        "ar": "البحري"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-        "ar": "تأمين متخصص للشحن البحري والبضائع المنقولة عبر الطرق المائية"
-      }
-    },
-    {
-      "title": {
-        "en": "Accident & Liability",
-        "ar": "الحوادث والمسؤولية"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-        "ar": "تغطية شاملة للحوادث الشخصية والمسؤولية المدنية بحماية موثوقة"
-      }
-    },
-    {
-      "title": {
-        "en": "Property",
-        "ar": "الممتلكات"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-        "ar": "حماية فعالة لممتلكاتك العقارية والمنقولة ضد جميع المخاطر المحتملة"
-      }
-    },
-    {
-      "title": {
-        "en": "Engineering",
-        "ar": "الهندسي"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-        "ar": "تأمين متخصص للمشاريع الهندسية والإنشائية بتغطية شاملة"
-      }
-    },
-    {
-      "title": {
-        "en": "Aviation",
-        "ar": "الطيران"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-        "ar": "تأمين متخصص لقطاع الطيران بحماية شاملة للطائرات والعمليات الجوية"
-      }
-    },
-    {
-      "title": {
-        "en": "Protection & Savings",
-        "ar": "الحماية والادخار"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-        "ar": "خطط مبتكرة تجمع بين الحماية التأمينية والادخار لمستقبل مالي آمن"
-      }
-    }
-  ],
-  "products2": [
-    {
-      "title": {
-        "en": "Travel",
-        "ar": "السفر"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-        "ar": "تأمين شامل للسفر يوفر الحماية والراحة في جميع رحلاتك"
-      }
-    },
-    {
-      "title": {
-        "en": "Visit Visa Extension",
-        "ar": "تمديد تأشيرة الزيارة"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-        "ar": "تأمين متخصص لتمديد تأشيرة الزيارة بخدمات سهلة ومرنة"
-      },
-      "featured": true
-    },
-    {
-      "title": {
-        "en": "Motor",
-        "ar": "السيارات"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-        "ar": "تأمين شامل للمركبات يوفر الحماية الكاملة ضد جميع المخاطر والحوادث"
-      }
-    },
-    {
-      "title": {
-        "en": "House Holder",
-        "ar": "رب المنزل"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-        "ar": "تأمين شامل لحماية المنزل ومحتوياته ضد جميع المخاطر المنزلية"
-      }
-    },
-    {
-      "title": {
-        "en": "Medical Domestic Helper",
-        "ar": "العاملة المنزلية الطبي"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-        "ar": "تأمين طبي متخصص للعاملات المنزليات يوفر الرعاية الصحية الشاملة"
-      }
-    },
-    {
-      "title": {
-        "en": "Medical malpractice protection & Savings",
-        "ar": "الحماية من الأخطاء الطبية والادخار"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-        "ar": "تأمين متخصص للحماية من الأخطاء الطبية مع خطط ادخار مرنة"
-      }
-    },
-    {
-      "title": {
-        "en": "Craftsmen",
-        "ar": "الحرفيين"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-        "ar": "تأمين متخصص للحرفيين والعمالة المهنية بتغطية شاملة"
-      }
-    }
-  ],
-  "products": [
-    {
-      "title": {
-        "en": "Medical",
-        "ar": "الطبي"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        "ar": "نوفر تغطية طبية شاملة تلبي احتياجاتك وأسرتك بأفضل المعايير العالمية."
-      },
-      "url": "/individualproducts"
-    },
-    {
-      "title": {
-        "en": "Motor",
-        "ar": "السيارات"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        "ar": "تأمين شامل للمركبات يوفر الحماية الكاملة ضد جميع المخاطر والحوادث."
-      },
-      "featured": true,
-      "url": "/individualproducts"
-    },
-    {
-      "title": {
-        "en": "Marine",
-        "ar": "البحري"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        "ar": "تأمين متخصص للشحن البحري والبضائع المنقولة عبر الطرق المائية."
-      },
-      "url": "/individualproducts"
-    },
-    {
-      "title": {
-        "en": "Property",
-        "ar": "الممتلكات"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        "ar": "حماية فعالة لممتلكاتك العقارية والمنقولة ضد جميع المخاطر المحتملة."
-      },
-      "url": "/individualproducts"
-    },
-    {
-      "title": {
-        "en": "Engineering",
-        "ar": "الهندسي"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        "ar": "تأمين متخصص للمشاريع الهندسية والإنشائية بتغطية شاملة."
-      },
-      "url": "/individualproducts"
-    },
-    {
-      "title": {
-        "en": "Aviation",
-        "ar": "الطيران"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        "ar": "تأمين متخصص لقطاع الطيران بحماية شاملة للطائرات والعمليات الجوية."
-      },
-      "url": "/individualproducts"
-    },
-    {
-      "title": {
-        "en": "Accident & Liability",
-        "ar": "الحوادث والمسؤولية"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        "ar": "تغطية شاملة للحوادث الشخصية والمسؤولية المدنية بحماية موثوقة."
-      },
-      "url": "/individualproducts"
-    },
-    {
-      "title": {
-        "en": "Protection & Savings",
-        "ar": "الحماية والادخار"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        "ar": "خطط مبتكرة تجمع بين الحماية التأمينية والادخار لمستقبل مالي آمن."
-      },
-      "url": "/individualproducts"
-    }
-  ],
-  "individualproducts": [
-    {
-      "title": {
-        "en": "Travel",
-        "ar": "السفر"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        "ar": "تأمين شامل للسفر يوفر الحماية والراحة في جميع رحلاتك."
-      },
-      "url": "/individualproducts"
-    },
-    {
-      "title": {
-        "en": "Visit Visa Extension",
-        "ar": "تمديد تأشيرة الزيارة"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        "ar": "تأمين متخصص لتمديد تأشيرة الزيارة بخدمات سهلة ومرنة."
-      },
-      "featured": true,
-      "url": "/individualproducts"
-    },
-    {
-      "title": {
-        "en": "Motor",
-        "ar": "السيارات"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        "ar": "تأمين شامل للمركبات يوفر الحماية الكاملة ضد جميع المخاطر والحوادث."
-      },
-      "url": "/individualproducts"
-    },
-    {
-      "title": {
-        "en": "House Holder",
-        "ar": "رب المنزل"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        "ar": "تأمين شامل لحماية المنزل ومحتوياته ضد جميع المخاطر المنزلية."
-      },
-      "url": "/individualproducts"
-    },
-    {
-      "title": {
-        "en": "Medical Domestic Helper",
-        "ar": "العاملة المنزلية الطبي"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        "ar": "تأمين طبي متخصص للعاملات المنزليات يوفر الرعاية الصحية الشاملة."
-      },
-      "url": "/individualproducts"
-    },
-    {
-      "title": {
-        "en": "Medical malpractice protection & Savings",
-        "ar": "الحماية من الأخطاء الطبية والادخار"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        "ar": "تأمين متخصص للحماية من الأخطاء الطبية مع خطط ادخار مرنة."
-      },
-      "url": "/individualproducts"
-    },
-    {
-      "title": {
-        "en": "Craftsmen",
-        "ar": "الحرفيين"
-      },
-      "icon": "",
-      "description": {
-        "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        "ar": "تأمين متخصص للحرفيين والعمالة المهنية بتغطية شاملة."
-      },
-      "url": "/individualproducts"
-    }
   ]
+
 }
