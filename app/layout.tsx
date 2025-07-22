@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google';
 import { Navigation } from '@/components/layout/navigation';
 import { Footer } from '@/components/layout/footer';
 import Header from '@/components/layout/Header';
+import "../i18n";
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
