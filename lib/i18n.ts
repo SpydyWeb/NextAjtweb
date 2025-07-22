@@ -1,3 +1,4 @@
+
 // lib/i18n.ts
 import i18n from 'i18next';
 import Backend from 'i18next-http-backend';
@@ -11,17 +12,23 @@ i18n
   .init({
     fallbackLng: 'en',
     supportedLngs: ['en', 'ar'],
-    ns: [], // Don't preload
-    defaultNS: undefined,
+    debug: false,
+    
     backend: {
-      loadPath: '/public/constants/translation/{{ns}}/{{lng}}.json', 
+      // Correct path for Next.js public directory
+      loadPath: '/public/constants/translation/{{ns}}/{{lng}}.json',
     },
+    
     interpolation: {
       escapeValue: false,
     },
+    
     react: {
       useSuspense: false,
     },
+    
+    ns: [], // Don't preload
+    defaultNS: undefined,
   });
 
 export default i18n;
