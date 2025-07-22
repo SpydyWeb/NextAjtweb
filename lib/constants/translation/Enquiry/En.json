@@ -1,0 +1,13 @@
+{
+    "sendEnquiry":"SEND AN ENQUIRY",
+    "oneSpectGetBackShortly": "One of our speciaists will get back to you shortly",
+    "PleaseEnterFullName": "Please enter your full name.",
+    "pleaseEnterEmailAddrs": "Please enter a valid email address.",
+    "mobile": "Mobile",
+    "pleaseEnterMobilNo": "Please enter a valid mobile number.",
+    "insuranceType": "Insurance Type",
+    "selectInsuranceType": "Select Insurance Type",
+    "pleaseEnterNote": "Please enter a note.",
+    "clear": "Clear",
+    "send": "Send"
+}

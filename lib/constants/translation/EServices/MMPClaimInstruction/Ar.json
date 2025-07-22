@@ -1,0 +1,17 @@
+{
+    "MMPClaimRegHeader": "MEDICAL MALPRACTICE",
+    "MMPClaimRegDesc1": "Claim procedure and list of required documents:",
+    "MMPClaimRegDesc2": "In the event of any accident that may result in a claim under a medical malpractice insurance policy, the following procedures must be followed:",
+    "MMPClaimRegPoint1": "AlJazira Takaful must be notified immediately of the claim during the insurance period. And submit all documents as follows :",
+    "MMPClaimRegPoint1Item1": "A copy of the medical report on the case.",
+    "MMPClaimRegPoint1Item2": "A copy of the letter of the concerned authority that includes a complaint against the doctor.",
+    "MMPClaimRegPoint1Item3": "A copy of the professional classification certificate.",
+    "MMPClaimRegPoint1Item4": "A copy of the professional registration card.",
+    "MMPClaimRegPoint1Item5": "A copy of the ID or Iqama.",
+    "MMPClaimRegPoint1Item6": "A copy of the license to practice professions issued by the Ministry of Health for the private sector.",
+    "MMPClaimRegPoint1Item7": "A copy of the employment contract for the government sector.",
+    "MMPClaimRegPoint1Item8": "copy of the complaint submitted by the patient.",
+    "MMPClaimRegPoint1Note": "Note",
+    "MMPClaimRegPoint1Note1": "In the event that a fine and performance letter is requested, all the above-mentioned documents must be submitted in addition to the power of attorney.",
+    "MMPClaimRegPoint1Note2": "The company has the right to request other additional documents if necessary"
+}

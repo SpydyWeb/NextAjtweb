@@ -1,0 +1,12 @@
+{
+    "MotorClaimRegHeader": "CLAIM REGISTRATION",
+    "MotorClaimRegDesc1": "Dear customer..",
+    "MotorClaimRegPoint1": "To submit a claim, please consider the following:",
+    "MotorClaimRegPoint1Item1": "Please note that the accident report will be received within 48 hours from the accident registration time by the accident surveillance authority",
+    "MotorClaimRegPoint1Item2": "Receiving an AJT reference or claim number does not relate to the claim being approved.",
+    "MotorClaimRegPoint1Item3": "Ensure that you have entered your vehicle's sequence number and ID number correctly.",
+    "MotorClaimRegPoint1Item4":"Make sure the iban is valid and registered under the Id/Iqama you entered",
+    "MotorClaimRegPoint1Item5":"In case of any additional Invoices that needs to be uploadedd after submitting the claim and receiving the claim number, you can upload them by clicking on the following link ",
+    "MotorClaimRegPoint1Link" :"here",
+    "MotorClaimRegPoint1Submit" :"Submit your Claim now"
+}

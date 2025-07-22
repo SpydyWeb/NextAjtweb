@@ -1,0 +1,23 @@
+{
+    "PSClaimInstructionDesc1": "عملينا العزيز..",
+    "PSClaimInstructionDesc2": "قبل الشروع في تقديم مطالبة نأمل منكم التأكد من وجود المتطلبات التالية حسب نوع المطالبة بصيغة PDF",
+    "PSClaimInstructionPoint1": "مطالبات الوفاة :",
+    "PSClaimInstructionPoint1Item1": "نسخة من شهادة الوفاة",
+    "PSClaimInstructionPoint1Item2": "التقرير الطبي عن حالة الوفاة",
+    "PSClaimInstructionPoint1Item3": " نموذج المطالبة ( CL2 ) من قبل المستشفى .",
+    "PSClaimInstructionPoint1Item4": "نسخة من هوية مقدم المطالبة",
+    "PSClaimInstructionPoint1Item5": " إذا كانت الوفاة ناجمة عن حادث ، تقرير الشرطة الذي يؤكد أن وفاة المشمول بالتغطية نجمت عن حادث",
+    "PSClaimInstructionPoint2": "مطالبات العجز الكلي أو الجزئي الدائم :",
+    "PSClaimInstructionPoint2Item1": "تقرير بالحالة من لجنة تحديد العجز إن وجد",
+    "PSClaimInstructionPoint2Item2": " تقرير طبي من المستشفى التي أعلنت عن وجود حالة العجز",
+    "PSClaimInstructionPoint2Item3": "نموذج المطالبة CL3) ) من قبل المستشفى .",
+    "PSClaimInstructionPoint2Item4": "إذا كانت حالة العجز ناجمة عن حادث ، تقرير الشرطة الذي يؤكد أن عجز المشمول بالتغطية نجمت عن حادث",
+    "PSClaimInstructionPoint2Item5": " نسخة من هوية مقدم المطالبة / هوية العميل",
+    "PSClaimInstructionPoint3": "مطالبات الأمراض المستعصية:",
+    "PSClaimInstructionPoint3Item1": "تقرير طبي من المستشفى التي قامت بتشخيص المرض المستعصي",
+    "PSClaimInstructionPoint3Item2": "نموذج المطالبة( CL4 ) من قبل المستشفى .",
+    "PSClaimInstructionPoint3Item3": "نسخة من هوية مقدم المطالبة / هوية العميل",
+    "PSClaimInstructionPoint4Note1": "ملحوظة : ",
+    "PSClaimInstructionPoint4Note2": "يحق لشركة الجزيرة تكافل طلب مستندات إضافية في حال تطلبت دراسة الحالة ذلك"
+
+}

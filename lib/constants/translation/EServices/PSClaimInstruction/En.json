@@ -1,0 +1,23 @@
+{
+    "PSClaimInstructionDesc1": "Dear customer..",
+    "PSClaimInstructionDesc2": "Before proceeding to submit a claim, we hope that you make sure that the following required documents are in PDF format is fulfilled",
+    "PSClaimInstructionPoint1": "Death claim:",
+    "PSClaimInstructionPoint1Item1": "Copy of the death certificate.",
+    "PSClaimInstructionPoint1Item2": "The medical report on the case of death.",
+    "PSClaimInstructionPoint1Item3": "Claim form number 2(CL2) fullfield from hospital.",
+    "PSClaimInstructionPoint1Item4": "Copy of the claimant's ID.",
+    "PSClaimInstructionPoint1Item5": "Police report if the death of the covered person due to an accident.",
+    "PSClaimInstructionPoint2": "Total permanent disability or partial permanent disability claims :",
+    "PSClaimInstructionPoint2Item1": "copy of medical committee report.",
+    "PSClaimInstructionPoint2Item2": "The medical report from the hospital that declared the state of disability.",
+    "PSClaimInstructionPoint2Item3": "Claim form number 3(CL3) fullfield from hospital.",
+    "PSClaimInstructionPoint2Item4": "Police report if the disability of the covered person due to an accident .",
+    "PSClaimInstructionPoint2Item5": "A copy of the claimant ID/Customer ID.",
+    "PSClaimInstructionPoint3": "Critical illness claims :",
+    "PSClaimInstructionPoint3Item1": "A medical report from the hospital that diagnosed the disease.",
+    "PSClaimInstructionPoint3Item2": "Claim form number 4(CL4) fullfield from hospital.",
+    "PSClaimInstructionPoint3Item3": "A copy of the claimant ID/Customer ID.",
+    "PSClaimInstructionPoint4Note1": "Note : ",
+    "PSClaimInstructionPoint4Note2": "Al-Jazira Takaful Company has the right to request additional documents if necessary."
+
+}
