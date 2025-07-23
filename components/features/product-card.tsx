@@ -6,8 +6,9 @@ import Link from "next/link";
 import { getLocalizedText } from "@/lib/utils";
 interface ProductCardProps {
   product: {
-    label: { en: string; ar: string } | undefined; 
-    path: string;
+    title: string;
+    icon: string;
+    url: string;
     description: string;
   };
   isSelected: boolean;
@@ -21,7 +22,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 }) => {
   return (
     <div
-      onClick={() => onProductClick(getLocalizedText(product.label, 'en'))}
+      onClick={() => onProductClick(product.title)}
       className={`relative cursor-pointer rounded-2xl border transition duration-300 p-6 flex flex-col justify-between items-center min-h-[260px]
       ${isSelected ? 'bg-[#0d2e57] text-white' : 'bg-white text-[#1c1c1c] border-gray-200 hover:shadow-lg'}`}
     >

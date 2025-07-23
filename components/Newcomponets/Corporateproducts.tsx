@@ -7,8 +7,8 @@ import {products} from '@/lib/utilities';
 import Link from "next/link";
 import Contactus from "../layout/Contactus";
 import ProductCard from "../features/product-card";
-import utilities from "@/Utilities.json";
-import { getLocalizedText } from "@/lib/utils";
+// import utilities from "@/Utilities.json";
+// import { getLocalizedText } from "@/lib/utils";
 const Corporateproducts = () => {
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
  const [isLangAr, setLangAr] = useState<boolean>(
@@ -18,7 +18,7 @@ const Corporateproducts = () => {
   const handleProductClick = (productTitle: string) => {
     setSelectedProduct(productTitle);
   };
-  const { NavigationData } = utilities;
+  // const { NavigationData } = utilities;
    const lang: string = isLangAr ? "ar" : "en";
   return (
     <>
@@ -39,11 +39,11 @@ const Corporateproducts = () => {
     </p>
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-7xl mx-auto">
-      {NavigationData.corporateProducts.items.map((product, idx) => (
+      {products.map((product, idx) => (
         <ProductCard
           key={idx}
           product={product}
-          isSelected={selectedProduct === getLocalizedText(product.label, lang)}
+          isSelected={selectedProduct === (product.title)}
           onProductClick={handleProductClick}
         />
       ))}

@@ -18,8 +18,6 @@ const IndividualSection = () => {
   const handleProductClick = (productTitle: string) => {
     setSelectedProduct(productTitle);
   };
-    const { NavigationData } = utilities;
-  const lang: string = isLangAr ? "ar" : "en";
   return (
     <>
     <div className="mt-4 w-full  border-gray-200 bg-white">
