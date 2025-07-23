@@ -5,20 +5,12 @@ import React, { useRef, useState } from 'react';
 // import { CalendarOutlined } from '@ant-design/icons';
 // import dayjs from 'dayjs';
 import { newsData } from '@/lib/utilities';
-import utilities from "@/Utilities.json";
-import { getLocalizedText } from "@/lib/utils";
 import { MdDateRange } from "react-icons/md";
 const Dateformat = 'DD/MM/YYYY';
 
 const LatestNews = () => {
   const [selectedDate, setSelectedDate] = useState(null);
   const pickerRef = useRef(null);
-  const [isLangAr, setLangAr] = useState<boolean>(
-    (typeof window !== "undefined" && localStorage.getItem("lang") === "ar") ||
-      false
-  );
-  const { newsData } = utilities;
- const lang: string = isLangAr ? "ar" : "en";
   return (
     <>
     <section className="text-center py-12 px-4 bg-white">
@@ -40,7 +32,7 @@ const LatestNews = () => {
               {item.id}
             </div>
 
-            <p className="text-base text-black mt-6 font-semibold">{(getLocalizedText(item.title, lang))}</p>
+            <p className="text-base text-black mt-6 font-semibold">{(item.title)}</p>
           
             <p className="text-sm text-cyan-500 mt-4 flex items-center gap-1 text-lg"><MdDateRange className="text-xl"/>{(item.date)}</p>
 

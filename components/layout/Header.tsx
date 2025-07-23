@@ -99,8 +99,8 @@ const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     onChange={handleLanguageChange}
     className="appearance-none cursor-pointer rounded px-4 py-2 text-[#10426c] pr-8 focus:outline-none focus:ring-2 focus:ring-blue-400"
   >
-    <option value="en">EN</option>
-    <option value="ar">AR</option>
+    <option value="en">{t("left")}</option>
+    <option value="ar">{t("Right")}</option>
   </select>
 
   {/* Icon overlay */}
