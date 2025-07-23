@@ -70,9 +70,11 @@
 
 import { useState } from "react";
 import { Car,Stethoscope,ShieldAlert, Home,Gavel,Plane,PiggyBank,} from "lucide-react";
-import {products1,products2}from "@/lib/utilities";
-import Image from 'next/image'
+import {corporateproducts,individualproducts}from "@/lib/utilities";
+import Image from 'next/image';
+import { useTranslation } from "react-i18next";
 export function Features() {
+    const { t, i18n } = useTranslation();
    const [products,setProducts] =useState('Retail');
   const [selectedCategory, setSelectedCategory] = useState("Retail");
  const [selected, setSelected] = useState("");
@@ -82,8 +84,8 @@ export function Features() {
   };
   return (
     <section className="py-10 bg-gray-50">
-      <h2 className="text-center text-2xl font-bold text-[#10426C] mb-2">OUR SERVICE</h2>
-      <p className="text-center text-2xl font-bold mb-6">Explore our wide range of products</p>
+      <h2 className="text-center text-2xl font-bold text-[#10426C] mb-2">{t("Ourservice")}</h2>
+      <p className="text-center text-2xl font-bold mb-6">{t("Exploreproducts")}</p>
 
       {/* Toggle Buttons */}
       <div className="flex justify-center gap-4 mb-8 flex-wrap px-4">
@@ -95,7 +97,7 @@ export function Features() {
               : "bg-gray-100 text-gray-800 border-gray-300"
           }`}
         >
-          Retail Products
+          {t("RetailProducts")}
         </button>
         <button
           onClick={() => setProducts("Corporate")}
@@ -105,14 +107,14 @@ export function Features() {
               : "bg-gray-100 text-gray-800 border-gray-300"
           }`}
         >
-          Corporate Products
+          {t("CorporateProducts")}
         </button>
       </div>
 
       {/* Product Cards */}
      {products === "Corporate" && (
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-[96rem] mx-auto px-4 py-8">
-    {products1.map(({ title, icon, description }) => {
+    {corporateproducts.map(({ title, icon, description }) => {
       const isSelected = selected === title;
       return (
    <div
@@ -170,7 +172,7 @@ export function Features() {
 
 {products === "Retail" && (
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-[96rem] mx-auto px-4 py-8">
-    {products2.map(({ title, icon, description }) => {
+    {individualproducts.map(({ title, icon, description }) => {
       const isSelected = selected === title;
       return (
        <div

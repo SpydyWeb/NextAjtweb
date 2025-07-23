@@ -71,7 +71,10 @@ import ServiceRequestEn from "@/public/locales/translation/ServiceRequests/En.js
 import ServiceRequestAr from "@/public/locales/translation/ServiceRequests/Ar.json";
 import MotorflowEn from "@/public/locales/translation/MotorFlow/En.json";
 import MotorflowAr from "@/public/locales/translation/MotorFlow/Ar.json";
-
+import heroEn from "@/public/locales/translation/hero/en.json";
+import heroAr from "@/public/locales/translation/hero/ar.json";
+import FeaturesEn from "@/public/locales/translation/features/en.json";
+import FeaturesAr from "@/public/locales/translation/features/ar.json";
 const resources = {
   en: {
     translation: {
@@ -110,6 +113,10 @@ const resources = {
       ...MarineEN,
       ...MedicalEN,
       ...MotorflowEn,
+
+
+      ...heroEn,
+      ...FeaturesEn
     },
   },
   ar: {
@@ -149,6 +156,10 @@ const resources = {
       ...MarineAR,
       ...MedicalAR,
       ...MotorflowAr,
+
+
+      ...heroAr,
+      ...FeaturesAr
     },
   },
 };

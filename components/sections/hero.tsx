@@ -36,17 +36,17 @@ export function Hero() {
         <button
           className="py-2 px-6 border border-[#123766] text-[#10426C] rounded-full font-medium text-sm bg-transparent cursor-pointer whitespace-nowrap"
         >
-          E-Services
+          {t("EServicesbtn")}
         </button>
       </div>
     </div>
    <section className="relative flex flex-col md:flex-row justify-between items-center max-w-[1100px] mx-auto px-4 py-8 gap-8">
       {/* Left Text */}
       <div className="flex-1 text-center md:text-left">
-        <h1 className="text-3xl md:text-4xl font-bold text-[#1e3a8a]">{t("MotorSearchSubHeader")}</h1>
-        <p className="text-2xl md:text-4xl mt-2">You Drive & We Insure</p>
+        <h1 className="text-3xl md:text-4xl font-bold text-[#1e3a8a]">{t("motorinsurancetitle")}</h1>
+        <p className="text-2xl md:text-4xl mt-2">{t("YouDriveWeInsure")}</p>
         <button className="mt-4 px-6 py-2 border border-[#123766] text-[#10426C] rounded-full font-medium text-sm bg-transparent cursor-pointer whitespace-nowrap">
-          InsureNow !
+          {t("InsureNowbtn")}
         </button>
       </div>
 
