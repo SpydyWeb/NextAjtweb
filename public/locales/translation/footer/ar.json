@@ -5,5 +5,18 @@
     "Followus":"تابعنا الآن",
     "DownloadMedical":"تنزيل طبي",
     "InsuranceNextCare":"تأمين نيكست كير",       
-    "Application":"طلب"
+    "Application":"طلب",
+
+    "footerLink1":"من نحن",
+    "footerLink2":"الخدمات الإلكترونية",
+    "footerLink3":"الأسئلة الشائعة ",
+    "footerLink4":"مركز التحميل",
+    "footerLink5":"حياة مهنية",
+    "footerAddress1":"شارع حراء، السلامة، جدة مبنى يو زون السلامة",
+    "footerAddress2":"4516-23324 ، المملكة العربية السعودية", 
+    "footerAddress3":"8003040400 | +966 12 6688877",
+    "footerAddress4":"info@ajt.com.sa",
+    "footerPdf1":"سياسة الخصوصية",
+    "footerPdf2":"شروط الخدمة",
+    "footerPdf3":"سياسة ملفات تعريف الارتباط"
 }

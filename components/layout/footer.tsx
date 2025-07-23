@@ -13,30 +13,11 @@ import Playstore from '../../assets/Images/google play.png';
 import facebook from '../../assets/Images/facebook.png';
 import instagram from '../../assets/Images/instagram.png';
 import twiter from '../../assets/Images/twiter.png';
+import {footerLinks} from '@/lib/utilities';
 import { useTranslation } from 'react-i18next';
 export function Footer() {
   const {t, i18n} = useTranslation();
-  const footerLinks = {
-    company: [
-      { name: 'About', href: '/aboutuspage' },
-      { name: 'E-Service', href: '/E-Service' },
-      { name: 'FAQs', href: '/FAQs' },
-      { name: 'Download Center', href: '/DownloadCenter' },
-      { name: 'Career', href: '/Career' },
-    ],
-    resources: [
-        { name: 'Hira Street, Al Salamah, Jeddah, U-Zone Building', href: '#', icon: <BiSolidMap className="w-[2rem] h-[2rem] text-[#009ee2]" /> },
-        { name: 'Al Salama, 4516-23324, Kingdom of Saudi Arabia', href: '#', icon: <BiSolidMap className="w-[2rem] h-[2rem] text-[#009ee2]" /> },
-        { name: '8003040400 | +966 12 6688877', href: '#', icon: <BsFillTelephoneFill className="w-[1.5rem] h-[1.5rem] text-[#009ee2]" /> },
-        { name: 'info@ajt.com.sa', href: '#', icon: <IoMail className="w-[1.5rem] h-[1.5rem] text-[#009ee2]" /> },
-      ],
-    legal: [
-      { name: 'Privacy Policy', href: '#' },
-      { name: 'Terms of Service', href: '#' },
-      { name: 'Cookie Policy', href: '#' },
-    ],
-  };
-
+ 
  const socialLinks = [
   { name: 'Facebook', href: 'https://www.facebook.com/AljaziraTakafulofficial/', icon: facebook },
   { name: 'Instagram', href: 'https://www.instagram.com/aljaziratakafulco/', icon: instagram },
@@ -72,17 +53,12 @@ export function Footer() {
             <div>
               <h3 className="text-lg font-semibold mb-4">{t('Contactus')}</h3>
               <ul className="space-y-3">
-                {footerLinks.resources.map((link) => (
-                  <li key={link.name}>
-                    <Link
-                      href={link.href}
-                      className="flex items-start gap-2 text-sm hover:text-sky-600"
-                    >
-                      {link.icon}
-                      <span>{link.name}</span>
-                    </Link>
-                  </li>
-                ))}
+               {footerLinks.resources.map((link, idx) => (
+                <li key={idx} className="flex items-start gap-3 text-sm text-[#10426C]">
+                  <span className="mt-0">{link.icon}</span>
+                  <span>{t(link.name)}</span>
+                </li>
+              ))}
               </ul>
             </div>
 
@@ -91,12 +67,13 @@ export function Footer() {
               <h3 className="text-lg font-semibold mb-4">{t('Quicklinks')}</h3>
               <ul className="space-y-3 text-sm">
                 {footerLinks.company.map((link) => (
-                  <li key={link.name}>
-                    <Link href={link.href} className="hover:text-sky-600">
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
+  <li key={link.name}>
+    <Link href={link.href} className="hover:text-sky-600 text-sm">
+      {t(link.name)}
+    </Link>
+  </li>
+))}
+
               </ul>
             </div>
 
@@ -105,21 +82,23 @@ export function Footer() {
               <h3 className="text-lg font-semibold mb-4">{t('Followus')}</h3>
               <div className="flex items-center gap-4 mb-6">
                 {socialLinks.slice(0, 3).map((social) => (
-                  <Link
-                    key={social.name}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={social.name}
-                    className="w-6 h-6"
-                  >
-                    <Image
-                      src={social.icon}
-                      alt={social.name}
-                      className="w-full h-full object-contain filter invert sepia saturate-500 hue-rotate-[175deg] brightness-110"
-                    />
-                  </Link>
-                ))}
+                <Link
+                  key={social.name}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={t(social.name)} // translated label
+                  className="w-6 h-6"
+                >
+                  <Image
+                  
+                    src={social.icon}
+                    alt={t(social.name)} // translated alt text
+                    className="w-full h-full object-contain filter invert sepia saturate-500 hue-rotate-[175deg] brightness-110"
+                  />
+                </Link>
+              ))}
+
               </div>
               <p className="text-sm font-medium mb-3 leading-tight">
                 {t('DownloadMedical')} <br />

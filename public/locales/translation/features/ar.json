@@ -3,11 +3,51 @@
     "Exploreproducts":"استكشف مجموعتنا الواسعة من المنتجات",
     "RetailProducts":"منتجات التجزئة",
     "CorporateProducts":"منتجات الشركات",
-    "":"",
-    "":"",
-    "":"",
-    "":"",
-    "":"",
-    "":"",
-    "":""
+   
+  "Medical": "طبي",
+  "MedicalDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  "Motor": "محرك",
+  "MotorDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  "Marine": "البحرية",
+  "MarineDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  "AccidentAndLiability": "الحوادث والمسؤولية",
+  "AccidentAndLiabilityDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  "Property": "ملكية",
+  "PropertyDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  "Engineering": "هندسة",
+  "EngineeringDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  "Aviation": "الطيران",
+  "AviationDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  "ProtectionAndSavings": "الحماية والادخار",
+  "ProtectionAndSavingsDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+
+
+ "Travel": "يسافر",
+  "TravelDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  "VisitVisaExtension": "تمديد تأشيرة الزيارة",
+  "VisitVisaExtensionDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+   "Motor1": "محرك",
+  "MotorDescription1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  "HouseHolder": "صاحب المنزل",
+  "HouseHolderDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  "MedicalDomesticHelper": "مساعدة منزلية طبية",
+  "MedicalDomesticHelperDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  "MedicalMalpractice": "الإهمال الطبي",
+  "MedicalMalpracticeDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  "Craftsmen": "الحرفيين",
+  "CraftsmenDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+  "ProtectionAndSavings1": "الحماية والادخار",
+  "ProtectionAndSavingsDescription1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+
+
+  "CorporateInsurance": "التأمين للشركات",
+  "CorporateInsurancedesc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Labore et dolore magna aliqua. استخدم الحد الأدنى من السم.",
+  "RetailInsurance":"تأمين التجزئة",
+  "RetailInsurancedesc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Labore et dolore magna aliqua. استخدم الحد الأدنى من السم.",
+  "OURPRODUCTS":"منتجاتنا",
+ "Exploreproducts":"اكتشف مجموعتنا الواسعة من المنتجات!"
+
+
+
+
 }
