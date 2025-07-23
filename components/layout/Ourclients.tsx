@@ -4,7 +4,9 @@ import utilities from "@/Utilities.json";
 import { logos } from '@/lib/utilities';
 import { getLocalizedText } from "@/lib/utils";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 const Ourclients = () => {
+  const { t, i18n } = useTranslation();
  const scrollRef = useRef<HTMLDivElement | null>(null);
   const [isLangAr, setLangAr] = useState<boolean>(
     (typeof window !== "undefined" && localStorage.getItem("lang") === "ar") ||
@@ -25,10 +27,10 @@ const Ourclients = () => {
     <>
     <section className="text-center py-12 px-4">
       <h3 className="text-xl sm:text-2xl font-bold text-[#10426C] mb-0">
-        OUR CLIENTS
+        {t("OurClients")}
       </h3>
       <p className="text-base sm:text-lg mb-8">
-        Explore our wide range of case studies
+        {t("Explorestudies")}
       </p>
 
       <div className="relative max-w-7xl mx-auto">
@@ -81,7 +83,7 @@ const Ourclients = () => {
 
       {/* View All Button */}
       <button className="mt-8 px-6 py-2 border border-gray-300 bg-gray-50 rounded-full font-medium text-gray-800 hover:bg-white transition">
-        VIEW ALL
+        {t("Viewbtn")}
       </button>
     </section>
     </>

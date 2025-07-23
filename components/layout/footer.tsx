@@ -1,3 +1,4 @@
+"use client";
 import Link from 'next/link';
 import { Code2, Github, Twitter, Linkedin,Instagram,Facebook } from 'lucide-react';
 import FooterCard from './footercard';
@@ -12,8 +13,9 @@ import Playstore from '../../assets/Images/google play.png';
 import facebook from '../../assets/Images/facebook.png';
 import instagram from '../../assets/Images/instagram.png';
 import twiter from '../../assets/Images/twiter.png';
+import { useTranslation } from 'react-i18next';
 export function Footer() {
-  
+  const {t, i18n} = useTranslation();
   const footerLinks = {
     company: [
       { name: 'About', href: '/aboutuspage' },
@@ -62,17 +64,13 @@ export function Footer() {
                 />
               </Link>
               <p className="text-sm max-w-md">
-                We aim to be the leading company in the field of Islamic
-                Sharia-compliant insurance in the Kingdom of Saudi Arabia and
-                the Middle East region by providing innovative, high-quality
-                insurance solutions in a way that achieves the maximum benefit
-                for our customers, shareholders and employees.
+                {t('footerText')}
               </p>
             </div>
 
             {/* Contact Info */}
             <div>
-              <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+              <h3 className="text-lg font-semibold mb-4">{t('Contactus')}</h3>
               <ul className="space-y-3">
                 {footerLinks.resources.map((link) => (
                   <li key={link.name}>
@@ -90,7 +88,7 @@ export function Footer() {
 
             {/* Quick Links */}
             <div>
-              <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+              <h3 className="text-lg font-semibold mb-4">{t('Quicklinks')}</h3>
               <ul className="space-y-3 text-sm">
                 {footerLinks.company.map((link) => (
                   <li key={link.name}>
@@ -104,7 +102,7 @@ export function Footer() {
 
             {/* Social & App Links */}
             <div>
-              <h3 className="text-lg font-semibold mb-4">Follow Us Now</h3>
+              <h3 className="text-lg font-semibold mb-4">{t('Followus')}</h3>
               <div className="flex items-center gap-4 mb-6">
                 {socialLinks.slice(0, 3).map((social) => (
                   <Link
@@ -124,9 +122,9 @@ export function Footer() {
                 ))}
               </div>
               <p className="text-sm font-medium mb-3 leading-tight">
-                Download Medical <br />
-                Insurance NextCare <br />
-                Application
+                {t('DownloadMedical')} <br />
+                {t('InsuranceNextCare')} <br />
+                {t('Application')}
               </p>
               <div className="space-y-3">
                 {socialLinks.slice(3).map((store) => (

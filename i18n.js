@@ -75,6 +75,16 @@ import heroEn from "@/public/locales/translation/hero/en.json";
 import heroAr from "@/public/locales/translation/hero/ar.json";
 import FeaturesEn from "@/public/locales/translation/features/en.json";
 import FeaturesAr from "@/public/locales/translation/features/ar.json";
+import statsEn from "@/public/locales/translation/stats/en.json";
+import statsAr from "@/public/locales/translation/stats/ar.json";
+import ourclinetsEn from "@/public/locales/translation/ourclients/en.json";
+import ourclinetsAr from "@/public/locales/translation/ourclients/ar.json";
+import latestnewsEn from "@/public/locales/translation/latestnews/en.json";
+import latestnewsAr from "@/public/locales/translation/latestnews/ar.json";
+import contactusEn from "@/public/locales/translation/contactus/en.json";
+import contactusAr from "@/public/locales/translation/contactus/ar.json"; 
+import footerEn from "@/public/locales/translation/footer/en.json";
+import footerAr from "@/public/locales/translation/footer/ar.json"; 
 const resources = {
   en: {
     translation: {
@@ -116,7 +126,12 @@ const resources = {
 
 
       ...heroEn,
-      ...FeaturesEn
+      ...FeaturesEn,
+      ...statsEn,
+      ...ourclinetsEn,
+      ...latestnewsEn,
+      ...contactusEn,
+      ...footerEn
     },
   },
   ar: {
@@ -159,7 +174,12 @@ const resources = {
 
 
       ...heroAr,
-      ...FeaturesAr
+      ...FeaturesAr,
+      ...statsAr,
+      ...ourclinetsAr,
+      ...latestnewsAr,
+      ...contactusAr,
+      ...footerAr
     },
   },
 };
