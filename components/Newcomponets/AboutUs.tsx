@@ -45,7 +45,7 @@ const AboutUs = () => {
 
       {/* Our Story Section */}
       <section className="bg-white px-4 md:px-24 py-16 relative overflow-visible">
-        <h2 className="text-3xl font-bold text-center text-[#1e3a8a] mb-20">
+        <h2 className="text-3xl font-bold text-center text-[#1e3a8a] mb-20 ml-[-50%]">
           {t("Our")} <span className="text-[#002c60]">{t("Story")}</span>
         </h2>
 

@@ -35,11 +35,11 @@ const Header = () => {
   const lang = isLangAr ? "ar" : "en";
 
   return (
-    <header className="bg-white shadow-sm w-full px-6 py-3">
+    <header className="bg-white shadow-sm w-full px-6 py-3 border-b border-gray-400">
       <div className="max-w-[100rem] mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
-          <Image src={logo} width={200} height={200} alt="AlJAZIRA TAKAFUL" />
+          <Image src={logo} width={250} height={250} alt="AlJAZIRA TAKAFUL" />
         </Link>
 
         {/* Navigation Links */}

@@ -16,7 +16,7 @@ export function Features() {
     setSelected(service);
   };
   return (
-    <section className="py-10 bg-gray-50">
+    <section className="py-10 ">
       <h2 className="text-center text-2xl font-bold text-[#10426C] mb-2">{t("Ourservice")}</h2>
       <p className="text-center text-2xl font-bold mb-6">{t("Exploreproducts")}</p>
 
@@ -48,13 +48,13 @@ export function Features() {
      {products === "Corporate" && (
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-[96rem] mx-auto px-4 py-8">
 
-    {corporateproducts.map(({ title, icon, description }) => {
+ {corporateproducts.map(({ title, icon, description }) => {
   const isSelected = selected === title;
 
   return (
     <div
       key={title}
-      onClick={() => handleCardClick(title)}
+      // onClick={() => handleCardClick(title)}
       className={`group relative cursor-pointer p-6 rounded-xl shadow-sm text-center overflow-hidden transition-all duration-200 border
         ${isSelected ? "bg-[#0d2e57] text-white border-none" : "bg-white text-gray-800 border-gray-200"}`}
     >
@@ -73,29 +73,31 @@ export function Features() {
         <div className="text-lg font-semibold mb-2 group-hover:text-white">
           {t(title)}
         </div>
-        <p className="text-sm min-h-[3rem] group-hover:text-white">
-          {t(description)}
-        </p>
 
-        {(isSelected || title === "Motor") ? (
-          <button
-            className={`mt-4 rounded-full font-semibold px-4 py-2 transition duration-200 ${
-              isSelected || title === "Motor"
-                ? "bg-white text-[#10426C]"
-                : "group-hover:bg-white group-hover:text-[#10426C]"
-            }`}
+        {/* Description + hover actions in a fixed-height wrapper */}
+        <div className="relative min-h-[4.5rem]">
+          {/* Description (visible by default, hidden on hover) */}
+          <p
+            className={`text-sm transition-opacity duration-200
+              ${isSelected ? "text-white" : "text-gray-800"}
+              group-hover:opacity-0`}
           >
-            {t("InsureNow")}!
-          </button>
-        ) : (
-          <span
-            className={`inline-block mt-4 font-medium text-sm underline transition duration-200 ${
-              isSelected ? "text-white" : "text-[#1e3a8a] group-hover:text-white"
-            }`}
-          >
-            {t("LearnMore")}
-          </span>
-        )}
+            {t(description)}
+          </p>
+
+          {/* Hover action buttons (hidden by default, visible on hover) */}
+          <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+             <span className="mb-2 font-medium text-sm underline text-white">
+              {t("LearnMore")}
+            </span>
+            <button
+              className="bg-white text-[#10426C] rounded-full font-semibold px-4 py-2"
+            >
+              {t("InsureNow")}!
+            </button>
+           
+          </div>
+        </div>
       </div>
 
       {/* Bottom blue strip only when not selected */}
@@ -111,13 +113,13 @@ export function Features() {
 
 {products === "Retail" && (
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-[96rem] mx-auto px-4 py-8">
-   {individualproducts.map(({ title, icon, description }) => {
+{individualproducts.map(({ title, icon, description }) => {
   const isSelected = selected === title;
 
   return (
     <div
       key={title}
-      onClick={() => handleCardClick(title)}
+      // onClick={() => handleCardClick(title)}
       className={`group cursor-pointer p-6 rounded-xl shadow-sm text-center relative overflow-hidden transition-all duration-200 border
         ${isSelected ? "bg-[#0d2e57] text-white border-none" : "bg-white text-gray-800 border border-gray-200"}`}
     >
@@ -134,29 +136,36 @@ export function Features() {
         />
 
         <div className="text-lg font-semibold mb-2 group-hover:text-white">{t(title)}</div>
-        <p className="text-sm min-h-[3rem] group-hover:text-white">{t(description)}</p>
 
-        {(isSelected || title === "Motor") ? (
-          <button className="mt-4 bg-white text-[#10426C] rounded-full font-semibold px-4 py-2">
-            {t("InsureNow")}!
-          </button>
-        ) : (
-          <span
-            className={`inline-block mt-4 font-medium text-sm underline transition duration-200 
-              ${isSelected ? "text-white" : "text-[#1e3a8a] group-hover:text-white"}`}
-          >
-            {t("LearnMore")}
-          </span>
-        )}
+        {/* Fixed height container to prevent layout shift */}
+        <div className="relative min-h-[4.5rem]">
+          {/* Description - shown normally, hidden on hover */}
+          <p className={`text-sm transition-opacity duration-200
+            ${isSelected ? "text-white" : "text-gray-800"} 
+            group-hover:opacity-0`}>
+            {t(description)}
+          </p>
+
+          {/* Hover actions - hidden normally, shown on hover */}
+          <div className={`absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200`}>
+              <span className="mb-2 font-medium text-sm underline text-white">
+              {t("LearnMore")}
+            </span>
+            <button className="bg-white text-[#10426C] rounded-full font-semibold px-4 py-2">
+              {t("InsureNow")}!
+            </button>
+          
+          </div>
+        </div>
       </div>
-
-      {/* Bottom bar only for non-selected */}
       {!isSelected && (
         <div className="absolute bottom-0 left-0 h-2 w-full bg-[#10426C] rounded-b-xl z-10" />
       )}
     </div>
   );
 })}
+
+
 
   </div>
 )}

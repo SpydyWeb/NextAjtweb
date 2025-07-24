@@ -6,10 +6,10 @@ const Contactus = () => {
 
   return (
     <section className="py-12 px-4 text-center bg-white">
-      <h3 className="text-2xl sm:text-3xl font-semibold text-[#1e3a8a] mb-1">
+      <h3 className="text-2xl sm:text-5xl font-semibold text-[#1e3a8a] mb-1">
         {t("Contactus")}
       </h3>
-      <h3 className="text-2xl sm:text-3xl font-bold text-[#1e3a8a] mb-4">
+      <h3 className="text-2xl sm:text-5xl font-bold text-[#1e3a8a] mb-4">
         {t("Your")} <span className="text-sky-400">{t("InsuranceToday")}</span>
       </h3>
 
