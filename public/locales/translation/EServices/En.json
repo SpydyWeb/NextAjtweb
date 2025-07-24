@@ -38,7 +38,11 @@
     "travel":"TRAVEL",
     "polCanc":"Policy Cancelation",
     "visitVisaExtensionCaps":"VISIT VISA EXTENSION",
-    "CorporateProduct":"CorporateProduct",
-    "RatailProduct":"RatailProduct",
-    "":""
+    "CorporateProduct":"Corporate Product ",
+    "RatailProduct":"Ratail Product",
+    "OurProducts":"Our Products",
+    "CustomerCare":"Customer Care",
+    "AboutUs":"About Us",
+    "Carrer":"Carrer",
+    "Contact":"Contact"
 }

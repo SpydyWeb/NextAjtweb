@@ -36,11 +36,11 @@
     "travel":"السفر",
     "polCanc":"الغاء الوثيقة",
     "visitVisaExtensionCaps":"تأشيرة زيارة",
-       "CorporateProduct":"منتج الشركة",
-    "RatailProduct":"منتج راتايل",
-    "OurProducts":"منتجاتنا",
-    "CustomerCare":"خدمة العملاء",
-    "AboutUs":"معلومات عنا",
-    "Career":"حياة مهنية",
-    "Contact":"اتصال"
+  "CorporateProduct": "المنتج المؤسسي",
+  "RatailProduct": "المنتج الفردي",
+  "OurProducts": "منتجاتنا",
+  "CustomerCare": "خدمة العملاء",
+  "AboutUs": "معلومات عنا",
+  "Carrer":"الوظائف",
+  "Contact": "اتصل بنا"
 }

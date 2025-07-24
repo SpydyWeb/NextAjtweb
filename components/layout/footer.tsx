@@ -59,8 +59,8 @@ export function Footer() {
               <Image
                 src={logo}
                 alt="Aljazira Takaful"
-                width={180}
-                height={60}
+                width={250}
+                height={250}
                 className="object-contain"
               />
             </Link>

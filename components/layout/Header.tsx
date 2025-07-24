@@ -44,30 +44,31 @@ const Header = () => {
 
         {/* Navigation Links */}
   <div className="flex gap-6 items-center">
-  {Object.entries(utilitiesData).map(([key, section]) => (
-    <div key={key} className="relative group">
-      {/* Main Button */}
-      <button className="text-lg font-semibold text-[#10426c] hover:text-blue-700 transition-colors duration-200">
-        {t(section.title)}
-      </button>
+{Object.entries(utilitiesData).map(([key, section]) => (
+        <div key={key} className="relative group">
+          <button className="text-lg font-semibold text-[#10426c] hover:text-blue-700 transition-colors duration-200">
+            {t(section.title)}
+          </button>
 
-      {/* Dropdown - visible on hover of group or itself */}
-      <div className=" w-[250px] absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 bg-white border border-gray-200 mt-3 rounded-lg shadow-lg p-4 z-50 min-w-56 space-y-2 pointer-events-auto">
-        <ul className="space-y-2">
-          {section.links.map((link: any, index: number) => (
-            <li key={index}>
-              <a
-                onClick={() => handleNavigation(link.path)}
-                className="block text-sm text-gray-700 hover:text-white hover:bg-sky-400  px-3 py-1.5 rounded-md transition-all duration-200 cursor-pointer"
-              >
-                {t(link.label)}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
-  ))}
+          {section.links.length > 0 && (
+            <div className="w-[250px] absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 bg-white border border-gray-200 mt-3 rounded-lg shadow-lg p-4 z-50 min-w-56 space-y-2 pointer-events-auto">
+              <ul className="space-y-2">
+                {section.links.map((link, index) => (
+                  <li key={index}>
+                    <a
+                      onClick={() => handleNavigation(link.path)}
+                      className="block text-sm text-gray-700 hover:text-white hover:bg-sky-400 px-3 py-1.5 rounded-md transition-all duration-200 cursor-pointer"
+                    >
+                      {t(link.label)}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+        </div>
+      ))}
+
 </div>
 
 
