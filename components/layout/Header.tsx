@@ -43,29 +43,34 @@ const Header = () => {
         </Link>
 
         {/* Navigation Links */}
-        <div className="flex gap-6 items-center">
-          {Object.entries(utilitiesData).map(([key, section]) => (
-            <div key={key} className="relative group">
-              <button className="text-lg font-medium text-[#10426c] hover:text-blue-700 transition">
-                {t(section.title)}
-              </button>
-              <div className="absolute hidden group-hover:block bg-white border mt-2 rounded shadow-md p-3 z-50 min-w-52">
-                <ul className="space-y-1">
-                  {section.links.map((link: any, index: number) => (
-                    <li key={index}>
-                      <a
-                        onClick={() => handleNavigation(link.path)}
-                        className="cursor-pointer text-gray-700 hover:text-blue-600 block text-sm"
-                      >
-                        {t(link.label)}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+  <div className="flex gap-6 items-center">
+  {Object.entries(utilitiesData).map(([key, section]) => (
+    <div key={key} className="relative group">
+      {/* Main Button */}
+      <button className="text-lg font-semibold text-[#10426c] hover:text-blue-700 transition-colors duration-200">
+        {t(section.title)}
+      </button>
+
+      {/* Dropdown - visible on hover of group or itself */}
+      <div className=" w-[250px] absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 bg-white border border-gray-200 mt-3 rounded-lg shadow-lg p-4 z-50 min-w-56 space-y-2 pointer-events-auto">
+        <ul className="space-y-2">
+          {section.links.map((link: any, index: number) => (
+            <li key={index}>
+              <a
+                onClick={() => handleNavigation(link.path)}
+                className="block text-sm text-gray-700 hover:text-white hover:bg-sky-400  px-3 py-1.5 rounded-md transition-all duration-200 cursor-pointer"
+              >
+                {t(link.label)}
+              </a>
+            </li>
           ))}
-        </div>
+        </ul>
+      </div>
+    </div>
+  ))}
+</div>
+
+
 
         {/* Right: Auth, Language, Search */}
         <div className="flex items-center gap-4 text-lg text-[#2e3b55]">

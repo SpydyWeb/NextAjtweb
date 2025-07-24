@@ -82,7 +82,7 @@ export function Features() {
         </div>
 
         {/* Description + hover actions in a fixed-height wrapper */}
-        <div className="relative min-h-[4.5rem]">
+        <div className="relative min-h-[4.5rem] mt-8">
           {/* Description (visible by default, hidden on hover) */}
           <p
             className={`text-sm transition-opacity duration-200
@@ -92,7 +92,7 @@ export function Features() {
             {t(description)}
           </p>
           <span  className={`text-sm transition-opacity duration-200 
-                ${isSelected ? "text-white" : "text-gray-800"} group-hover:opacity-0 underline mt-20`}>
+                ${isSelected ? "text-white" : "text-[#10426C]"} group-hover:opacity-0 underline mt-20`}>
               {t("LearnMore")}
             </span>
           {/* Hover action buttons (hidden by default, visible on hover) */}
@@ -149,7 +149,7 @@ export function Features() {
         <div className="text-lg font-semibold mb-2 group-hover:text-white">{t(title)}</div>
 
         {/* Fixed height container to prevent layout shift */}
-        <div className="relative min-h-[4.5rem]">
+        <div className="relative min-h-[4.5rem] mt-8">
           {/* Description - shown normally, hidden on hover */}
           <p className={`text-sm transition-opacity duration-200
             ${isSelected ? "text-white" : "text-gray-800"} 
@@ -157,7 +157,7 @@ export function Features() {
             {t(description)}
           </p>
           <span  className={`text-sm transition-opacity duration-200 
-                ${isSelected ? "text-white" : "text-gray-800"} group-hover:opacity-0 underline mb-20`}>
+                ${isSelected ? "text-white" : "text-[#10426C]"} group-hover:opacity-0 underline mb-20`}>
               {t("LearnMore")}
             </span>
           {/* Hover actions - hidden normally, shown on hover */}

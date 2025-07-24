@@ -37,5 +37,8 @@
     "kyc":"KYC",
     "travel":"TRAVEL",
     "polCanc":"Policy Cancelation",
-    "visitVisaExtensionCaps":"VISIT VISA EXTENSION"
+    "visitVisaExtensionCaps":"VISIT VISA EXTENSION",
+    "CorporateProduct":"CorporateProduct",
+    "RatailProduct":"RatailProduct",
+    "":""
 }

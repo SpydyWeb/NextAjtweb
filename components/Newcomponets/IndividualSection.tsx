@@ -62,27 +62,26 @@ const IndividualSection = () => {
               ${isSelected ? "filter brightness-0 invert" : "group-hover:filter group-hover:brightness-0 group-hover:invert"}`}
           />
           <div className="text-lg font-semibold mb-2 group-hover:text-white">{t(title)}</div>
-         <div className="relative min-h-[4.5rem]">
-  
-  <p
-    className={`text-sm transition-opacity duration-200 
-      ${isSelected ? "text-white" : "text-gray-800"} group-hover:opacity-0`}
-  >
-    {t(description)}
-  </p>
-  <span  className={`text-sm transition-opacity duration-200 
-      ${isSelected ? "text-white" : "text-gray-800"} group-hover:opacity-0 underline mb-20`}>
-    {t("LearnMore")}
-  </span>
-  <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-    <span className="mb-2 font-medium text-sm underline text-white">
-      {t("LearnMore")}
-    </span>
-    <button className="bg-white text-[#10426C] rounded-full font-semibold px-4 py-2">
-      {t("InsureNow")}!
-    </button>
-  </div>
-</div>
+         <div className="relative min-h-[4.5rem]  mt-8">
+        <p
+          className={`text-sm transition-opacity duration-200 
+            ${isSelected ? "text-white" : "text-gray-800"} group-hover:opacity-0`}
+        >
+          {t(description)}
+        </p>
+        <span  className={`text-sm transition-opacity duration-200 
+            ${isSelected ? "text-white" : "text-[#10426C]"} group-hover:opacity-0 underline mb-20`}>
+          {t("LearnMore")}
+        </span>
+        <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+          <span className="mb-2 font-medium text-sm underline text-white">
+            {t("LearnMore")}
+          </span>
+          <button className="bg-white text-[#10426C] rounded-full font-semibold px-4 py-2">
+            {t("InsureNow")}!
+          </button>
+        </div>
+      </div>
 
         </div>
         {!isSelected && (
