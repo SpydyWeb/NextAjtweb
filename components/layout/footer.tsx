@@ -1,131 +1,152 @@
-"use client";
+'use client';
+
 import Link from 'next/link';
-import { Code2, Github, Twitter, Linkedin,Instagram,Facebook } from 'lucide-react';
-import FooterCard from './footercard';
-import { BsSearch } from 'react-icons/bs';
-import { BiSolidMap } from 'react-icons/bi';
-import { BsFillTelephoneFill } from 'react-icons/bs';
-import { IoMail } from 'react-icons/io5';
 import Image from 'next/image';
 import logo from '../../assets/Images/logo.png';
 import Appstore from '../../assets/Images/app store.png';
 import Playstore from '../../assets/Images/google play.png';
-import facebook from '../../assets/Images/facebook.png';
-import instagram from '../../assets/Images/instagram.png';
-import twiter from '../../assets/Images/twiter.png';
-import {footerLinks} from '@/lib/utilities';
-import { useTranslation } from 'react-i18next';
-export function Footer() {
-  const {t, i18n} = useTranslation();
- 
- const socialLinks = [
-  { name: 'Facebook', href: 'https://www.facebook.com/AljaziraTakafulofficial/', icon: facebook },
-  { name: 'Instagram', href: 'https://www.instagram.com/aljaziratakafulco/', icon: instagram },
-  { name: 'Twitter', href: 'https://x.com/AljaziraTakaful', icon: twiter },
-  { name: 'AppStore-iOS', href: 'https://apps.apple.com/us/app/mynextcare/id1039800748', icon: Appstore },
-  { name: 'AppStore-Android', href: 'https://play.google.com/store/apps/details?id=com.nextcare.app&hl=en', icon: Playstore }
-];
 
+import facebook from '../../assets/Images/ImagesIcons/facebook.png';
+import instagram from '../../assets/Images/ImagesIcons/instagram.png';
+import twitter from '../../assets/Images/ImagesIcons/twitter.png';
+
+import { footerLinks } from '@/lib/utilities';
+import { useTranslation } from 'react-i18next';
+
+export function Footer() {
+  const { t } = useTranslation();
+
+  const socialLinks = [
+    {
+      name: 'Facebook',
+      href: 'https://www.facebook.com/AljaziraTakafulofficial/',
+      icon: facebook,
+    },
+    {
+      name: 'Instagram',
+      href: 'https://www.instagram.com/aljaziratakafulco/',
+      icon: instagram,
+    },
+    {
+      name: 'Twitter',
+      href: 'https://x.com/AljaziraTakaful',
+      icon: twitter,
+    },
+  ];
+
+  const appStoreLinks = [
+    {
+      name: 'AppStore-iOS',
+      href: 'https://apps.apple.com/us/app/mynextcare/id1039800748',
+      icon: Appstore,
+    },
+    {
+      name: 'AppStore-Android',
+      href: 'https://play.google.com/store/apps/details?id=com.nextcare.app&hl=en',
+      icon: Playstore,
+    },
+  ];
 
   return (
      <>
       <hr />
-      <footer className="bg-white text-[#10426c]">
-        <div className="max-w-7xl mx-auto px-4 py-12">
-          <div className="grid gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-            {/* Logo + Description */}
-            <div className="lg:col-span-2 space-y-4">
-              <Link href="/" className="inline-block">
-                <Image
-                  src={logo}
-                  alt="Company Logo"
-                  width={200}
-                  height={200}
-                  className="object-contain"
-                />
-              </Link>
-              <p className="text-sm max-w-md">
-                {t('footerText')}
-              </p>
-            </div>
+   <footer className="bg-white text-[#10426c] text-sm ml-[250px]">
+  <div className="max-w-[1250px] mx-auto px-4 lg:px-8 py-12">
+    <div className="grid gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.3fr_1.2fr_1fr_1fr]">
+          {/* Logo and About */}
+          <div className="space-y-4 ml-[-70%] ">
+            <Link href="/" className="inline-block">
+              <Image
+                src={logo}
+                alt="Aljazira Takaful"
+                width={180}
+                height={60}
+                className="object-contain"
+              />
+            </Link>
+            <p className="leading-relaxed max-w-sm text-lg">
+            {t("footerText")}
+            </p>
+          </div>
 
-            {/* Contact Info */}
-            <div>
-              <h3 className="text-lg font-semibold mb-4">{t('Contactus')}</h3>
-              <ul className="space-y-3">
-               {footerLinks.resources.map((link, idx) => (
-                <li key={idx} className="flex items-start gap-3 text-sm text-[#10426C]">
-                  <span className="mt-0">{link.icon}</span>
-                  <span>{t(link.name)}</span>
+          {/* Contact Us */}
+          <div className="ml-[-50%]">
+            <h3 className="text-base font-bold text-xl mb-4">{t("Contactus")}</h3>
+            <ul className="space-y-4 text-lg">
+              {footerLinks.resources.map((link, idx) => (
+                <li key={idx} className="flex items-start gap-3">
+                  <Image src={link.icon} alt="icon" width={20} height={20} />
+                  <span className="leading-snug">{t(link.name)}</span>
                 </li>
               ))}
-              </ul>
-            </div>
+            </ul>
+          </div>
 
-            {/* Quick Links */}
-            <div>
-              <h3 className="text-lg font-semibold mb-4">{t('Quicklinks')}</h3>
-              <ul className="space-y-3 text-sm">
-                {footerLinks.company.map((link) => (
-  <li key={link.name}>
-    <Link href={link.href} className="hover:text-sky-600 text-sm">
-      {t(link.name)}
-    </Link>
-  </li>
-))}
+          {/* Quick Links */}
+          <div className="ml-[-10%]">
+            <h3 className="text-base text-xl font-bold mb-4">{t("Quicklinks")}</h3>
+            <ul className="space-y-4 text-lg">
+              {footerLinks.company.map((link) => (
+                <li key={link.name}>
+                  <Link
+                    href={link.href}
+                    className="hover:text-sky-600 transition-colors"
+                  >
+                    {t(link.name)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-              </ul>
-            </div>
+          {/* Social and App Links */}
+         <div className="ml-[-20%]">
+            <h3 className="text-base text-xl font-bold mb-4">{t("Followus")}</h3>
+            <div className="flex items-center gap-4 mb-6 text-lg">
+            {socialLinks.map((social) => (
+              <Link
+                key={social.name}
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-6 h-6 flex items-center justify-center"
+              >
+                <Image
+                  src={social.icon}
+                  alt={social.name}
+                  className="w-6 h-6 object-contain"
+                />
+              </Link>
+            ))}
+          </div>
 
-            {/* Social & App Links */}
-            <div>
-              <h3 className="text-lg font-semibold mb-4">{t('Followus')}</h3>
-              <div className="flex items-center gap-4 mb-6">
-                {socialLinks.slice(0, 3).map((social) => (
+            <p className="text-[#1ca4e9] font-semibold  text-xl leading-snug mb-4">
+              {t("DownloadMedical")}<br />
+             {t("InsuranceNextCare")}<br /> 
+              {t("Application")}
+            </p>
+            <div className="space-y-3">
+              {appStoreLinks.map((store) => (
                 <Link
-                  key={social.name}
-                  href={social.href}
+                  key={store.name}
+                  href={store.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={t(social.name)} // translated label
-                  className="w-6 h-6"
                 >
                   <Image
-                  
-                    src={social.icon}
-                    alt={t(social.name)} // translated alt text
-                    className="w-full h-full object-contain filter invert sepia saturate-500 hue-rotate-[175deg] brightness-110"
+                    src={store.icon}
+                    alt={store.name}
+                    width={140}
+                    height={40}
+                    className="object-contain"
                   />
                 </Link>
               ))}
-
-              </div>
-              <p className="text-sm font-medium mb-3 leading-tight">
-                {t('DownloadMedical')} <br />
-                {t('InsuranceNextCare')} <br />
-                {t('Application')}
-              </p>
-              <div className="space-y-3">
-                {socialLinks.slice(3).map((store) => (
-                  <Link
-                    key={store.name}
-                    href={store.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      src={store.icon}
-                      alt={store.name}
-                      className="w-[140px] h-auto"
-                    />
-                  </Link>
-                ))}
-              </div>
             </div>
           </div>
         </div>
-      </footer>
-      <FooterCard />
+      </div>
+    </footer>
     </>
   );
 }

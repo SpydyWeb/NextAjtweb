@@ -6,13 +6,14 @@ import { ArrowRight, Play } from 'lucide-react';
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import logo from '../../assets/Images/logo.png';
 import globelogImg from '../../assets/Images/globelogoImg.png';
-import Image from 'next/image'
+import Image from 'next/image';
 import Link from "next/link";
+import headercar from '../../assets/Images/ImagesIcons/Headercar.png'
 import { useTranslation } from "react-i18next";
 export function Hero() {
       const [activeIndex, setActiveIndex] = useState(0);
  const { t, i18n } = useTranslation();
-      const images = [logo, globelogImg, logo, logo];
+      const images = [headercar, globelogImg, logo, logo];
   return (
     // <section className="relative bg-gradient-to-b from-blue-50 to-white">
      <section className="relative">
@@ -43,8 +44,15 @@ export function Hero() {
    <section className="relative flex flex-col md:flex-row justify-between items-center max-w-[1100px] mx-auto px-4 py-8 gap-8">
       {/* Left Text */}
       <div className="flex-1 text-center md:text-left">
-        <h1 className="text-3xl md:text-4xl font-bold text-[#1e3a8a]">{t("motorinsurancetitle")}</h1>
-        <p className="text-2xl md:text-4xl mt-2">{t("YouDriveWeInsure")}</p>
+        {/* <h1 className="text-3xl md:text-7xl font-bold text-[#1e3a8a] whitespace-nowrap">
+  {t("motorinsurancetitle")}
+</h1>
+<p className="text-3xl md:text-7xl mt-2 whitespace-nowrap">
+  {t("YouDriveWeInsure")}
+</p> */}
+
+        <h1 className="text-3xl md:text-6xl font-bold text-[#1e3a8a] ml-[-80px] whitespace-nowrap">{t("motorinsurancetitle")}</h1>
+        <p className="text-3xl md:text-6xl ml-[-80px] mt-2 whitespace-nowrap">{t("YouDriveWeInsure")}</p>
         <button className="mt-4 px-6 py-2 border border-[#123766] text-[#10426C] rounded-full font-medium text-sm bg-transparent cursor-pointer whitespace-nowrap">
           {t("InsureNowbtn")}
         </button>
@@ -52,17 +60,20 @@ export function Hero() {
 
       {/* Right Image */}
       <div className="flex-shrink-0 mb-0 md:mb-0">
-        <div className="w-[240px] h-[220px] sm:w-[280px] sm:h-[250px] md:w-[320px] md:h-[300px] mx-auto md:mx-0">
-         <Link href="/">
-            <Image
-              src={images[activeIndex]}
-              width={300}
-              height={300}
-              alt={`Motor Image ${activeIndex + 1}`}
-              className="object-contain w-full h-full"
-            />
-          </Link>
-        </div>
+        {/* <div className="w-[500px] h-[280px] sm:w-[280px] sm:h-[250px] md:w-[320px] md:h-[300px] mx-auto md:mx-0">
+         */}
+         <div className="w-[320px] h-[280px] sm:w-[400px] sm:h-[340px] md:w-[500px] md:h-[420px] lg:w-[600px] lg:h-[500px] mx-auto md:mx-0">
+  <Link href="/">
+    <Image
+      src={images[activeIndex]}
+      width={1000}
+      height={1000}
+      alt={`Motor Image ${activeIndex + 1}`}
+      className="object-contain w-full h-full"
+    />
+  </Link>
+</div>
+
       </div>
 
       {/* Center Dots */}

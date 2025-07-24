@@ -46,18 +46,25 @@ export function Features() {
 
       {/* Product Cards */}
      {products === "Corporate" && (
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-[96rem] mx-auto px-4 py-8">
+ <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-4 max-w-[80rem] mx-auto px-6 py-6">
+
 
  {corporateproducts.map(({ title, icon, description }) => {
   const isSelected = selected === title;
 
   return (
+    // <div
+    //   key={title}
+    //   // onClick={() => handleCardClick(title)}
+    //   className={`group relative cursor-pointer p-6 rounded-xl shadow-sm text-center overflow-hidden transition-all duration-200 border
+    //     ${isSelected ? "bg-[#0d2e57] text-white border-none" : "bg-white text-gray-800 border-gray-200"}`}
+    // >
     <div
-      key={title}
-      // onClick={() => handleCardClick(title)}
-      className={`group relative cursor-pointer p-6 rounded-xl shadow-sm text-center overflow-hidden transition-all duration-200 border
-        ${isSelected ? "bg-[#0d2e57] text-white border-none" : "bg-white text-gray-800 border-gray-200"}`}
-    >
+  key={title}
+  className={`group relative cursor-pointer p-6 rounded-xl shadow-sm text-center overflow-hidden transition-all duration-200 border
+    w-[200px] h-[250px] sm:w-[270px] sm:h-[320px] md:w-[280px] md:h-[340px] lg:w-[300px] lg:h-[360px]
+    ${isSelected ? "bg-[#0d2e57] text-white border-none" : "bg-white text-gray-800 border-gray-200"}`}
+>
       {/* Background animation layer */}
       <div className="absolute bottom-0 left-0 w-full h-0 group-hover:h-full bg-[#0d2e57] transition-all duration-300 ease-in-out z-0" />
 
@@ -84,9 +91,12 @@ export function Features() {
           >
             {t(description)}
           </p>
-
+          <span  className={`text-sm transition-opacity duration-200 
+                ${isSelected ? "text-white" : "text-gray-800"} group-hover:opacity-0 underline mt-20`}>
+              {t("LearnMore")}
+            </span>
           {/* Hover action buttons (hidden by default, visible on hover) */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+          <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 mt-20">
              <span className="mb-2 font-medium text-sm underline text-white">
               {t("LearnMore")}
             </span>
@@ -112,7 +122,7 @@ export function Features() {
 )}
 
 {products === "Retail" && (
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-[96rem] mx-auto px-4 py-8">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-[80rem] mx-auto px-4 py-8">
 {individualproducts.map(({ title, icon, description }) => {
   const isSelected = selected === title;
 
@@ -120,8 +130,9 @@ export function Features() {
     <div
       key={title}
       // onClick={() => handleCardClick(title)}
-      className={`group cursor-pointer p-6 rounded-xl shadow-sm text-center relative overflow-hidden transition-all duration-200 border
-        ${isSelected ? "bg-[#0d2e57] text-white border-none" : "bg-white text-gray-800 border border-gray-200"}`}
+       className={`group relative cursor-pointer p-6 rounded-xl shadow-sm text-center overflow-hidden transition-all duration-200 border
+    w-[200px] h-[250px] sm:w-[270px] sm:h-[320px] md:w-[280px] md:h-[340px] lg:w-[300px] lg:h-[360px]
+    ${isSelected ? "bg-[#0d2e57] text-white border-none" : "bg-white text-gray-800 border-gray-200"}`}
     >
       {/* Hover background animation layer */}
       <div className="absolute bottom-0 left-0 w-full h-0 group-hover:h-full bg-[#0d2e57] transition-all duration-300 ease-in-out z-0" />
@@ -145,9 +156,12 @@ export function Features() {
             group-hover:opacity-0`}>
             {t(description)}
           </p>
-
+          <span  className={`text-sm transition-opacity duration-200 
+                ${isSelected ? "text-white" : "text-gray-800"} group-hover:opacity-0 underline mb-20`}>
+              {t("LearnMore")}
+            </span>
           {/* Hover actions - hidden normally, shown on hover */}
-          <div className={`absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200`}>
+          <div className={`absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 mt-20`}>
               <span className="mb-2 font-medium text-sm underline text-white">
               {t("LearnMore")}
             </span>

@@ -68,8 +68,8 @@ const BoardMembers = () => {
       </div>
 
       {/* Board Members */}
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold text-[#1e3a8a]">
+      <div className="text-center mb-12">
+        <h2 className="text-5xl font-bold text-[#1e3a8a]">
           {t("Board")} <span className="text-[#002c60]">{t("Members")}</span>
         </h2>
       </div>
@@ -95,7 +95,7 @@ const BoardMembers = () => {
       <span className="block font-bold text-base text-[#10426C]">
         {t(member.name)}
       </span>
-      <span className="block text-sm text-gray-600">
+      <span className="block text-sm text-[#10426C]">
         {t(member.role)}
       </span>
     </div>

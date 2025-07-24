@@ -33,7 +33,7 @@ const Corporateproducts = () => {
       {t("Exploreproducts")}
     </p>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 max-w-7xl mx-auto">
+     <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-x-2 gap-y-4 max-w-[60rem] mx-auto px-6 py-6">
       {/* {corporateproducts.map((product, idx) => (
         <ProductCard
           key={idx}
@@ -49,8 +49,9 @@ const Corporateproducts = () => {
     <div
       key={title}
       // onClick={() => handleCardClick(title)}
-      className={`group relative cursor-pointer p-6 rounded-xl shadow-sm text-center overflow-hidden transition-all duration-200 border
-        ${isSelected ? "bg-[#0d2e57] text-white border-none" : "bg-white text-gray-800 border-gray-200"}`}
+       className={`group relative cursor-pointer p-6 rounded-xl shadow-sm text-center overflow-hidden transition-all duration-200 border
+          w-full h-[250px] sm:h-[320px] md:h-[340px] lg:h-[360px]
+          ${isSelected ? "bg-[#0d2e57] text-white border-none" : "bg-white text-gray-800 border-gray-200"}`}
     >
       <div className="absolute bottom-0 left-0 w-full h-0 group-hover:h-full bg-[#0d2e57] transition-all duration-300 ease-in-out z-0" />
       <div className="relative z-10">
@@ -69,6 +70,10 @@ const Corporateproducts = () => {
             ${isSelected ? "text-white" : "text-gray-800"} group-hover:opacity-0`}>
             {t(description)}
           </p>
+           <span  className={`text-sm transition-opacity duration-200 
+              ${isSelected ? "text-white" : "text-gray-800"} group-hover:opacity-0 underline `}>
+            {t("LearnMore")}
+          </span>
           <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
              <span className="mb-2 font-medium text-sm underline text-white">
               {t("LearnMore")}

@@ -63,27 +63,27 @@ const AboutUs = () => {
           />
         </svg>
 
-        <div className="relative z-10 flex flex-wrap justify-between gap-y-32 md:gap-y-0">
-        {Steps.map((step, index) => (
-  <div
-    key={step.id}
-    className={`flex flex-col items-center w-full md:w-1/4 px-4 ${
-      index % 2 === 1 ? 'mt-32' : ''
-    }`}
-  >
-    <div className="w-24 h-24 bg-white border-[6px] border-[#00a6e0] text-[#002c60] rounded-full flex items-center justify-center text-xl font-bold shadow-md z-20">
-      {step.id}
+        <div className="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-y-32 md:gap-y-0">
+  {Steps.map((step, index) => (
+    <div
+      key={step.id}
+      className={`flex flex-col items-center px-4 ${
+        index % 2 === 1 ? 'md:mt-32' : ''
+      }`}
+    >
+      <div className="w-24 h-24 bg-white border-[6px] border-[#00a6e0] text-[#002c60] rounded-full flex items-center justify-center text-xl font-bold shadow-md z-20">
+        {step.id}
+      </div>
+      <h3 className="text-lg font-bold text-[#002c60] mt-12 mb-2 text-center text-justify">
+        {t(step.title)}
+      </h3>
+      <p className="text-ms text-gray-700 max-w-[250px] text-center text-justify">
+        {t(step.text)}
+      </p>
     </div>
-    <h3 className="text-lg font-bold text-[#002c60] mt-12 mb-2 text-center">
-      {t(step.title)}
-    </h3>
-    <p className="text-sm text-gray-700 max-w-[250px] text-center">
-      {t(step.text)}
-    </p>
-  </div>
-))}
+  ))}
+</div>
 
-        </div>
       </section>
     </div>
     <BoardMembers />
