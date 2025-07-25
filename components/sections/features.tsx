@@ -69,7 +69,7 @@ export function Features() {
       <div className="absolute bottom-0 left-0 w-full h-0 group-hover:h-full bg-[#0d2e57] transition-all duration-300 ease-in-out z-0" />
 
       {/* Foreground content */}
-      <div className="relative z-10">
+      <div className="relative z-10 mt-12">
         <Image
           src={icon}
           alt={t(title)}
@@ -138,7 +138,7 @@ export function Features() {
       <div className="absolute bottom-0 left-0 w-full h-0 group-hover:h-full bg-[#0d2e57] transition-all duration-300 ease-in-out z-0" />
 
       {/* Foreground content */}
-      <div className="relative z-10">
+      <div className="relative z-10 mt-12">
         <Image
           src={icon}
           alt={t(title)}
