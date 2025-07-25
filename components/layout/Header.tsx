@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
@@ -15,7 +15,12 @@ const Header = () => {
   const [isLangAr, setLangAr] = useState<boolean>(
     typeof window !== "undefined" && localStorage.getItem("lang") === "ar"
   );
-
+useEffect(() => {
+  const storedLang = localStorage.getItem("lang") || "en";
+  i18n.changeLanguage(storedLang);
+  document.documentElement.setAttribute("lang", storedLang);
+  setLangAr(storedLang === "ar");
+}, []);
   const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
     localStorage.setItem("lang", lang);
