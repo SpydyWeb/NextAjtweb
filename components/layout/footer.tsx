@@ -49,12 +49,12 @@ export function Footer() {
 
   return (
      <>
-      <hr />
-   <footer className="bg-white text-[#10426c] text-sm ml-[250px]">
+    <hr className="h-[2px] mt-0 sm:block hidden mx-24" />
+   <footer className="bg-white text-[#10426c] text-sm ">
   <div className="max-w-[1250px] mx-auto px-4 lg:px-8 py-12">
     <div className="grid gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.3fr_1.2fr_1fr_1fr]">
           {/* Logo and About */}
-          <div className="space-y-4 ml-[-70%] ">
+          <div className="space-y-4 text-wrap: wrap ">
             <Link href="/" className="inline-block">
               <Image
                 src={logo}
@@ -70,7 +70,7 @@ export function Footer() {
           </div>
 
           {/* Contact Us */}
-          <div className="ml-[-50%]">
+          <div className="text-wrap: wrap">
             <h3 className="text-base font-bold text-xl mb-4">{t("Contactus")}</h3>
             <ul className="space-y-4 text-lg">
               {footerLinks.resources.map((link, idx) => (
@@ -83,7 +83,7 @@ export function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="ml-[-10%]">
+          <div className="text-wrap: wrap">
             <h3 className="text-base text-xl font-bold mb-4">{t("Quicklinks")}</h3>
             <ul className="space-y-4 text-lg">
               {footerLinks.company.map((link) => (
@@ -100,7 +100,7 @@ export function Footer() {
           </div>
 
           {/* Social and App Links */}
-         <div className="ml-[-20%]">
+         <div className="text-wrap: wrap">
             <h3 className="text-base text-xl font-bold mb-4">{t("Followus")}</h3>
             <div className="flex items-center gap-4 mb-6 text-lg">
             {socialLinks.map((social) => (

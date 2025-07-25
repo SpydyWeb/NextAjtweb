@@ -18,7 +18,7 @@ export function Hero() {
     // <section className="relative bg-gradient-to-b from-blue-50 to-white">
      <section className="relative">
       <div className="w-full">
-      <div className="max-w-screen-xl mx-auto px-6 py-2 flex flex-wrap items-center justify-between gap-6">
+      <div className="max-w-screen-xl mx-auto px-2  py-2 flex flex-wrap items-center justify-between gap-6">
         {/* Select Dropdown */}
         <div className="flex-1 min-w-[250px] relative">
           <select
@@ -41,7 +41,7 @@ export function Hero() {
         </button>
       </div>
     </div>
-   <section className="relative flex flex-col md:flex-row justify-between items-center max-w-[1100px] mx-auto px-4 py-8 gap-8">
+   <section className="relative flex flex-col md:flex-row justify-between items-center max-w-[1100px] mx-auto p-1 gap-8">
       {/* Left Text */}
       <div className="flex-1 text-center md:text-left">
         {/* <h1 className="text-3xl md:text-7xl font-bold text-[#1e3a8a] whitespace-nowrap">
@@ -51,8 +51,8 @@ export function Hero() {
   {t("YouDriveWeInsure")}
 </p> */}
 
-        <h1 className="text-3xl md:text-6xl font-bold text-[#1e3a8a] ml-[-80px] whitespace-nowrap">{t("motorinsurancetitle")}</h1>
-        <p className="text-3xl md:text-6xl ml-[-80px] mt-2 whitespace-nowrap">{t("YouDriveWeInsure")}</p>
+        <h1 className="text-3xl md:text-6xl font-bold text-[#1e3a8a] whitespace-nowrap">{t("motorinsurancetitle")}</h1>
+        <p className="text-3xl md:text-6xl  mt-2 whitespace-nowrap">{t("YouDriveWeInsure")}</p>
         <button className="mt-4 px-6 py-2 border border-[#123766] text-[#10426C] rounded-full font-medium text-sm bg-transparent cursor-pointer whitespace-nowrap">
           {t("InsureNowbtn")}
         </button>

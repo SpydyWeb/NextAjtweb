@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <I18nProvider>
-          <div className="min-h-screen flex flex-col  pr-[100px] pl-[100px]">
+          <div className="min-h-screen flex flex-col  ">
             <Header /> {/* now wrapped correctly */}
             <main className="flex-1">{children}</main>
             <Footer />

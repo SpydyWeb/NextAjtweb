@@ -40,7 +40,8 @@ useEffect(() => {
   const lang = isLangAr ? "ar" : "en";
 
   return (
-    <header className="bg-white shadow-sm w-full px-6 py-3 border-b border-gray-400">
+    <>
+    <header className="bg-white shadow-sm w-full px-6 py-3">    
       <div className="max-w-[100rem] mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/">
@@ -75,10 +76,6 @@ useEffect(() => {
       ))}
 
 </div>
-
-
-
-        {/* Right: Auth, Language, Search */}
         <div className="flex items-center gap-4 text-lg text-[#2e3b55]">
           <Link href="/aboutuspage" className="underline hover:text-blue-600">
             {t("login")}
@@ -89,8 +86,6 @@ useEffect(() => {
           >
             {t("signup")}
           </Link>
-
-          {/* Language Dropdown */}
           <div className="relative text-base w-fit">
             <select
               value={lang}
@@ -106,7 +101,10 @@ useEffect(() => {
           <BsSearch />
         </div>
       </div>
+      {/* <hr className="bg-[#0000008f] h-[2px] mt-5 sm:block hidden mx-24"/> */}
     </header>
+      <hr className="bg-[#0000008f] h-[2px] mt-0 sm:block hidden mx-24"/>
+</>
   );
 };
 
