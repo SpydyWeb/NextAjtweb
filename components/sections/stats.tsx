@@ -10,7 +10,7 @@ export function Stats() {
     <>
       <section className="relative text-center py-10 px-4">
         {/* Globe Background Image */}
-        <div className="relative z-10 w-[620px] max-w-2xl aspect-square mx-auto flex flex-col justify-center items-center p-6 sm:p-8 overflow-hidden">
+        <div className="relative z-10  sm:w-[620px] w-[300px] max-w-2xl aspect-square mx-auto flex flex-col justify-center items-center p-6 sm:p-8 overflow-hidden">
           <Image
             src={globeImg}
             alt="Globe Background"

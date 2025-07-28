@@ -48,7 +48,7 @@ export function Features() {
 
       {/* Product Cards */}
     
- <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-4 max-w-[80rem] mx-auto sm:px-6 sm:py-6 p-1 text-wrap: wrap">
+ <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-x-2 gap-y-4 max-w-[80rem] mx-auto sm:px-6 sm:py-6 p-1 text-wrap: wrap justify-items-center">
 
 
  {featureProducts.map(({ title, icon, description }:any) => {
