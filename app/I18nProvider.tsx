@@ -5,25 +5,38 @@ import { I18nextProvider } from "react-i18next";
 import i18n from "@/lib/i18n";
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
-  const [direction, setDirection] = useState<string>("rtl"); // Default direction
-  const [currentLang, setCurrentLang] = useState<string>("");
+  const [direction, setDirection] = useState<string>("rtl");
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Check localStorage when component mounts
-    const lang = localStorage.getItem("lang");
-    setCurrentLang(lang || "");
-    setDirection(lang === "ar" ? "rtl" : "ltr");
-
-    // Add event listener for storage changes
-    const handleStorageChange = () => {
-      const newLang = localStorage.getItem("lang");
-      setCurrentLang(newLang || "");
-      setDirection(newLang === "ar" ? "rtl" : "ltr");
+    setMounted(true);
+    const handleDirectionChange = () => {
+      const lang = localStorage.getItem("lang");
+      if (lang === "ar") {
+        setDirection("rtl");
+        document.documentElement.dir = "rtl";
+      } else {
+        setDirection("ltr");
+        document.documentElement.dir = "ltr";
+      }
     };
 
-    window.addEventListener("storage", handleStorageChange);
-    return () => window.removeEventListener("storage", handleStorageChange);
+    // Initial direction setup
+    handleDirectionChange();
+
+    // Listen for language changes
+    window.addEventListener("storage", handleDirectionChange);
+    i18n.on("languageChanged", handleDirectionChange);
+
+    return () => {
+      window.removeEventListener("storage", handleDirectionChange);
+      i18n.off("languageChanged", handleDirectionChange);
+    };
   }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <I18nextProvider i18n={i18n}>
