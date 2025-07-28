@@ -28,9 +28,19 @@ useEffect(() => {
   };
 
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const lang = e.target.value;
-    setLangAr(lang === "ar");
-    changeLanguage(lang);
+    const newLang = e.target.value;
+    setLangAr(newLang === "ar");
+    
+    // Update localStorage
+    localStorage.setItem("lang", newLang);
+    
+    i18n.changeLanguage(newLang);
+    
+    document.documentElement.setAttribute("lang", newLang);
+    document.documentElement.dir = newLang === "ar" ? "rtl" : "ltr";
+
+    window.dispatchEvent(new Event('storage'));
+
   };
 
   const handleNavigation = (path: string) => {
