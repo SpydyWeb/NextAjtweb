@@ -19,13 +19,13 @@ const Contactus = () => {
       </p>
 
       {/* Email Form */}
-      <div className="flex flex-col sm:flex-row justify-center max-w-xl mx-auto overflow-hidden rounded-full border border-[#1e3a8a] shadow-sm">
+      <div className="flex flex-row justify-center max-w-xl mx-auto overflow-hidden rounded-full border border-[#1e3a8a] shadow-sm">
         <input
           type="email"
           placeholder="ENTER YOUR EMAIL"
           className="flex-1 px-4 py-3 text-sm text-gray-800 outline-none border-none"
         />
-        <button className="bg-[#1e3a8a] rounded-[20px] text-white px-6 py-3 text-sm font-semibold w-full sm:w-auto">
+        <button className="bg-[#1e3a8a] rounded-[20px] text-white sm:px-6 px-3 py-3 text-sm font-semibold w-full sm:w-auto ">
           {t("ContactBtn")}
         </button>
       </div>

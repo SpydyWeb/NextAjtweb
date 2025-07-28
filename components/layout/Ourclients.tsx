@@ -54,6 +54,7 @@ const Ourclients = () => {
     key={idx}
     className="flex-none w-36 sm:w-40 h-28 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center p-4 text-center"
   >
+  {/* className="flex-none w-full sm:w-1/2 md:w-40 h-28 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center p-4 text-center"> */}
     <Image
       src={logo.src}
       alt={t(logo.name)}

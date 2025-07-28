@@ -18,7 +18,7 @@ export function Hero() {
     // <section className="relative bg-gradient-to-b from-blue-50 to-white">
      <section className="relative">
       <div className="w-full">
-      <div className="max-w-screen-xl mx-auto px-2  py-2 flex flex-wrap items-center justify-between gap-6">
+      <div className="max-w-screen-xl mx-auto px-2  py-2 flex flex-wrap items-center justify-between gap-6 relative">
         {/* Select Dropdown */}
         <div className="flex-1 min-w-[250px] relative">
           <select
@@ -35,13 +35,17 @@ export function Hero() {
 
         {/* EServices Button */}
         <button
-          className="py-2 px-6 border border-[#123766] text-[#10426C] rounded-full font-medium text-sm bg-transparent cursor-pointer whitespace-nowrap"
+          className="py-2 sm:px-6 px-3 border border-[#123766] text-[#10426C] rounded-full font-medium text-sm bg-white cursor-pointer whitespace-nowrap sm:relative absolute right-[8px]"
         >
           {t("EServicesbtn")}
         </button>
       </div>
     </div>
-   <section className="relative flex flex-col md:flex-row justify-between items-center max-w-[1100px] mx-auto p-1 gap-8">
+   {/* <section className="relative flex flex-col md:flex-row justify-between items-center max-w-[1100px] mx-auto p-1 gap-8"> */}
+ <section className="relative flex flex-col lg:flex-row justify-between items-center mx-auto p-4 gap-6 
+  max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1100px]">
+
+
       {/* Left Text */}
       <div className="flex-1 text-center md:text-left">
         {/* <h1 className="text-3xl md:text-7xl font-bold text-[#1e3a8a] whitespace-nowrap">

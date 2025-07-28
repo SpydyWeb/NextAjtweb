@@ -64,12 +64,13 @@ export function Features() {
     <div
   key={title}
   className={`group relative cursor-pointer p-6 rounded-xl shadow-sm text-center overflow-hidden transition-all duration-200 border
-    w-[200px] h-[250px] sm:w-[270px] sm:h-[320px] md:w-[280px] md:h-[340px] lg:w-[300px] lg:h-[360px]
+    w-[200px] h-[250px] sm:w-[270px] sm:h-[320px] md:w-[230px] md:h-[340px] lg:w-[240px] xl:w-[300px] lg:h-[360px]
     ${isSelected ? "bg-[#0d2e57] text-white border-none" : "bg-white text-gray-800 border-gray-200"}`}
 >
+
       <div className="absolute bottom-0 left-0 w-full h-0 group-hover:h-full bg-[#0d2e57] transition-all duration-300 ease-in-out z-0" />
 
-      <div className="relative z-10 mt-12">
+      <div className="relative z-10 sm:mt-12 mt-0">
         <Image
           src={icon}
           alt={t(title)}
@@ -80,11 +81,11 @@ export function Features() {
         <div className="text-lg font-semibold mb-2 group-hover:text-white">
           {t(title)}
         </div>
-        <div className="relative min-h-[4.5rem] mt-8">
+        <div className="relative sm:min-h-[4.5rem] sm:mt-8 mt-0">
           <p
             className={`text-sm transition-opacity duration-200
               ${isSelected ? "text-white" : "text-gray-800"}
-              group-hover:opacity-0`}
+              group-hover:hidden`}
           >
             {t(description)}
           </p>
@@ -92,7 +93,7 @@ export function Features() {
                 ${isSelected ? "text-white" : "text-[#10426C]"} group-hover:opacity-0 underline mt-20`}>
               {t("LearnMore")}
             </span>
-          <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 mt-20">
+          <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 sm:mt-20 mt-8">
              <span className="mb-2 font-medium text-sm underline text-white">
               {t("LearnMore")}
             </span>
