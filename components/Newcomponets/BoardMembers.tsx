@@ -79,7 +79,10 @@ const BoardMembers = () => {
   <div key={index} className="flex flex-col items-center text-center">
     
     {/* Gray halo + blue ring */}
-    <div className="relative w-[250px] h-[250px] flex items-center justify-center">
+    {/* <div className="relative w-[250px] h-[250px] flex items-center md:w-[70%] justify-center"> */}
+    <div className="relative w-auto md:w-[80%] lg:w-auto h-[250px] flex items-center justify-center">
+
+
       <div className="w-[240px] h-[240px] rounded-full border-[6px] border-[#002c60] overflow-hidden bg-white shadow-[0_0_25px_8px_rgba(0,0,0,0.15)]">
         <Image
           src={member.image}

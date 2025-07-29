@@ -87,7 +87,7 @@ const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
               </div>
             ))}
           </div>
-          <div className="hidden lg:flex items-center gap-4 text-lg text-[#2e3b55]">
+            <div className="hidden lg:flex lg:pl-[5px] items-center gap-4 text-lg text-[#2e3b55]">
             <Link href="/aboutuspage" className="underline hover:text-blue-600">
               {t("login")}
             </Link>
