@@ -83,19 +83,21 @@ const BoardMembers = () => {
     <div className="relative w-auto md:w-[80%] lg:w-auto h-[250px] flex items-center justify-center">
 
 
-      <div className="w-[240px] h-[240px] rounded-full border-[6px] border-[#002c60] overflow-hidden bg-white shadow-[0_0_25px_8px_rgba(0,0,0,0.15)]">
+      <div className="w-[240px] h-[240px] ">
         <Image
           src={member.image}
           alt={t(member.name)}
           width={240}
           height={240}
-          className="object-cover w-full h-full rounded-full"
+          className="w-full h-full rounded-full"
         />
       </div>
     </div>
 
     <div className="mt-4">
-      <span className="block font-bold text-base text-[#10426C]">
+      {/* <span className="block font-bold text-base text-[#10426C]"> */}
+      <span className="block font-bold text-[#10426C] text-nowrap text-sm md:text-base md:px-[60px] lg:px-0">
+
         {t(member.name)}
       </span>
       <span className="block text-sm text-[#10426C]">
