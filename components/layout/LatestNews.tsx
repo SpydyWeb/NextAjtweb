@@ -27,7 +27,7 @@ const LatestNews = () => {
   >
     {/* ID Badge Bubble */}
     <div
-      className={`absolute -top-10 left-4 w-20 h-[4.5rem] rounded-[18px] text-white flex items-center justify-center  text-3xl ${
+      className={`absolute -top-10 left-4 w-20 h-[5.5rem] rounded-[18px] text-white flex items-center justify-center  text-3xl ${
         idx === 0 ? 'bg-cyan-500' : idx === 1 ? 'bg-[#10426C]' : 'bg-[rgb(11,10,44)]'
       }`}
     >
@@ -60,7 +60,7 @@ const LatestNews = () => {
     </p>
 
     {/* Learn More CTA */}
-    <div className="flex items-center mt-4 cursor-pointer justify-between text-gray-700">
+    <div className="flex items-center mt-4 cursor-pointer text-gray-700">
       <div className="w-8 h-8 rounded-full bg-[#10426C] text-center text-white text-lg mr-2">
         →
       </div>
@@ -73,7 +73,7 @@ const LatestNews = () => {
 
       </div>
 
-      <button className="mt-10 px-6 py-2 border border-gray-300 bg-gray-50 rounded-full font-medium text-gray-800 hover:bg-gray-100 transition">
+       <button className="mt-8 px-12 py-4 border border-[#10426C] bg-gray-50 rounded-full font-medium text-[#10426C] hover:bg-white transition">
         {t('Viewbtn')}
       </button>
     </section>

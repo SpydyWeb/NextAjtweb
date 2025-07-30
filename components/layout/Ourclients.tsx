@@ -80,8 +80,8 @@ const Ourclients = () => {
 
 
       {/* View All Button */}
-      <button className="mt-8 px-12 py-4 border border-gray-300 bg-gray-50 rounded-full font-medium text-gray-800 hover:bg-white transition">
-        {t("Viewbtn")}
+       <button className="mt-8 px-12 py-4 border border-[#10426C] bg-gray-50 rounded-full font-medium text-[#10426C] hover:bg-white transition">
+        {t('Viewbtn')}
       </button>
     </section>
     </>
