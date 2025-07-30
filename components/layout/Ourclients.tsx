@@ -59,7 +59,7 @@ const Ourclients = () => {
           alt={t(logo.name)}
           width={100}
           height={40}
-          className="max-h-10 mb-2 object-contain"
+          className="max-h-16 mb-2 object-contain"
         />
         <div className="text-sm font-medium text-gray-700">
           {t(logo.name)}
