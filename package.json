@@ -2,14 +2,13 @@
   "name": "nextjs",
   "version": "0.1.0",
   "private": true,
-   "scripts": {
+  "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "node build/standalone/server.js",
-    "clean": "rimraf build",
-    "deploy": "npm run clean && next build && node build/standalone/server.js"
-  }
-,
+    "start": "node server.js",
+    "clean": "rimraf .next build",
+    "deploy": "npm run clean && npm run build && npm run start"
+  },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
