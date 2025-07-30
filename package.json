@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "node build/server.js",
-    "clean": "rimraf .next build",
+    "start": "NODE_ENV=production node server.js",
+    "clean": "rimraf .next",
     "deploy": "npm run clean && npm run build && npm run start"
   },
   "dependencies": {
@@ -74,7 +74,7 @@
     "sonner": "^1.5.0",
     "tailwind-merge": "^2.5.2",
     "tailwindcss": "3.3.3",
-    "tailwindcss-animate": "^1.0.7",
+    "tailwindcs-animate": "^1.0.7",
     "typescript": "5.2.2",
     "vaul": "^0.9.9",
     "zod": "^3.23.8"
