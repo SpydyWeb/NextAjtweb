@@ -170,7 +170,7 @@ const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         )}
       </header>
     {/* <hr className="bg-[#0000008f] h-[2px] mt-0 sm:block hidden mx-24"/> */}
-    <hr className="h-[2px] bg-[#0000008f] mt-0 w-[100rem] mx-auto" />
+    <hr className="h-[2px] bg-[#0000008f] mt-0 w-[95%] mx-auto" />
     </>
       );
     };
