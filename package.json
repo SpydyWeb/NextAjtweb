@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "cross-env NODE_ENV=production node server.js",
+    "start": "node .next/standalone/server.js",
     "clean": "rimraf .next && rimraf build",
-    "deploy": "npm run clean && next build && cross-env NODE_ENV=production node server.js"
+    "deploy": "npm run clean && next build && node build/standalone/server.js"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
