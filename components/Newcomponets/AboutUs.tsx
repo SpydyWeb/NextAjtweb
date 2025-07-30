@@ -1,6 +1,7 @@
 'use client'
 import React,{useState} from 'react';
 import VisionImg from '../../assets/Images/vision2030.jpg';
+import Vision2030 from '../../assets/Images/Boardmembers/Vision2030.png'
 import Image from 'next/image';
 import utilities from "@/Utilities.json";
 import {Steps} from "@/lib/utilities";
@@ -23,7 +24,7 @@ const AboutUs = () => {
         </div>
 
         {/* Who We Are Section */}
-        <div className="grid md:grid-cols-2 items-center gap-8 mb-16">
+        <div className="grid md:grid-cols-2 items-center gap-1 mb-16">
           <div>
             <h3 className="text-2xl font-bold mb-4 text-[#002c60]">
               {t("who")} <span className="text-[#1e3a8a]">{t("weare")}</span>
@@ -35,9 +36,10 @@ const AboutUs = () => {
           </div>
           <div className="flex justify-center">
             <Image
-              src={VisionImg}
+              src={Vision2030}
               alt="Vision 2030"
-              className="w-full md:max-w-lg object-contain"
+                className="w-[250px] h-[250px]"
+              // className="w-full md:max-w-lg object-contain"
             />
           </div>
         </div>
@@ -49,7 +51,7 @@ const AboutUs = () => {
           {t("Our")} <span className="text-[#002c60]">{t("Story")}</span>
         </h2>
 
-        <svg
+        {/* <svg
           className="absolute top-[150px] left-0 w-full h-[220px] z-0 hidden md:block"
           viewBox="0 0 1200 220"
           preserveAspectRatio="none"
@@ -61,7 +63,7 @@ const AboutUs = () => {
             fill="none"
             strokeDasharray="6,6"
           />
-        </svg>
+        </svg> */}
 
         <div className="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-y-32 md:gap-y-0">
   {Steps.map((step, index) => (
@@ -71,9 +73,12 @@ const AboutUs = () => {
         index % 2 === 1 ? 'md:mt-32' : ''
       }`}
     >
-      <div className="w-24 h-24 bg-white border-[6px] border-[#00a6e0] text-[#002c60] rounded-full flex items-center justify-center text-xl font-bold shadow-md z-20">
-        {step.id}
-      </div>
+    <div
+      className="w-24 h-24 bg-cover bg-center text-[#002c60] rounded-full flex items-center justify-center text-xl font-bold "
+      style={{ backgroundImage: `url(${step.BgImage.src})` }}
+    >
+      {step.id}
+    </div>
       <h3 className="text-lg font-bold text-[#002c60] mt-12 mb-2 text-center text-justify">
         {t(step.title)}
       </h3>
@@ -82,6 +87,8 @@ const AboutUs = () => {
       </p>
     </div>
   ))}
+
+
 </div>
 
       </section>

@@ -16,26 +16,26 @@ const LatestNews = () => {
   return (
     <>
     <section className="text-center py-12 px-4 bg-white">
-      <h3 className="text-2xl font-bold text-[#10426C] mb-2">{t('LatestNews')}</h3>
-      <p className="text-gray-500 mb-8">{t('Discovernews')}</p>
+      <h3 className="text-3xl font-bold text-[#10426C] mb-2">{t('LatestNews')}</h3>
+      <p className="text-xl text-gray-500 mb-20">{t('Discovernews')}</p>
 
       <div className="grid gap-6 max-w-6xl mx-auto grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {newsData.map((item, idx) => (
   <div
     key={item.id}
-    className="relative bg-white border border-gray-200 rounded-2xl shadow-md p-6 text-left"
+    className="relative bg-white border border-gray-200 rounded-2xl shadow-md p-6 text-left py-[40px]"
   >
     {/* ID Badge Bubble */}
     <div
-      className={`absolute -top-5 left-4 w-10 h-10 rounded-md text-white flex items-center justify-center font-bold ${
-        idx === 0 ? 'bg-cyan-500' : idx === 1 ? 'bg-slate-900' : 'bg-indigo-900'
+      className={`absolute -top-10 left-4 w-[3.5rem] h-[4.5rem] rounded-[18px] text-white flex items-center justify-center  text-3xl ${
+        idx === 0 ? 'bg-cyan-500' : idx === 1 ? 'bg-[#10426C]' : 'bg-[rgb(11,10,44)]'
       }`}
     >
       {item.id}
     </div>
 
     {/* News Title */}
-    <p className="text-base text-black mt-6 font-semibold">
+    <p className="text-base text-black mt-6 font-bold">
       {t(item.title)}
     </p>
 
@@ -55,7 +55,7 @@ const LatestNews = () => {
     */}
 
     {/* Description Label */}
-    <p className="text-sm text-gray-500 mt-3">
+    <p className="text-md text-gray-600 mt-5">
       {t('Description')}
     </p>
 

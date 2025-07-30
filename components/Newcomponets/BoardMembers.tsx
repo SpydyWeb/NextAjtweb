@@ -1,5 +1,6 @@
 import React from "react";
-import WitnessIcon from '../../assets/Images/witness.png'
+// import WitnessIcon from '../../assets/Images/witness.png';
+import WitnessIcon from '../../assets/Images/Eyevisionicon.png'
 import Image from 'next/image'
 import { useTranslation } from "react-i18next";
 import { boardMembers } from "../../lib/utilities";
@@ -16,7 +17,7 @@ const BoardMembers = () => {
         <Image
           src={WitnessIcon}
           alt="Witness Icon"
-          className="w-[100px] h-[100px] filter invert-[32%] sepia-[91%] saturate-[742%] hue-rotate-[166deg] brightness-[93%] contrast-[101%]"
+          className="w-[150px] h-[150px]"
         />
         <div className="max-w-xl text-center">
           <h2 className="text-3xl font-bold text-[#1e3a8a] mb-4">

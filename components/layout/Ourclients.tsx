@@ -27,59 +27,60 @@ const Ourclients = () => {
         {t("Explorestudies")}
       </p>
 
-      <div className="relative max-w-7xl mx-auto">
-        {/* Left Arrow */}
-        <button
-          onClick={() => scroll('left')}
-          className="hidden md:flex absolute -left-4 top-1/2 -translate-y-1/2 bg-white border border-gray-300 rounded-full w-10 h-10 z-10 shadow-md items-center justify-center"
-        >
-          &#8249;
-        </button>
-
-        {/* Scrollable Logo Carousel */}
-        <div
-          id="logo-carousel"
-          ref={scrollRef}
-          className="flex overflow-x-auto gap-4 px-6 md:px-12 scroll-smooth"
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-        >
-          <style>{`
-            #logo-carousel::-webkit-scrollbar {
-              display: none;
-            }
-          `}</style>
-
-        {logos.map((logo, idx) => (
-  <div
-    key={idx}
-    className="flex-none w-36 sm:w-40 h-28 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center p-4 text-center"
+<div className="relative max-w-7xl mx-auto">
+  {/* Left Arrow */}
+  <button
+    onClick={() => scroll('left')}
+    className="hidden md:flex absolute -left-6 top-1/2 -translate-y-1/2 bg-white border border-gray-300 rounded-full w-12 h-12 z-10 shadow-lg items-center justify-center"
   >
-  {/* className="flex-none w-full sm:w-1/2 md:w-40 h-28 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center p-4 text-center"> */}
-    <Image
-      src={logo.src}
-      alt={t(logo.name)}
-      className="max-h-10 mb-2 object-contain"
-    />
-    <div className="text-sm font-medium text-gray-700">
-      {t(logo.name)}
-    </div>
-  </div>
-))}
+    &#8249;
+  </button>
 
+  {/* Scrollable Logo Carousel */}
+  <div
+    id="logo-carousel"
+    ref={scrollRef}
+    className="flex overflow-x-auto gap-6 scroll-smooth px-[3rem] sm:px-[5rem] md:px-[8rem]"
+    style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+  >
+    <style>{`
+      #logo-carousel::-webkit-scrollbar {
+        display: none;
+      }
+    `}</style>
 
+    {logos.map((logo, idx) => (
+      <div
+        key={idx}
+        className="flex-none w-36 sm:w-48 lg:w-48 h-48 bg-white rounded-xl border border-gray-200 shadow-sm flex flex-col items-center justify-center px-4 py-2 text-center"
+      >
+        <Image
+          src={logo.src}
+          alt={t(logo.name)}
+          width={100}
+          height={40}
+          className="max-h-10 mb-2 object-contain"
+        />
+        <div className="text-sm font-medium text-gray-700">
+          {t(logo.name)}
         </div>
-
-        {/* Right Arrow */}
-        <button
-          onClick={() => scroll('right')}
-          className="hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 bg-white border border-gray-300 rounded-full w-10 h-10 z-10 shadow-md items-center justify-center"
-        >
-          &#8250;
-        </button>
       </div>
+    ))}
+  </div>
+
+  {/* Right Arrow */}
+  <button
+    onClick={() => scroll('right')}
+    className="hidden md:flex absolute -right-6 top-1/2 -translate-y-1/2 bg-white border border-gray-300 rounded-full w-12 h-12 z-10 shadow-lg items-center justify-center"
+  >
+    &#8250;
+  </button>
+</div>
+
+
 
       {/* View All Button */}
-      <button className="mt-8 px-6 py-2 border border-gray-300 bg-gray-50 rounded-full font-medium text-gray-800 hover:bg-white transition">
+      <button className="mt-8 px-12 py-4 border border-gray-300 bg-gray-50 rounded-full font-medium text-gray-800 hover:bg-white transition">
         {t("Viewbtn")}
       </button>
     </section>

@@ -11,11 +11,11 @@ export function Features() {
    
    const [featureProducts ,setFeatureProducts]:any = useState(corporateproducts);
   
- const [selected, setSelected] = useState("Retail");
+ const [selected, setSelected] = useState("Corporate");
 
  const handleCardClick = (service: string) => {
     setSelected(service);
-    setFeatureProducts(service==="Retail"?individualproducts:corporateproducts)
+    setFeatureProducts(service==="Corporate"?corporateproducts:individualproducts)
   };
   return (
     <section className="py-10 ">
