@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "node server.js",
+    "start": "node build/server.js",
     "clean": "rimraf .next build",
     "deploy": "npm run clean && npm run build && npm run start"
   },
