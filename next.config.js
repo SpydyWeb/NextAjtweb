@@ -5,7 +5,7 @@ const nextConfig = {
   },
   images: { unoptimized: true },
   distDir: "build",
-  output: "export",
+  output: "standalone",
 };
 
 module.exports = nextConfig;
