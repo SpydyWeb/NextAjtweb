@@ -1,8 +1,7 @@
 
 "use client";
 import Image from 'next/image';
-import globelogImg from '../../assets/Images/globelogoImg.png';
-import globeImg from '../../assets/Images/ImagesIcons/globeImg.png';
+import globeImg from '../../public/assets/Images/ImagesIcons/globeImg.png';
 import { useTranslation } from "react-i18next";
 export function Stats() {
   const { t, i18n } = useTranslation();

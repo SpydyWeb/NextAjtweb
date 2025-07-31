@@ -2,13 +2,13 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import logo from '../../assets/Images/logo.png';
-import Appstore from '../../assets/Images/app store.png';
-import Playstore from '../../assets/Images/google play.png';
+import logo from '../../public/assets/Images/logo.png';
+import Appstore from '../../public/assets/Images/app store.png';
+import Playstore from '../../public/assets/Images/google play.png';
 
-import facebook from '../../assets/Images/ImagesIcons/facebook.png';
-import instagram from '../../assets/Images/ImagesIcons/instagram.png';
-import twitter from '../../assets/Images/ImagesIcons/twitter.png';
+import facebook from '../../public/assets/Images/ImagesIcons/facebook.png';
+import instagram from '../../public/assets/Images/ImagesIcons/instagram.png';
+import twitter from '../../public/assets/Images/ImagesIcons/twitter.png';
 
 import { footerLinks } from '@/lib/utilities';
 import { useTranslation } from 'react-i18next';
@@ -52,8 +52,8 @@ export function Footer() {
     <hr className="h-[2px] mt-0 sm:block hidden mx-24" />
    <footer className="bg-white text-[#10426c] text-sm ">
   {/* <div className="max-w-[1250px] mx-auto px-4 lg:px-8 py-12"> */}
-  <div className="mx-auto px-4 lg:px-8 py-12 max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1250px]">
-    <div className="grid gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[1.3fr_1.2fr_1fr_1fr]">
+  <div className="mx-auto px-4 lg:px-8 py-12 max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1600px]">
+    <div className="grid gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[4fr_4fr_2fr_3fr]">
           {/* Logo and About */}
           <div className="space-y-4 text-wrap: wrap ">
             <Link href="/" className="inline-block">

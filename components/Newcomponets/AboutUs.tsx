@@ -29,9 +29,9 @@ const AboutUs = () => {
             <h3 className="text-2xl font-bold mb-4 text-[#002c60]">
               {t("who")} <span className="text-[#1e3a8a]">{t("weare")}</span>
             </h3>
-            <p className="leading-relaxed text-[#10426C]">
+            <p className="leading-relaxed font-semibold text-[#10426C]">
               {t("CompanyProfilDesc1")}<br />
-              {t("CompanyProfilDesc2")}
+              {t("CompanyProfilDesc21")}
             </p>
           </div>
           <div className="flex justify-center">

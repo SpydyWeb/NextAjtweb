@@ -5,7 +5,8 @@ import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { BsSearch, BsCaretDownFill,BsList  } from "react-icons/bs";
 import Image from "next/image";
-import logo from "@/assets/Images/logo.png";
+import logo from "../../public/assets/Images/logo.png";
+
 import { utilitiesData } from "@/lib/utilities";
 import { IoClose } from "react-icons/io5";
 const Header = () => {
