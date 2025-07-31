@@ -61,9 +61,10 @@ const LatestNews = () => {
 
     {/* Learn More CTA */}
     <div className="flex items-center mt-4 cursor-pointer text-gray-700">
-      <div className="w-8 h-8 rounded-full bg-[#10426C] text-center text-white text-lg mr-2">
-        →
-      </div>
+      <div className="w-8 h-8 rounded-full  flex items-center justify-center mr-2">
+  <img src={t("forwardcircle")} alt="Forward" className="w-10 h-10 " />
+</div>
+
       <span className="text-[#10426C] text-base font-medium">
         {t('LearnMore')}
       </span>

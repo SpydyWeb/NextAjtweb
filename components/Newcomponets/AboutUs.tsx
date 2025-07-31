@@ -1,9 +1,7 @@
 'use client'
 import React,{useState} from 'react';
-import VisionImg from '../../assets/Images/vision2030.jpg';
-import Vision2030 from '../../assets/Images/Boardmembers/Vision2030.png'
+import Vision2030 from '../../public/assets/Images/Boardmembers/Vision2030.png'
 import Image from 'next/image';
-import utilities from "@/Utilities.json";
 import {Steps} from "@/lib/utilities";
 import BoardMembers from '../Newcomponets/BoardMembers'
 import { useTranslation } from 'react-i18next';
@@ -15,8 +13,8 @@ const AboutUs = () => {
       {/* About Us Section */}
       <section className="px-6 md:px-20 xl:px-[20rem] py-12">
         <div className="text-center mb-12">
-          <h1 className="text-2xl font-bold mb-2 text-[#10426C]">{t("AboutUsHeader")}</h1>
-          <p className="text-base text-black-600">
+          <h1 className="text-3xl font-bold mb-2 text-[#10426C]">{t("AboutUsHeader")}</h1>
+          <p className=" text-black-500 font-semibold text-2xl">
             {t("CompanyProfileTab")}
             <br/>
             {t("CompanyProfileTab1")}
@@ -26,22 +24,23 @@ const AboutUs = () => {
         {/* Who We Are Section */}
         <div className="grid md:grid-cols-2 items-center gap-1 mb-16">
           <div>
-            <h3 className="text-2xl font-bold mb-4 text-[#002c60]">
+            <h3 className="text-2xl font-bold mb-4 text-[#002c60] text-justify">
               {t("who")} <span className="text-[#1e3a8a]">{t("weare")}</span>
             </h3>
-            <p className="leading-relaxed font-semibold text-[#10426C]">
+            <p className="leading-relaxed text-[#10426C] text-2xl">
               {t("CompanyProfilDesc1")}<br />
               {t("CompanyProfilDesc21")}
             </p>
           </div>
-          <div className="flex justify-center">
-            <Image
-              src={Vision2030}
-              alt="Vision 2030"
-                className="w-[250px] h-[250px]"
-              // className="w-full md:max-w-lg object-contain"
-            />
-          </div>
+        <div className="flex justify-center lg:p-[1rem] lg:ml-[100px]">
+      <Image
+        src={Vision2030}
+        alt="Vision 2030"
+        // className="w-[250px] h-[250px]"
+        // className="w-full md:max-w-lg object-contain"
+      />
+    </div>
+
         </div>
       </section>
 
