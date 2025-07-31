@@ -5,7 +5,7 @@ const nextConfig = {
   },
   images: { unoptimized: true },
   distDir: "build",
-  // output: "standalone",
+  output: "export",
   poweredByHeader: false
 };
 

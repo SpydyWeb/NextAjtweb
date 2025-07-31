@@ -10,13 +10,13 @@ const BoardMembers = () => {
   return (
     <div className="px-6 md:px-20 xl:px-[20rem] py-12">
       {/* Vision Section */}
-      <div className="flex flex-wrap items-center justify-center gap-6 mb-16">
+      <div className="flex flex-wrap items-center gap-10 mb-16">
         <Image
           src={WitnessIcon}
           alt="Witness Icon"
-          className="w-[150px] h-[150px]"
+          className="p-12"
         />
-        <div className="max-w-xl text-center">
+        <div className="max-w-xl ">
           <h2 className="text-3xl font-bold text-[#1e3a8a] mb-4">
             {t("CompanyProfilSubHeader2")}{" "}
             <span className="text-[#002c60]">{t("Vision")}</span>

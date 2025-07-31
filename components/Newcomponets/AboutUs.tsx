@@ -5,6 +5,11 @@ import Image from 'next/image';
 import {Steps} from "@/lib/utilities";
 import BoardMembers from '../Newcomponets/BoardMembers'
 import { useTranslation } from 'react-i18next';
+import step1 from '../../public/assets/Images/steps/step1.png'
+import connetion1 from '../../public/assets/Images/steps/connection1.png';
+import connetion2 from '../../public/assets/Images/steps/connection2.png';
+import connetion3 from '../../public/assets/Images/steps/connection3.png';
+import connetion4 from '../../public/assets/Images/steps/connection4.png';
 const AboutUs = () => {
  const {t, i18n}= useTranslation()
   return (
@@ -50,19 +55,16 @@ const AboutUs = () => {
           {t("Our")} <span className="text-[#002c60]">{t("Story")}</span>
         </h2>
 
-        {/* <svg
-          className="absolute top-[150px] left-0 w-full h-[220px] z-0 hidden md:block"
-          viewBox="0 0 1200 220"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M 180 110 C 300 30, 400 30, 520 110 S 760 190, 880 110 S 1040 30, 1120 110"
-            stroke="#00a6e0"
-            strokeWidth="4"
-            fill="none"
-            strokeDasharray="6,6"
-          />
-        </svg> */}
+       <div>
+<div><img src={step1.src} alt='d'/>
+<img src={connetion1.src} alt='d'/></div>
+<div><img src={step1.src} alt='d'/>
+<img src={connetion2.src} alt='d'/></div>
+<div><img src={step1.src} alt='d'/>
+<img src={connetion4.src} alt='d'/></div>
+<div><img src={step1.src} alt='d'/>
+<img src={connetion3.src} alt='d'/></div>
+</div>
 
         <div className="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-y-32 md:gap-y-0">
   {Steps.map((step, index) => (
