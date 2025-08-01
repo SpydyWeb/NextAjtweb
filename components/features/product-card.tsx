@@ -4,10 +4,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { getLocalizedText } from "@/lib/utils";
+import { useTranslation } from "react-i18next";
+import type { StaticImageData } from "next/image";
 interface ProductCardProps {
   product: {
     title: string;
-    icon: string;
+    icon: string |StaticImageData ;
     url: string;
     description: string;
   };
@@ -15,53 +17,54 @@ interface ProductCardProps {
   onProductClick: (productTitle: string) => void;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({
-  product,
-  isSelected,
-  onProductClick,
-}) => {
+const ProductCard: React.FC<ProductCardProps> = ({ product, isSelected, onProductClick }) => {
+  const { t } = useTranslation();
+  const { title, icon, description } = product;
+
   return (
     <div
-      onClick={() => onProductClick(product.title)}
-      className={`relative cursor-pointer rounded-2xl border transition duration-300 p-6 flex flex-col justify-between items-center min-h-[260px]
-      ${isSelected ? 'bg-[#0d2e57] text-white' : 'bg-white text-[#1c1c1c] border-gray-200 hover:shadow-lg'}`}
+      // onClick={() => onProductClick(title)}
+      className={`group relative cursor-pointer p-6 rounded-xl shadow-sm text-center overflow-hidden transition-all duration-200 border
+        w-full h-[250px] sm:h-[320px] md:h-[340px] lg:h-[360px]
+        ${isSelected ? "bg-[#0d2e57] text-white border-none" : "bg-white text-gray-800 border-gray-200"}`}
     >
-      {/* Icon */}
-      <div className="mb-4 h-12 flex items-center justify-center">
+      <div className="absolute bottom-0 left-0 w-full h-0 group-hover:h-full bg-[#0d2e57] transition-all duration-300 ease-in-out z-0" />
+      <div className="relative z-10 sm:mt-12">
         <Image
-          src={product.icon}
-          alt={product.title}
-          className={`h-10 w-10 object-contain ${isSelected ? 'filter brightness-0 invert' : ''}`}
+          src={icon}
+          alt={t(title)}
+          className={`h-[60px] mb-4 mx-auto object-contain transition duration-200
+            ${isSelected ? "filter brightness-0 invert" : "group-hover:filter group-hover:brightness-0 group-hover:invert"}`}
         />
+        <div className="text-lg font-semibold mb-2 group-hover:text-white">{t(title)}</div>
+
+        <div className="relative min-h-[4.5rem] sm:mt-8">
+          <p
+            className={`text-sm transition-opacity duration-200 
+              ${isSelected ? "text-white" : "text-gray-800"} group-hover:opacity-0`}
+          >
+            {t(description)}
+          </p>
+          <span
+            className={`text-sm transition-opacity duration-200 
+              ${isSelected ? "text-white" : "text-[#10426C]"} group-hover:opacity-0 underline mb-20`}
+          >
+            {t("LearnMore")}
+          </span>
+
+          <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+            <span className="mb-2 font-medium text-sm underline text-white">
+              {t("LearnMore")}
+            </span>
+            <button className="bg-white text-[#10426C] rounded-full font-semibold px-4 py-2">
+              {t("InsureNow")}!
+            </button>
+          </div>
+        </div>
       </div>
 
-      {/* Title */}
-      <h4 className="font-semibold text-base mb-1">{product.title}</h4>
-
-      {/* Description */}
-      <p className="text-sm text-center mb-4 px-2 min-h-[3rem]">
-        {product.description}
-      </p>
-
-      {/* CTA */}
-      {isSelected && product.title === "Motor" ? (
-        <button className="mt-auto bg-white text-[#10426C] font-semibold py-2 px-5 rounded-full text-sm hover:bg-gray-100 transition">
-          Insure now
-        </button>
-      ) : (
-        <Link href={product?.url}
-          className={`mt-auto font-medium text-sm underline ${
-            isSelected ? 'text-white' : 'text-[#1e3a8a]'
-          } hover:no-underline`}
-          
-        >
-          Learn More
-        </Link>
-      )}
-
-      {/* Bottom Accent */}
       {!isSelected && (
-        <div className="absolute bottom-0 left-0 w-full h-2 bg-[#10426C] rounded-b-2xl" />
+        <div className="absolute bottom-0 left-0 h-2 w-full bg-[#10426C] rounded-b-xl z-10" />
       )}
     </div>
   );

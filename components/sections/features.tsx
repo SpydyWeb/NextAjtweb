@@ -91,16 +91,16 @@ export function Features() {
           </p>
           <span  className={`text-sm transition-opacity duration-200 
                 ${isSelected ? "text-white" : "text-[#10426C]"} group-hover:opacity-0 underline mt-20`}>
-              {t("LearnMore")}
+              {t("Learnmore")}
             </span>
           <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200 sm:mt-20 mt-8">
              <span className="mb-2 font-medium text-sm underline text-white">
-              {t("LearnMore")}
+              {t("Learnmore")}
             </span>
             <button
               className="bg-white text-[#10426C] rounded-full font-semibold px-4 py-2"
             >
-              {t("InsureNow")}!
+              {t("insurenow")}
             </button>
            
           </div>

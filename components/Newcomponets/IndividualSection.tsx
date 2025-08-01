@@ -16,6 +16,9 @@ const IndividualSection = () => {
  const handleCardClick = (service: string) => {
     setSelected(service);
   };
+//   const handleCardClick = (title: string) => {
+//   setSelectedProduct(title);
+// };
   return (
     <>
     <div className="mt-4 w-full  border-gray-200 bg-white">
@@ -35,14 +38,14 @@ const IndividualSection = () => {
 
         {/* Product Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-3 gap-x-2 gap-y-4 max-w-[60rem] mx-auto px-6 py-6">
-           {/* {individualproducts.map((product, idx) => (
-              <ProductCard
-                key={idx}
-                product={product}
-                isSelected={selectedProduct === product.title}
-                onProductClick={handleProductClick}
-              />
-            ))} */}
+      {/* {individualproducts.map((product, idx) => (
+        <ProductCard
+          key={idx}
+          product={product}
+          isSelected={selectedProduct === product.title}
+          onProductClick={handleCardClick}
+        />
+      ))} */}
   {individualproducts.map(({ title, icon, description }) => {
     const isSelected = selected === title;
 
@@ -71,14 +74,14 @@ const IndividualSection = () => {
         </p>
         <span  className={`text-sm transition-opacity duration-200 
             ${isSelected ? "text-white" : "text-[#10426C]"} group-hover:opacity-0 underline mb-20`}>
-          {t("LearnMore")}
+          {t("Learnmore")}
         </span>
         <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
           <span className="mb-2 font-medium text-sm underline text-white">
-            {t("LearnMore")}
+            {t("Learnmore")}
           </span>
           <button className="bg-white text-[#10426C] rounded-full font-semibold px-4 py-2">
-            {t("InsureNow")}!
+            {t("insurenow")}
           </button>
         </div>
       </div>
