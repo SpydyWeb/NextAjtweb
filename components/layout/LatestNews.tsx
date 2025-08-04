@@ -23,11 +23,11 @@ const LatestNews = () => {
         {newsData.map((item, idx) => (
   <div
     key={item.id}
-    className="relative bg-white border border-gray-200 rounded-2xl shadow-md p-6 text-left py-[40px]"
+    className="relative bg-white border border-gray-200 rounded-2xl shadow-md p-6 text-left py-[2.5rem]"
   >
     {/* ID Badge Bubble */}
     <div
-      className={`absolute -top-10 left-4 w-20 h-[5.5rem] rounded-[18px] text-white flex items-center justify-center  text-3xl ${
+      className={`absolute -top-10 left-4 w-20 h-[5.5rem] rounded-[1.125rem] text-white flex items-center justify-center  text-3xl ${
         idx === 0 ? 'bg-cyan-500' : idx === 1 ? 'bg-[#10426C]' : 'bg-[rgb(11,10,44)]'
       }`}
     >
