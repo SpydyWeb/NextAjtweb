@@ -9,7 +9,7 @@ export function Stats() {
     <>
   <section className="relative text-center py-10 px-4">
   {/* Globe Background Image */}
-  <div className="relative z-10 w-full max-w-[620px] aspect-square mx-auto flex flex-col justify-center items-center p-4 sm:p-6 md:p-8 overflow-hidden">
+  <div className="relative z-10 w-full max-w-[38.75rem] aspect-square mx-auto flex flex-col justify-center items-center p-4 sm:p-6 md:p-8 overflow-hidden">
     <Image
       src={globeImg}
       alt="Globe Background"
@@ -20,7 +20,7 @@ export function Stats() {
 
     {/* Foreground Content */}
     <div className="relative z-10 text-center w-full">
-      <h2 className="text-[24px] sm:text-[28px] md:text-[36px] lg:text-[44px] xl:text-5xl font-bold text-[#10426C] leading-tight">
+      <h2 className="text-[1.5rem] sm:text-[1.75rem] md:text-[2.25rem] lg:text-[2.75rem] xl:text-5xl font-bold text-[#10426C] leading-tight">
         {t("MoreThan")}{" "}
         <span className="text-blue-500">{t("Years")}</span>
         <br />

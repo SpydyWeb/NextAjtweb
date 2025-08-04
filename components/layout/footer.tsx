@@ -52,10 +52,10 @@ export function Footer() {
   return (
      <>
     {/* <hr className="h-[2px] mt-0 sm:block hidden mx-24" /> */}
-    <hr className="h-[2px] bg-[#0000008f] mt-0 w-[95%] mx-auto" />
+    <hr className="h-[0.125rem] bg-[#0000008f] mt-0 w-[95%] mx-auto" />
    <footer className="bg-white text-[#10426c] text-sm ">
   {/* <div className="max-w-[1250px] mx-auto px-4 lg:px-8 py-12"> */}
-  <div className="mx-auto px-4 lg:px-8 py-12 max-w-full sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1800px]">
+  <div className="mx-auto px-4 lg:px-8 py-12 max-w-full sm:max-w-[40rem] md:max-w-[48rem] lg:max-w-[112.5rem]">
     <div className="grid gap-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-[4fr_4fr_3fr_3fr]">
           {/* Logo and About */}
           <div className="space-y-4 text-wrap: wrap ">
@@ -79,7 +79,7 @@ export function Footer() {
             <ul className="space-y-4 text-lg">
               {footerLinks.resources.map((link, idx) => (
                 <li key={idx} className="flex items-start gap-3 ">
-                  <Image src={link.icon} alt="icon" width={20} height={20} className="lg:mb-3" />
+                  <Image src={link.icon} alt="icon" width={20} height={20} className="lg:mb-3 w-[1.25rem] h-[1.25rem]" />
                   <span className="leading-snug">{t(link.name)}</span>
                 </li>
               ))}
@@ -87,7 +87,7 @@ export function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="text-wrap: wrap lg:ml-[100px]">
+          <div className="text-wrap: wrap lg:ml-[6.25rem]">
             <h3 className="text-base text-xl font-bold mb-4">{t("Quicklinks")}</h3>
             <ul className="space-y-4 text-lg">
               {footerLinks.company.map((link) => (
@@ -104,7 +104,7 @@ export function Footer() {
           </div>
 
           {/* Social and App Links */}
-          <div className="text-wrap: wrap lg:ml-20">
+          <div className="text-wrap: wrap lg:ml-[5rem]">
               <h3 className="text-base text-xl font-bold mb-4">
                 {t("Followus")}
               </h3>
@@ -146,7 +146,7 @@ export function Footer() {
                       alt={store.name}
                       width={140}
                       height={40}
-                      className="object-contain"
+                      className="object-contain "
                     />
                   </Link>
                 ))}

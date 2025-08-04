@@ -10,29 +10,6 @@ import connetion1 from "../../public/assets/Images/steps/connection1.png";
 import connetion2 from "../../public/assets/Images/steps/connection2.png";
 import connetion3 from "../../public/assets/Images/steps/connection3.png";
 import connetion4 from "../../public/assets/Images/steps/connection4.png";
-import styled from "styled-components";
-const CustomRow = styled.div`
-  & > .stepConnection {
-    padding: 0 4rem;
-    position: relative;
-
-    &::after {
-      content: "";
-      position: absolute;
-      background: url(${connetion1.src});
-      height: 16rem;
-      width: calc(100% - 10rem);
-      left: calc(100% - 4rem);
-      top: 50%;
-      transform: translateY(-50%);
-      background-repeat: no-repeat;
-    }
-  }
-
-  & > .stepConnection:nth-child(odd) {
-    margin-top: 4rem !important;
-  }
-`;
 const AboutUs = () => {
   const { t, i18n } = useTranslation();
   return (

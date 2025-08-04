@@ -26,7 +26,7 @@ export function Features() {
       <div className="flex justify-center gap-4 mb-8  px-4">
         <button
           onClick={() => handleCardClick("Retail")}
-          className={`w-[280px] md:w-[350px] sm:px-6 sm:py-3 p-2 border rounded-full font-semibold transition ${
+          className={`w-[17.5rem] md:w-[21.875rem] sm:px-6 sm:py-3 p-2 border rounded-full font-semibold transition ${
             selected === "Retail"
               ? "bg-[#10426C] text-white border-gray-300"
               : "bg-gray-100 text-gray-800 border-gray-300"
@@ -36,7 +36,7 @@ export function Features() {
         </button>
         <button
           onClick={() => handleCardClick("Corporate")}
-          className={`w-[280px] md:w-[350px] sm:px-6 sm:py-3 p-2 border rounded-full font-semibold transition ${
+          className={`w-[17.5rem] md:w-[21.875rem] sm:px-6 sm:py-3 p-2 border rounded-full font-semibold transition ${
             selected === "Corporate"
               ? "bg-[#10426C] text-white border-gray-300"
               : "bg-gray-100 text-gray-800 border-gray-300"
@@ -64,7 +64,7 @@ export function Features() {
     <div
   key={title}
   className={`group relative cursor-pointer p-6 rounded-xl shadow-sm text-center overflow-hidden transition-all duration-200 border
-    w-[200px] h-[250px] sm:w-[270px] sm:h-[320px] md:w-[230px] md:h-[340px] lg:w-[240px] xl:w-[300px] lg:h-[360px]
+    w-[12.5rem] h-[15.625rem] sm:w-[16.875rem] sm:h-[20rem] md:w-[14.375rem] md:h-[21.25rem] lg:w-[15rem] lg:h-[22.5rem] xl:w-[18.75rem]
     ${isSelected ? "bg-[#0d2e57] text-white border-none" : "bg-white text-gray-800 border-gray-200"}`}
 >
 
@@ -74,7 +74,7 @@ export function Features() {
         <Image
           src={icon}
           alt={t(title)}
-          className={`h-[60px] mb-4 mx-auto object-contain transition duration-200 
+          className={` w-[3.75rem] h-[3.75rem] mb-4 mx-auto object-contain transition duration-200 
             ${isSelected ? "filter brightness-0 invert" : "group-hover:filter group-hover:brightness-0 group-hover:invert"}`}
         />
 

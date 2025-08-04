@@ -10,18 +10,20 @@ const BoardMembers = () => {
   return (
     <div className="px-6 md:px-20 xl:px-[20rem] py-12">
       {/* Vision Section */}
-      <div className="flex items-center gap-10 mb-16">
-        <Image src={WitnessIcon} alt="Witness Icon" className="p-12" />
-        <div className="max-w-xl ">
-          <h2 className="text-3xl font-bold text-[#1e3a8a] mb-4">
-            {t("CompanyProfilSubHeader2")}{" "}
-            <span className="text-[#002c60]">{t("Vision")}</span>
-          </h2>
-          <p className="text-gray-700 text-base leading-relaxed">
-            {t("VisionDesc")}
-          </p>
-        </div>
-      </div>
+      <div className="flex flex-col md:flex-row items-center gap-10 mb-16">
+  <Image src={WitnessIcon} alt="Witness Icon" className="p-12 w-full md:w-auto" />
+  
+  <div className="max-w-xl text-center md:text-left">
+    <h2 className="text-3xl font-bold text-[#1e3a8a] mb-4">
+      {t("CompanyProfilSubHeader2")}{" "}
+      <span className="text-[#002c60]">{t("Vision")}</span>
+    </h2>
+    <p className="text-gray-700 text-base leading-relaxed">
+      {t("VisionDesc")}
+    </p>
+  </div>
+</div>
+
 
       {/* Core Values */}
       <div className="text-center mb-8">
@@ -83,8 +85,8 @@ const BoardMembers = () => {
           >
             {/* Gray halo + blue ring */}
             {/* <div className="relative w-[250px] h-[250px] flex items-center md:w-[70%] justify-center"> */}
-            <div className="relative w-auto md:w-[80%] lg:w-auto h-[250px] flex items-center justify-center">
-              <div className="w-[240px] h-[240px] ">
+            <div className="relative w-auto md:w-[80%] lg:w-auto h-[15.625rem] flex items-center justify-center">
+              <div className="w-[15rem] h-[15rem]">
                 <Image
                   src={member.image}
                   alt={t(member.name)}
@@ -97,7 +99,7 @@ const BoardMembers = () => {
 
             <div className="mt-4">
               {/* <span className="block font-bold text-base text-[#10426C]"> */}
-              <span className="block font-bold text-[#10426C] text-nowrap text-sm md:text-base md:px-[60px] lg:px-0">
+              <span className="block font-bold text-[#10426C] text-nowrap text-sm md:text-base md:px-[3.75rem] lg:px-0">
                 {t(member.name)}
               </span>
               <span className="block text-sm text-[#10426C]">

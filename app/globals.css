@@ -134,3 +134,12 @@
   background-size: 100%;
   background-repeat: no-repeat;
 }
+@media (max-width: 1023px) {
+  .step-circle1::after,
+  .step-circle2::after,
+  .step-circle3::after,
+  .step-circle4::after {
+    display: none !important;
+  }
+}
+
