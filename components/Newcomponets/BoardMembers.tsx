@@ -10,12 +10,8 @@ const BoardMembers = () => {
   return (
     <div className="px-6 md:px-20 xl:px-[20rem] py-12">
       {/* Vision Section */}
-      <div className="flex flex-wrap items-center gap-10 mb-16">
-        <Image
-          src={WitnessIcon}
-          alt="Witness Icon"
-          className="p-12"
-        />
+      <div className="flex items-center gap-10 mb-16">
+        <Image src={WitnessIcon} alt="Witness Icon" className="p-12" />
         <div className="max-w-xl ">
           <h2 className="text-3xl font-bold text-[#1e3a8a] mb-4">
             {t("CompanyProfilSubHeader2")}{" "}
@@ -81,7 +77,10 @@ const BoardMembers = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-6 justify-items-center">
         {boardMembers.map((member, index) => (
-          <div key={index} className="flex flex-col items-center text-center">
+          <div
+            key={index}
+            className="flex flex-col items-center text-center hover:duration-700 hover:scale-[1.1]"
+          >
             {/* Gray halo + blue ring */}
             {/* <div className="relative w-[250px] h-[250px] flex items-center md:w-[70%] justify-center"> */}
             <div className="relative w-auto md:w-[80%] lg:w-auto h-[250px] flex items-center justify-center">
