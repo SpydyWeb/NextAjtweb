@@ -15,6 +15,9 @@ const Corporateproducts = () => {
  const handleCardClick = (service: string) => {
     setSelected(service);
   };
+//   const handleCardClick = (title: string) => {
+//   setSelectedProduct(title);
+// };
   return (
     <>
 {/* <div className="mt-4 w-[300px] sm:w-[350px] md:w-full mx-auto  bg-white"> */}
@@ -41,8 +44,8 @@ const Corporateproducts = () => {
         <ProductCard
           key={idx}
           product={product}
-          isSelected={selectedProduct === (product.title)}
-          onProductClick={handleProductClick}
+          isSelected={selectedProduct === product.title}
+          onProductClick={handleCardClick}
         />
       ))} */}
      {corporateproducts.map(({ title, icon, description }) => {
@@ -73,14 +76,14 @@ const Corporateproducts = () => {
             </p>
             <span  className={`text-sm transition-opacity duration-200 
                 ${isSelected ? "text-white" : "text-[#10426C]"} group-hover:opacity-0 underline mb-20`}>
-              {t("LearnMore")}
+              {t("Learnmore")}
             </span>
             <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-200">
               <span className="mb-2 font-medium text-sm underline text-white">
-                {t("LearnMore")}
+                {t("Learnmore")}
               </span>
               <button className="bg-white text-[#10426C] rounded-full font-semibold px-4 py-2">
-                {t("InsureNow")}!
+                {t("insurenow")}
               </button>
             </div>
           </div>
