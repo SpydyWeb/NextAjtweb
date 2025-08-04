@@ -44,8 +44,7 @@ const AboutUs = () => {
               <Image
                 src={Vision2030}
                 alt="Vision 2030"
-                // className="w-[250px] h-[250px]"
-                // className="w-full md:max-w-lg object-contain"
+                className="w-[25rem] h-[20rem]"
               />
             </div>
           </div>

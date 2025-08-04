@@ -65,12 +65,12 @@ export function Footer() {
                 alt="Aljazira Takaful"
                 width={250}
                 height={250}
-                className="object-contain"
+                className='w-[15rem] h-[3rem]'
               />
             </Link>
             <p className="leading-relaxed max-w-sm text-lg">
             {t("footerText")}
-            </p>
+            </p> 
           </div>
 
           {/* Contact Us */}
@@ -146,7 +146,7 @@ export function Footer() {
                       alt={store.name}
                       width={140}
                       height={40}
-                      className="object-contain "
+                      className="h-[4rem] w-[12rem] "
                     />
                   </Link>
                 ))}

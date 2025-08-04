@@ -13,9 +13,9 @@ export function Hero() {
     // <section className="relative bg-gradient-to-b from-blue-50 to-white">
     <section className="relative">
       <div className="w-full">
-        <div className="max-w-screen-xl mx-auto px-2  py-4 flex flex-wrap items-center justify-between gap-6 relative">
+        <div className="min-w-[[10.625rem] w-mx-auto px-2  py-4 flex flex-wrap items-center justify-between gap-6 relative lg:ml-[3rem]">
           {/* Select Dropdown */}
-          <div className="flex-1 min-w-[[15.625rem] relative">
+          <div className="flex-1  relative">
             <select className="w-full appearance-none bg-slate-100 border border-gray-200 rounded-full py-3 px-4 text-slate-600 text-sm outline-none">
               <option>Choose your product insurance...</option>
               <option>Choose your Motor insurance... Raect js</option>
@@ -27,7 +27,7 @@ export function Hero() {
           </div>
 
           {/* EServices Button */}
-          <button className="py-2 sm:px-6 px-3 border border-[#123766] text-[#10426C] rounded-full font-medium text-sm bg-white cursor-pointer whitespace-nowrap sm:relative absolute right-[0.5rem]">
+          <button className="py-2 sm:px-6 px-3 border border-[#123766] text-[#10426C] rounded-full font-medium text-sm bg-white cursor-pointer whitespace-nowrap sm:relative absolute right-[0.5rem] lg:mr-[2rem]">
             {t("EServicesbtn")}
           </button>
         </div>
@@ -70,17 +70,18 @@ export function Hero() {
         </div>
 
         {/* Center Dots */}
-        <div className="absolute bottom-4 md:bottom-6 left-1/2 transform -translate-x-1/2 flex justify-center gap-2">
-          {HeroSection.Carousel.map((_, idx) => (
-            <div
-              key={idx}
-              onClick={() => setActiveIndex(idx)} // Step 2: Set active index on click
-              className={`w-[0.625rem] h-[0.625rem]rounded-full cursor-pointer transition-colors duration-300 ${
-                activeIndex === idx ? "bg-[#1e3a8a]" : "bg-slate-300"
-              }`}
-            />
-          ))}
-        </div>
+       <div className="absolute bottom-4 md:bottom-6 left-1/2 transform -translate-x-1/2 flex justify-center gap-2">
+        {HeroSection.Carousel.map((_, idx) => (
+          <div
+            key={idx}
+            onClick={() => setActiveIndex(idx)}
+            className={`w-[0.625rem] h-[0.625rem] rounded-full cursor-pointer transition-colors duration-300 ${
+              activeIndex === idx ? "bg-[#1e3a8a]" : "bg-slate-300"
+            }`}
+          />
+        ))}
+      </div>
+
       </section>
     </section>
   );

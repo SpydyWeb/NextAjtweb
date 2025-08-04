@@ -52,10 +52,10 @@ const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
   return (
     <>
    <header className="bg-white shadow-sm w-full px-6 py-3">
-        <div className="max-w-[100rem] mx-auto flex items-center justify-between">
+        <div className="max-w-[100rem] mx-auto flex items-center justify-between mr-[2rem]">
           {/* Logo */}
           <Link href="/">
-            <Image src={logo} width={250} height={250} alt="AlJAZIRA TAKAFUL" />
+            <Image src={logo} width={250} height={250} alt="AlJAZIRA TAKAFUL" className='w-[15rem] h-[3rem] lg:ml-[2rem]' />
           </Link>
           <div className="lg:hidden block">
             <button onClick={toggleMenu} className="text-[#10426c] text-2xl">
@@ -73,7 +73,7 @@ const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     </button>
 
     {section.links.length > 0 && (
-      <div className="w-[250px] absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 bg-white border border-gray-200 mt-3 rounded-lg shadow-lg p-4 z-50 min-w-56 space-y-2 pointer-events-auto">
+      <div className="w-[15.625rem] absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 bg-white border border-gray-200 mt-3 rounded-lg shadow-lg p-4 z-50 min-w-56 space-y-2 pointer-events-auto">
         <ul className="space-y-2">
           {section.links.map((link, index) => (
             <li key={index}>
@@ -117,7 +117,7 @@ const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
           </div>
         </div>
         {menuOpen && (
-         <div className="lg:hidden mt-4 px-6 space-y-4 border border-[azure] bg-[azure]">
+         <div className="lg:hidden mt-4 px-6 space-y-4 border border-[azure] bg-[azure] sm:ml-[10rem] md:ml-[2rem]">
           {Object.entries(utilitiesData).map(([key, section]) => (
   <div key={key} className="group relative">
     <p className="text-[#10426c] font-semibold cursor-pointer">
@@ -171,7 +171,7 @@ const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
         )}
       </header>
     {/* <hr className="bg-[#0000008f] h-[2px] mt-0 sm:block hidden mx-24"/> */}
-    <hr className="h-[2px] bg-[#0000008f] mt-0 w-[95%] mx-auto" />
+    <hr className="h-[0.125rem] bg-[#0000008f] mt-0 w-[95%] mx-auto" />
     </>
       );
     };
