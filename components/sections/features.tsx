@@ -18,7 +18,7 @@ export function Features() {
     setFeatureProducts(service==="Corporate"?corporateproducts:individualproducts)
   };
   return (
-    <section className="py-10 ">
+    <section className="py-10 px-10">
       <h2 className="text-center text-2xl font-bold text-[#10426C] mb-2">{t("Ourservice")}</h2>
       <p className="text-center text-2xl font-bold mb-6">{t("Exploreproducts")}</p>
 

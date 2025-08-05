@@ -21,9 +21,9 @@ const AboutUs = () => {
             <h1 className="text-3xl font-bold mb-2 text-[#10426C]">
               {t("AboutUsHeader")}
             </h1>
-            <p className=" text-black-500 font-semibold text-2xl">
+            <p className=" text-black-500 font-semibold text-sm sm:text-xl">
               {t("CompanyProfileTab")}
-              <br />
+              <br/>
               {t("CompanyProfileTab1")}
             </p>
           </div>
@@ -34,7 +34,7 @@ const AboutUs = () => {
               <h3 className="text-2xl font-bold mb-4 text-[#002c60] text-justify">
                 {t("who")} <span className="text-[#1e3a8a]">{t("weare")}</span>
               </h3>
-              <p className="leading-relaxed text-[#10426C] text-2xl">
+              <p className="leading-relaxed text-[#10426C] text-sm sm:text-xl">
                 {t("CompanyProfilDesc1")}
                 <br />
                 {t("CompanyProfilDesc21")}

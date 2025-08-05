@@ -34,10 +34,10 @@ const BoardMembers = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
         <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
-          <h4 className="text-[#002c60] text-lg font-semibold mb-3">
+          <h4 className="text-[#002c60] text-xl font-semibold mb-3">
             {t("ValuesTowardsOurCustomers")}
           </h4>
-          <ul className="list-disc pl-5 text-sm space-y-2 marker:text-[#069edb] text-gray-700">
+          <ul className="list-disc pl-5 text-md space-y-2 marker:text-[#069edb] text-gray-700">
             <li>{t("valueslist1")}</li>
             <li>{t("valueslist2")}</li>
             <li>{t("valueslist3")}</li>
@@ -45,10 +45,10 @@ const BoardMembers = () => {
         </div>
 
         <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
-          <h4 className="text-[#002c60] text-lg font-semibold mb-3">
+          <h4 className="text-[#002c60] text-xl font-semibold mb-3">
             {t("ValuesTowardsOurEmployees")}
           </h4>
-          <ul className="list-disc pl-5 text-sm space-y-2 marker:text-[#069edb] text-gray-700">
+          <ul className="list-disc pl-5 text-md space-y-2 marker:text-[#069edb] text-gray-700">
             <li>{t("CompanyProfilSubHeader1Item2List1")}</li>
             <li>{t("CompanyProfilSubHeader1Item2List2")}</li>
             <li>{t("CompanyProfilSubHeader1Item2List3")}</li>
@@ -57,10 +57,10 @@ const BoardMembers = () => {
         </div>
 
         <div className="bg-gray-50 rounded-lg p-6 shadow-sm">
-          <h4 className="text-[#002c60] text-lg font-semibold mb-3">
+          <h4 className="text-[#002c60] text-xl font-semibold mb-3">
             {t("ValuesTowardsOurOrganization")}
           </h4>
-          <ul className="list-disc pl-5 text-sm space-y-2 marker:text-[#069edb] text-gray-700">
+          <ul className="list-disc pl-5 text-md space-y-2 marker:text-[#069edb] text-gray-700">
             <li>{t("CompanyProfilSubHeader1Item3List1")}</li>
             <li>{t("CompanyProfilSubHeader1Item3List2")}</li>
             <li>{t("CompanyProfilSubHeader1Item3List3")}</li>
