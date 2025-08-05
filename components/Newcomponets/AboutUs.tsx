@@ -16,7 +16,7 @@ const AboutUs = () => {
     <>
       <div className="flex flex-col min-h-screen font-sans text-[#1c1c1c] bg-white mt-4">
         {/* About Us Section */}
-        <section className="px-6 md:px-20 xl:px-[20rem] py-12">
+        <section className="px-6 md:px-20 xl:px-[12rem]">
           <div className="text-center mb-12">
             <h1 className="text-3xl font-bold mb-2 text-[#10426C]">
               {t("AboutUsHeader")}
@@ -29,7 +29,7 @@ const AboutUs = () => {
           </div>
 
           {/* Who We Are Section */}
-          <div className="grid md:grid-cols-2 items-center gap-1 mb-16">
+          <div className="grid md:grid-cols-2 items-center gap-[8rem] mb-16">
             <div>
               <h3 className="text-2xl font-bold mb-4 text-[#002c60] text-justify">
                 {t("who")} <span className="text-[#1e3a8a]">{t("weare")}</span>
@@ -41,11 +41,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="flex justify-center lg:p-[1rem] lg:ml-[100px]">
-              <Image
-                src={Vision2030}
-                alt="Vision 2030"
-                className="w-[25rem] h-[20rem]"
-              />
+              <Image src={Vision2030} alt="Vision 2030" className="w-full" />
             </div>
           </div>
         </section>
