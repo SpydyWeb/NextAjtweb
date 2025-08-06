@@ -111,7 +111,7 @@ export const FooterNew: React.FC = () => {
           </ul>
         </div>
       </div>
-      <hr className="h-[0.1rem] bg-[#0000008f] mt-0 w-full sm:w-[95%] lg:w-[80%] mx-auto" />
+      <hr className="h-[0.1rem]  mt-0 w-full sm:w-[95%] lg:w-[80%] mx-auto" />
       <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
         <div className="flex items-center space-x-2">
           <Link href="/" className="inline-block">
@@ -125,7 +125,15 @@ export const FooterNew: React.FC = () => {
           </Link>
         </div>
         <div className="flex items-center gap-4 mb-6 text-lg">
-          <FaLinkedinIn className="w-6 h-6 text-sky-400" />
+          {/* <FaLinkedinIn className="w-6 h-6 text-sky-400" /> */}
+          <a
+            href="https://www.linkedin.com/company/aljazira-takaful-taawuni/?originalSubdomain=in"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedinIn className="w-6 h-6 text-sky-400" />
+          </a>
+
           {socialLinks.map((social) => (
             <Link
               key={social.name}
@@ -141,7 +149,14 @@ export const FooterNew: React.FC = () => {
               />
             </Link>
           ))}
-          <AiOutlineYoutube className="w-6 h-6 text-sky-400" />
+          {/* <AiOutlineYoutube className="w-6 h-6 text-sky-400" /> */}
+          <a
+            href="https://www.youtube.com/watch?v=s9u3wzstMD0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiOutlineYoutube className="w-6 h-6 text-sky-400" />
+          </a>
         </div>
       </div>
       <hr className="h-[0.1rem] mt-0 w-full sm:w-[95%] lg:w-[80%] mx-auto" />

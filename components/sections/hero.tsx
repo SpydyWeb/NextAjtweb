@@ -4,10 +4,12 @@ import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 import { HeroSection } from "@/lib/utilities";
+import { HeroSectionData } from "@/lib/utilities";
 import { useTranslation } from "react-i18next";
 export function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
   const { t, i18n } = useTranslation();
+  const activeItem = HeroSectionData[activeIndex];
 
   return (
     // <section className="relative bg-gradient-to-b from-blue-50 to-white">
@@ -18,7 +20,7 @@ export function Hero() {
           <div className="flex-1  relative">
             <select className="w-full appearance-none bg-slate-100 border border-gray-200 rounded-full py-3 px-4 text-slate-600 text-sm outline-none">
               <option>Choose your product insurance...</option>
-              <option>Choose your Motor insurance... Raect js</option>
+              <option>Choose your Motor insurance... React js</option>
               <option>Choose your Medical insurance... nextjs</option>
             </select>
             <div className="absolute top-1/2 right-5 transform -translate-y-1/2 pointer-events-none text-slate-500">
@@ -40,29 +42,26 @@ export function Hero() {
         {/* Left Text */}
         <div className="flex-1 text-center md:text-left">
           <h1 className="text-3xl md:text-6xl font-bold text-[#1e3a8a] whitespace-nowrap">
-            {t("motorinsurancetitle")}
+            {t(activeItem.titleKey)}
           </h1>
-          <p className="text-3xl md:text-6xl  mt-2 whitespace-nowrap">
-            {t("YouDriveWeInsure")}
+          <p className="text-3xl md:text-6xl mt-2 whitespace-nowrap">
+            {t(activeItem.subtitleKey)}
           </p>
           <button className="mt-4 px-6 py-2 border border-[#123766] text-[#10426C] rounded-full font-medium text-sm bg-transparent cursor-pointer whitespace-nowrap">
-            {t("InsureNowbtn")}
+            {t(activeItem.buttonKey)}
           </button>
         </div>
 
         {/* Right Image */}
         <div className="flex-shrink-0 mb-0 md:mb-0">
-          {/* <div className="w-[500px] h-[280px] sm:w-[280px] sm:h-[250px] md:w-[320px] md:h-[300px] mx-auto md:mx-0">
-           */}
-           {/* <div className="w-[320px] h-[280px] sm:w-[400px] sm:h-[340px] md:w-[500px] md:h-[420px] lg:w-[600px] lg:h-[500px] mx-auto md:mx-0"> */}
           <div className="w-[20rem] h-[17.5rem] sm:w-[25rem] sm:h-[21.25rem] md:w-[31.25rem] md:h-[26.25rem] lg:w-[37.5rem] lg:h-[31.25rem] mx-auto md:mx-0">
 
             <Link href="/">
               <Image
-                src={t(HeroSection.Carousel[activeIndex])}
+                src={t(activeItem.imageSrcKey)}
                 width={1000}
                 height={1000}
-                alt={`Motor Image ${activeIndex + 1}`}
+                alt={`Slide Image ${activeIndex + 1}`}
                 className="object-contain w-full h-full"
               />
             </Link>
@@ -70,17 +69,17 @@ export function Hero() {
         </div>
 
         {/* Center Dots */}
-       <div className="absolute bottom-4 md:bottom-6 left-1/2 transform -translate-x-1/2 flex justify-center gap-2">
-        {HeroSection.Carousel.map((_, idx) => (
-          <div
-            key={idx}
-            onClick={() => setActiveIndex(idx)}
-            className={`w-[0.625rem] h-[0.625rem] rounded-full cursor-pointer transition-colors duration-300 ${
-              activeIndex === idx ? "bg-[#1e3a8a]" : "bg-slate-300"
-            }`}
-          />
-        ))}
-      </div>
+        <div className="absolute bottom-4 md:bottom-6 left-1/2 transform -translate-x-1/2 flex justify-center gap-2">
+          {HeroSectionData.map((_, idx) => (
+            <div
+              key={idx}
+              onClick={() => setActiveIndex(idx)}
+              className={`w-[0.625rem] h-[0.625rem] rounded-full cursor-pointer transition-colors duration-300 ${
+                activeIndex === idx ? "bg-[#1e3a8a]" : "bg-slate-300"
+              }`}
+            />
+          ))}
+        </div>
 
       </section>
     </section>

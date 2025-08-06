@@ -4,8 +4,11 @@
     "EServicesbtn":"E-Services",
     "InsureNowbtn":"Insure Now !",
     "MotorImg":"assets\\Images\\ImagesIcons\\Carflipimg.png",
-    "":"",
-
-    "":""
-
+    "ProtectionSavings":"Protection & Savings",
+    "MotorImg2":"assets\\Images\\ImagesIcons//MotorImage2.jpg",
+    "MotorImg3":"assets\\Images\\ImagesIcons//MotorImage3.jpg",
+    "MotorImg4":"assets\\Images\\ImagesIcons//MotorImage4.jpg",
+    "AccidentLiability":"Accident & Liability",
+    "VisitVisaExtension":"Visit Visa Extension",
+    "MedicalMalpractice":"Medical Malpractice"
 }
