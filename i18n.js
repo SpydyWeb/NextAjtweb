@@ -85,6 +85,8 @@ import contactusEn from "@/public/locales/translation/contactus/en.json";
 import contactusAr from "@/public/locales/translation/contactus/ar.json"; 
 import footerEn from "@/public/locales/translation/footer/en.json";
 import footerAr from "@/public/locales/translation/footer/ar.json"; 
+import FooterNewEn from "@/public/locales/translation/footernew/en.json";
+import FooterNewAr from "@/public/locales/translation/footernew/ar.json";
 const resources = {
   en: {
     translation: {
@@ -131,7 +133,8 @@ const resources = {
       ...ourclinetsEn,
       ...latestnewsEn,
       ...contactusEn,
-      ...footerEn
+      ...footerEn,
+      ...FooterNewEn
     },
   },
   ar: {
@@ -179,7 +182,8 @@ const resources = {
       ...ourclinetsAr,
       ...latestnewsAr,
       ...contactusAr,
-      ...footerAr
+      ...footerAr,
+      ...FooterNewAr,
     },
   },
 };

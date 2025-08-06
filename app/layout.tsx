@@ -7,6 +7,7 @@ import Header from "@/components/layout/Header";
 import "../i18n.js";
 import { I18nProvider } from "./I18nProvider";
 import FooterCard from './../components/layout/footercard';
+import { FooterNew } from "@/components/layout/footernew";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -27,9 +28,10 @@ export default function RootLayout({
           <div className="min-h-screen flex flex-col  ">
             <Header /> {/* now wrapped correctly */}
             <main className="flex-1">{children}</main>
-            <Footer />
+            <FooterNew/>
+            {/* <Footer /> */}
           </div>
-           <FooterCard />
+           {/* <FooterCard /> */}
         </I18nProvider>
       </body>
     </html>

@@ -10,8 +10,8 @@ export default function Home() {
       <Hero />
       <Features />
       <Stats />
-      <Ourclients/>
-       <LatestNews/>
+      {/* <Ourclients/>
+       <LatestNews/> */}
       <Contactus />
     </div>
   );
