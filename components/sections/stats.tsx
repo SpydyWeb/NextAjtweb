@@ -4,9 +4,9 @@ import Image from 'next/image';
 import globeImg from '../../public/assets/Images/ImagesIcons/globeImg.png';
 import { useTranslation } from "react-i18next";
 export function Stats() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
-    <>
+
   <section className="relative text-center py-10 px-4">
   {/* Globe Background Image */}
   <div className="relative z-10 w-full max-w-[38.75rem] aspect-square mx-auto flex flex-col justify-center items-center p-4 sm:p-6 md:p-8 overflow-hidden">
@@ -37,7 +37,5 @@ export function Stats() {
     </div>
   </div>
 </section>
-
-    </>
   );
 }

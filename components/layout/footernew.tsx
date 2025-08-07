@@ -3,10 +3,7 @@ import React, { useState } from "react";
 import facebook from "../../public/assets/Images/ImagesIcons/facebook.png";
 import instagram from "../../public/assets/Images/ImagesIcons/instagram.png";
 import twitter from "../../public/assets/Images/ImagesIcons/twitter.png";
-import Youtube from "../../public/assets/Images/ImagesIcons/youtube.png";
-import Linkdin from "../../public/assets/Images/ImagesIcons/linkedin.png";
 import logo from "../../public/assets/Images/logo.png";
-import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineYoutube } from "react-icons/ai";
 import Link from "next/link";
@@ -57,57 +54,61 @@ export const FooterNew: React.FC = () => {
         <div>
           <h3 className="font-semibold mb-3 text-lg">{t("AboutUs")}</h3>
           <ul className="space-y-1">
-            {footernewLinks.AboutUs.map((link, idx) => (
-              <li key={idx} className="flex items-start gap-3 ">
-                <Link href={link.href}>
-                  <span className="leading-snug hover:underline">
-                    {t(link.name)}
-                  </span>
-                </Link>
-              </li>
-            ))}
+           {footernewLinks.AboutUs.map((link) => (
+  <li key={link.name} className="flex items-start gap-3">
+    <Link href={link.href}>
+      <span className="leading-snug hover:underline">
+        {t(link.name)}
+      </span>
+    </Link>
+  </li>
+))}
+
           </ul>
         </div>
         <div>
           <h3 className="font-semibold mb-3 text-lg">{t("MyPolicies")}</h3>
           <ul className="space-y-1">
-            {footernewLinks.MyPolicies.map((link, idx) => (
-              <li key={idx} className="flex items-start gap-3 ">
-                <Link href={link.href}>
-                  <span className="leading-snug hover:underline">
-                    {t(link.name)}
-                  </span>
-                </Link>
-              </li>
-            ))}
+           {footernewLinks.MyPolicies.map((link) => (
+  <li key={link.name} className="flex items-start gap-3">
+    <Link href={link.href}>
+      <span className="leading-snug hover:underline">
+        {t(link.name)}
+      </span>
+    </Link>
+  </li>
+))}
+
           </ul>
         </div>
         <div>
           <h3 className="font-semibold mb-3 text-lg">{t("OurService")}</h3>
           <ul className="space-y-1">
-            {footernewLinks.OurServices.map((link, idx) => (
-              <li key={idx} className="flex items-start gap-3 ">
-                <Link href={link.href}>
-                  <span className="leading-snug hover:underline">
-                    {t(link.name)}
-                  </span>
-                </Link>
-              </li>
-            ))}
+           {footernewLinks.OurServices.map((link) => (
+  <li key={link.name} className="flex items-start gap-3">
+    <Link href={link.href}>
+      <span className="leading-snug hover:underline">
+        {t(link.name)}
+      </span>
+    </Link>
+  </li>
+))}
+
           </ul>
         </div>
         <div>
           <h3 className="font-semibold mb-3 text-lg">{t("UsefulLinks")}</h3>
           <ul className="space-y-1">
-            {footernewLinks.UsefulLinks.map((link, idx) => (
-              <li key={idx} className="flex items-start gap-3 ">
-                <Link href={link.href}>
-                  <span className="leading-snug hover:underline">
-                    {t(link.name)}
-                  </span>
-                </Link>
-              </li>
-            ))}
+          {footernewLinks.UsefulLinks.map((link) => (
+  <li key={link.name} className="flex items-start gap-3">
+    <Link href={link.href}>
+      <span className="leading-snug hover:underline">
+        {t(link.name)}
+      </span>
+    </Link>
+  </li>
+))}
+
           </ul>
         </div>
       </div>
@@ -165,7 +166,7 @@ export const FooterNew: React.FC = () => {
         <div className="space-x-2">
           <span>{t("Aljaziratakaful")}</span>
           <span>|</span>
-          <a href="#" className="underline text-sky-700">
+          <a href="/about" className="underline text-sky-700">
             {t("PrivacyPolicy")}
           </a>
         </div>

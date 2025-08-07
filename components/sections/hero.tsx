@@ -3,12 +3,11 @@ import React, { useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
-import { HeroSection } from "@/lib/utilities";
 import { HeroSectionData } from "@/lib/utilities";
 import { useTranslation } from "react-i18next";
 export function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const activeItem = HeroSectionData[activeIndex];
 
   return (

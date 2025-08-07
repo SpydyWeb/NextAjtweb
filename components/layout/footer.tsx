@@ -3,8 +3,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../../public/assets/Images/logo.png';
-// import Appstore from '../../public/assets/Images/app store.png';
-// import Playstore from '../../public/assets/Images/google play.png';
 import Appstore from '../../public/assets/Images/ImagesIcons/Appstore.png';
 import Playstore from '../../public/assets/Images/ImagesIcons/playstore.webp'
 
@@ -77,8 +75,8 @@ export function Footer() {
           <div className="text-wrap: wrap">
             <h3 className="text-base font-bold text-xl mb-4">{t("Contactus")}</h3>
             <ul className="space-y-4 text-lg">
-              {footerLinks.resources.map((link, idx) => (
-                <li key={idx} className="flex items-start gap-3 ">
+              {footerLinks.resources.map((link) => (
+                <li key={link.name} className="flex items-start gap-3 ">
                   <Image src={link.icon} alt="icon" width={20} height={20} className="lg:mb-3 w-[1.25rem] h-[1.25rem]" />
                   <span className="leading-snug">{t(link.name)}</span>
                 </li>

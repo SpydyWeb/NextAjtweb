@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { boardMembers } from "../../lib/utilities";
 const BoardMembers = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className="px-6 md:px-20 xl:px-[20rem] py-12">
@@ -78,36 +78,34 @@ const BoardMembers = () => {
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-6 justify-items-center">
-        {boardMembers.map((member, index) => (
-          <div
-            key={index}
-            className="flex flex-col items-center text-center hover:duration-700 hover:scale-[1.1]"
-          >
-            {/* Gray halo + blue ring */}
-            {/* <div className="relative w-[250px] h-[250px] flex items-center md:w-[70%] justify-center"> */}
-            <div className="relative w-auto md:w-[80%] lg:w-auto h-[15.625rem] flex items-center justify-center">
-              <div className="w-[15rem] h-[15rem]">
-                <Image
-                  src={member.image}
-                  alt={t(member.name)}
-                  width={240}
-                  height={240}
-                  className="w-full h-full rounded-full"
-                />
-              </div>
-            </div>
+        {boardMembers.map((member) => (
+  <div
+    key={member.name} // ✅ use unique ID or name
+    className="flex flex-col items-center text-center hover:duration-700 hover:scale-[1.1]"
+  >
+    <div className="relative w-auto md:w-[80%] lg:w-auto h-[15.625rem] flex items-center justify-center">
+      <div className="w-[15rem] h-[15rem]">
+        <Image
+          src={member.image}
+          alt={t(member.name)}
+          width={240}
+          height={240}
+          className="w-full h-full rounded-full"
+        />
+      </div>
+    </div>
 
-            <div className="mt-4">
-              {/* <span className="block font-bold text-base text-[#10426C]"> */}
-              <span className="block font-bold text-[#10426C] text-nowrap text-sm md:text-base md:px-[3.75rem] lg:px-0">
-                {t(member.name)}
-              </span>
-              <span className="block text-sm text-[#10426C]">
-                {t(member.role)}
-              </span>
-            </div>
-          </div>
-        ))}
+    <div className="mt-4">
+      <span className="block font-bold text-[#10426C] text-nowrap text-sm md:text-base md:px-[3.75rem] lg:px-0">
+        {t(member.name)}
+      </span>
+      <span className="block text-sm text-[#10426C]">
+        {t(member.role)}
+      </span>
+    </div>
+  </div>
+))}
+
       </div>
     </div>
   );

@@ -1,20 +1,14 @@
 'use client';
 
-import React, { useRef, useState } from 'react';
-// import { DatePicker } from 'antd';
-// import { CalendarOutlined } from '@ant-design/icons';
-// import dayjs from 'dayjs';
+import React from 'react';
 import { newsData } from '@/lib/utilities';
 import { MdDateRange } from "react-icons/md";
 import { useTranslation } from 'react-i18next';
 const Dateformat = 'DD/MM/YYYY';
 
 const LatestNews = () => {
-   const { t, i18n } = useTranslation();
-  const [selectedDate, setSelectedDate] = useState(null);
-  const pickerRef = useRef(null);
+   const { t  } = useTranslation();
   return (
-    <>
     <section className="text-center py-12 px-4 bg-white">
       <h3 className="text-3xl font-bold text-[#10426C] mb-2">{t('LatestNews')}</h3>
       <p className="text-xl text-gray-500 mb-20">{t('Discovernews')}</p>
@@ -78,7 +72,6 @@ const LatestNews = () => {
         {t('Viewbtn')}
       </button>
     </section>
-    </>
   );
 };
 

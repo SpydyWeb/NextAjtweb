@@ -1,13 +1,12 @@
 
 "use client";
 
-import { useEffect, useState } from "react";
-import { Car,Stethoscope,ShieldAlert, Home,Gavel,Plane,PiggyBank,} from "lucide-react";
+import {useState } from "react";
 import {corporateproducts,individualproducts}from "@/lib/utilities";
 import Image from 'next/image';
 import { useTranslation } from "react-i18next";
 export function Features() {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
    
    const [featureProducts ,setFeatureProducts]:any = useState(corporateproducts);
   

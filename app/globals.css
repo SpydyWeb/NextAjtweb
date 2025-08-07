@@ -142,4 +142,27 @@
     display: none !important;
   }
 }
+[dir="rtl"] .step-circle1::after {
+  left: auto;
+  right: 50%;
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .step-circle2::after {
+  left: auto;
+  right: 54%;
+  transform: rotate(-17deg) scaleX(-1);
+}
+
+[dir="rtl"] .step-circle3::after {
+  left: auto;
+  right: 56%;
+  transform: rotate(10deg) scaleX(-1);
+}
+
+[dir="rtl"] .step-circle4::after {
+  left: auto;
+  right: 50%;
+  transform: scaleX(-1);
+}
 

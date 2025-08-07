@@ -2,15 +2,13 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import {corporateproducts} from '@/lib/utilities';
-import Link from "next/link";
 import Contactus from "../layout/Contactus";
 import ProductCard from "../features/product-card";
 import { useTranslation } from "react-i18next"; 
 const Corporateproducts = () => {
    const [selected, setSelected] = useState("");
-  const {t,i18n} = useTranslation();
+  const  { t } = useTranslation();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
  const handleCardClick = (service: string) => {
     setSelected(service);

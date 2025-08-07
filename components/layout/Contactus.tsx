@@ -2,7 +2,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next'; 
 const Contactus = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <section className="py-12 px-4 text-center bg-white">

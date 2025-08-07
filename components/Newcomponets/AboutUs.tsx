@@ -1,17 +1,12 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Vision2030 from "../../public/assets/Images/Boardmembers/Vision2030.png";
 import Image from "next/image";
 import { Steps } from "@/lib/utilities";
 import BoardMembers from "../Newcomponets/BoardMembers";
 import { useTranslation } from "react-i18next";
-import step1 from "../../public/assets/Images/steps/step1.png";
-import connetion1 from "../../public/assets/Images/steps/connection1.png";
-import connetion2 from "../../public/assets/Images/steps/connection2.png";
-import connetion3 from "../../public/assets/Images/steps/connection3.png";
-import connetion4 from "../../public/assets/Images/steps/connection4.png";
 const AboutUs = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <>
       <div className="flex flex-col min-h-screen font-sans text-[#1c1c1c] bg-white mt-4">
@@ -23,7 +18,7 @@ const AboutUs = () => {
             </h1>
             <p className=" text-black-500 font-semibold text-sm sm:text-xl">
               {t("CompanyProfileTab")}
-              <br/>
+              <br />
               {t("CompanyProfileTab1")}
             </p>
           </div>
@@ -53,33 +48,40 @@ const AboutUs = () => {
           </h2>
 
           <div className="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-18">
-            {Steps.map((step, index) => (
-              <div
-                key={step.id}
-                className={`flex flex-col items-center px-4 relative step-circle${
-                  index + 1
-                } ${
-                  index === 1 ? "md:mt-32" : index === 3 ? "md:mt-[11rem]" : ""
-                }`}
-              >
-                <div className={`relative `}>
-                  <img
-                    src={step.BgImage.src}
-                    className="w-24 h-24 relative z-[1]"
-                  />
-                  <span className="text-[#002c60] text-xl font-bold absolute top-[37%] left-[37%] z-[2]">
-                    {" "}
-                    {step.id}
-                  </span>
+            {Steps.map((step, index) => {
+              let mtClass = "";
+              if (index === 1) {
+                mtClass = "md:mt-32";
+              } else if (index === 3) {
+                mtClass = "md:mt-[11rem]";
+              }
+
+              return (
+                <div
+                  key={step.id}
+                  className={`flex flex-col items-center px-4 relative step-circle${
+                    index + 1
+                  } ${mtClass}`}
+                >
+                  <div className="relative">
+                    <img
+                      src={step.BgImage.src}
+                      alt="backgroundimages"
+                      className="w-24 h-24 relative z-[1]"
+                    />
+                    <span className="text-[#002c60] text-xl font-bold absolute top-[37%] left-[37%] z-[2]">
+                      {step.id}
+                    </span>
+                  </div>
+                  <h3 className="text-lg font-bold text-[#002c60] mt-12 mb-2 text-left">
+                    {t(step.title)}
+                  </h3>
+                  <p className="text-ms text-gray-700 text-left">
+                    {t(step.text)}
+                  </p>
                 </div>
-                <h3 className="text-lg font-bold text-[#002c60] mt-12 mb-2 text-left">
-                  {t(step.title)}
-                </h3>
-                <p className="text-ms text-gray-700 text-left">
-                  {t(step.text)}
-                </p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
       </div>

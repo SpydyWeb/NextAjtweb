@@ -22,11 +22,6 @@ const Header = () => {
     document.documentElement.setAttribute("lang", storedLang);
     setLangAr(storedLang === "ar");
   }, []);
-  const changeLanguage = (lang: string) => {
-    i18n.changeLanguage(lang);
-    localStorage.setItem("lang", lang);
-    document.documentElement.setAttribute("lang", lang);
-  };
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newLang = e.target.value;
     setLangAr(newLang === "ar");
@@ -80,14 +75,14 @@ const Header = () => {
                 {section.links.length > 0 && (
                   <div className="w-[15.625rem] absolute left-0 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-200 bg-white border border-gray-200 mt-3 rounded-lg shadow-lg p-4 z-50 min-w-56 space-y-2 pointer-events-auto">
                     <ul className="space-y-2">
-                      {section.links.map((link, index) => (
-                        <li key={index}>
-                          <a
+                      {section.links.map((link) => (
+                        <li key={link.label}>
+                          <button
                             onClick={() => handleNavigation(link.path)}
                             className="block text-sm text-gray-700 hover:text-white hover:bg-sky-400 px-3 py-1.5 rounded-md transition-all duration-200 cursor-pointer"
                           >
                             {t(link.label)}
-                          </a>
+                          </button>
                         </li>
                       ))}
                     </ul>
@@ -129,9 +124,9 @@ const Header = () => {
                 </p>
                 {section.links.length > 0 && (
                   <ul className="ml-4 space-y-2 mt-1 hidden group-hover:block absolute bg-white shadow-lg p-2 rounded-md z-10">
-                    {section.links.map((link, index) => (
-                      <li key={index}>
-                        <a
+                    {section.links.map((link) => (
+                      <li key={link.label}>
+                        <button
                           onClick={() => {
                             handleNavigation(link.path);
                             setMenuOpen(false);
@@ -139,7 +134,7 @@ const Header = () => {
                           className="block text-sm text-gray-700 hover:text-white hover:bg-sky-400 px-3 py-1.5 rounded-md transition-all duration-200 cursor-pointer"
                         >
                           {t(link.label)}
-                        </a>
+                        </button>
                       </li>
                     ))}
                   </ul>
