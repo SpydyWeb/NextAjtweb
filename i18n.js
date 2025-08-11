@@ -41,8 +41,8 @@ import EnquiryEN from "@/public/locales/translation/Enquiry/En.json";
 import EnquiryAR from "@/public/locales/translation/Enquiry/Ar.json";
 import MotorSearchEn from "@/public/locales/translation/PrintPolicy/En.json";
 import MotorSearchAr from "@/public/locales/translation/PrintPolicy/Ar.json";
-import MedicalMalpractisePlanEn from "@/public/locales/translation/individualproducts/MedicalMalpractisePlan/En.json";
-import MedicalMalpractisePlanAr from "@/public/locales/translation/individualproducts/MedicalMalpractisePlan/Ar.json";
+// import MedicalMalpractisePlanEn from "@/public/locales/translation/individualproducts/MedicalMalpractisePlan/En.json";
+// import MedicalMalpractisePlanAr from "@/public/locales/translation/individualproducts/MedicalMalpractisePlan/Ar.json";
 import MedicalDomesticHelperEn from "@/public/locales/translation/individualproducts/MedicalDomesticHelper/En.json";
 import MedicalDomesticHelperAr from "@/public/locales/translation/individualproducts/MedicalDomesticHelper/Ar.json";
 import MedicalAR from "@/public/locales/translation/corporateproducts/medical/ar.json";
@@ -51,8 +51,8 @@ import MarineEN from "@/public/locales/translation/corporateproducts/marine/en.j
 import MarineAR from "@/public/locales/translation/corporateproducts/marine/ar.json";
 import AccidentAR from "@/public/locales/translation/corporateproducts/accident/ar.json";
 import AccidentEN from "@/public/locales/translation/corporateproducts/accident/en.json";
-import PropertyPlanEn from "@/public/locales/translation/corporateproduct/PropertyPlan/En.json";
-import PropertyPlanAr from "@/public/locales/translation/corporateproduct/PropertyPlan/Ar.json";
+// import PropertyPlanEn from "@/public/locales/translation/corporateproduct/PropertyPlan/En.json";
+// import PropertyPlanAr from "@/public/locales/translation/corporateproduct/PropertyPlan/Ar.json";
 import CorporatePnSEn from "@/public/locales/translation/corporateproduct/PandS/En.json";
 import CorporatePnSAr from "@/public/locales/translation/corporateproduct/PandS/Ar.json";
 import AviationEn from "@/public/locales/translation/corporateproduct/Aviation/En.json";
@@ -87,6 +87,35 @@ import footerEn from "@/public/locales/translation/footer/en.json";
 import footerAr from "@/public/locales/translation/footer/ar.json"; 
 import FooterNewEn from "@/public/locales/translation/footernew/en.json";
 import FooterNewAr from "@/public/locales/translation/footernew/ar.json";
+import MotorplanEn from "@/public/locales/translation/motorplan/en.json";
+import MotorplanAr from "@/public/locales/translation/motorplan/ar.json";
+import VisitvisaEn from "@/public/locales/translation/visitvisa/en.json";
+import VisitvisaAr from "@/public/locales/translation/visitvisa/ar.json";
+import MedicalplanEn from "@/public/locales/translation/medicalplan/en.json";
+import MedicalplanAr from "@/public/locales/translation/medicalplan/ar.json";
+import MarinePlanEn from "@/public/locales/translation/marineplan/en.json";
+import MarinePlanAr from "@/public/locales/translation/marineplan/ar.json";
+import PropertyPlanEn from "@/public/locales/translation/propertyplan/en.json";
+import PropertyPlanAr from "@/public/locales/translation/propertyplan/ar.json"
+import EngineeringPlanEn from "@/public/locales/translation/engineeringplan/en.json";
+import EngineeringPlanAr from "@/public/locales/translation/engineeringplan/ar.json";
+import AviationPlanEn from "@/public/locales/translation/aviationplan/en.json";
+import AviationPlanAr from "@/public/locales/translation/aviationplan/ar.json";
+import ProtectionPlanEn from "@/public/locales/translation/protectionplan/en.json";
+import ProtectionPlanAr from "@/public/locales/translation/protectionplan/ar.json";
+import TravelPlanEn from "@/public/locales/translation/travelplan/en.json";
+import TravelPlanAr from "@/public/locales/translation/travelplan/ar.json";
+import MotorPlanREn from "@/public/locales/translation/motorplanr/en.json";
+import MotorPlanRAr from "@/public/locales/translation/motorplanr/ar.json";
+import MedicalDomesticHelperPlanEn from "@/public/locales/translation/medicaldomesticplan/en.json";
+import MedicalDomesticHelperPlanAr from "@/public/locales/translation/medicaldomesticplan/ar.json";
+import MedicalMalpractisePlanEn from "@/public/locales/translation/medicalmalpractice/en.json";
+import MedicalMalpractisePlanAr from "@/public/locales/translation/medicalmalpractice/ar.json";
+import CraftmenPlanEn from "@/public/locales/translation/craftsmenplan/en.json";
+import CraftmenPlanAr from "@/public/locales/translation/craftsmenplan/ar.json";
+
+
+
 const resources = {
   en: {
     translation: {
@@ -110,9 +139,9 @@ const resources = {
       ...FAQsEN,
       ...EnquiryEN,
       ...MotorSearchEn,
-      ...MedicalMalpractisePlanEn,
+      // ...MedicalMalpractisePlanEn,
       ...MedicalDomesticHelperEn,
-      ...PropertyPlanEn,
+      // ...PropertyPlanEn,
       ...CorporatePnSEn,
       ...AviationEn,
       ...engineeringEn,
@@ -125,6 +154,7 @@ const resources = {
       ...MarineEN,
       ...MedicalEN,
       ...MotorflowEn,
+      ...MotorplanEn,
 
 
       ...heroEn,
@@ -134,7 +164,19 @@ const resources = {
       ...latestnewsEn,
       ...contactusEn,
       ...footerEn,
-      ...FooterNewEn
+      ...FooterNewEn,
+      ...VisitvisaEn,
+      ...MedicalplanEn,
+      ...MarinePlanEn,
+      ...PropertyPlanEn,
+      ...EngineeringPlanEn,
+      ...AviationPlanEn,
+      ...ProtectionPlanEn,
+      ...TravelPlanEn,
+      ...MotorPlanREn,
+      ...MedicalDomesticHelperPlanEn,
+      ...MedicalMalpractisePlanEn,
+      ...CraftmenPlanEn
     },
   },
   ar: {
@@ -159,9 +201,9 @@ const resources = {
       ...FAQsAR,
       ...EnquiryAR,
       ...MotorSearchAr,
-      ...MedicalMalpractisePlanAr,
+      // ...MedicalMalpractisePlanAr,
       ...MedicalDomesticHelperAr,
-      ...PropertyPlanAr,
+      // ...PropertyPlanAr,
       ...CorporatePnSAr,
       ...AviationAr,
       ...engineeringAr,
@@ -184,6 +226,19 @@ const resources = {
       ...contactusAr,
       ...footerAr,
       ...FooterNewAr,
+      ...MotorplanAr,
+      ...VisitvisaAr,
+      ...MedicalplanAr,
+      ...MarinePlanAr,
+      ...PropertyPlanAr,
+      ...EngineeringPlanAr,
+      ...AviationPlanAr,
+      ...ProtectionPlanAr,
+      ...TravelPlanAr,
+      ...MotorPlanRAr,
+      ...MedicalDomesticHelperPlanAr,
+      ...MedicalMalpractisePlanAr,
+      ...CraftmenPlanAr
     },
   },
 };
