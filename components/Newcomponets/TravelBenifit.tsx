@@ -23,7 +23,7 @@ const BenefitsTable: React.FC = () => {
         <thead>
           <tr>
             <th className="px-4 py-2 text-left">
-              <div className="text-sky-500 text-2xl text-center">Benefits</div>
+              <div className="text-sky-500 text-2xl text-center">{t("Benefits")}</div>
             </th>
             <th className="px-4 py-2 text-left border-l border-sky-400">
               <div className="flex gap-2">
