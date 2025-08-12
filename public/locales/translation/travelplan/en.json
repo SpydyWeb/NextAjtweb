@@ -3,7 +3,8 @@
     "Travelheader": "Travel",
     "BuyNow": "Buy Now",
     "TravelSubheader1": "Travel Insurance",
-    "TravelSubDesc1": "Policy covers all your Insurance needs and concerns while being abroad. The policy will cover the probable medical and non-medical expenses and you can choose one of the coverage options that’s more suitable to your travel needs as shown in the below table:",
+    "TravelSubDesc11":" Policy covers all your Insurance needs and concerns while being abroad.",
+    "TravelSubDesc1": "The policy will cover the probable medical and non-medical expenses and you can choose one of the coverage options that’s more suitable to your travel needs as shown in the below table:",
     "TravelSubheader2": "Standard, Silver, Gold, and Platinum Policies: *",
     "TravelSubDesc2_1": "- Worldwide Coverage",
     "TravelSubDesc2_2": "- Worldwide Coverage except USA, Canada, Japan and Australia",
@@ -36,6 +37,32 @@
     "TravelTbRow13": "Personal accidents",
     "TravelTbRow14": "Personal responsibility",
     "NotCovered": "Not Covered",
-    "EconomicTicket": "Economic Ticket"
+    "EconomicTicket": "Economic Ticket",
+
+
+  "Secureyourtripnow":"Secure Your Trip Now",
+  "Insurenow":"Insure Now!",
+  "Advantages":"Advantages",
+  "Advantages_I1": "All of our products are compliant with the Islamic Sharia Law",
+  "Advantages_I2": "Competitive prices.",
+  "Advantages_I3": "Excellence in providing professional services",
+  "Advantages_I4": "Easy claim submission through website.",
+  "Lorem":"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+  "LoremAns":"Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
     
+
+  "Benefits":"Benefits",
+"Emergencymedical": "Emergency medical expenses and hospitalization abroad",
+    "Medicalreferrals": "Medical referrals / appointments with a local medical specialist",
+    "Dentalcareemergency": "Dental care emergency",
+    "Repatriationoffamily": "Repatriation of family members traveling with the Insured",
+    "Mortalitycosts": "Mortality costs coverage",
+    "Emergencyrepatriation": "Emergency repatriation to follow up on the death of a close family member",
+    "Escortchild": "Escort for the dependent child",
+    "Flightcancellation": "Flight cancellation",
+    "Delayeddeparture": "Delayed departure",
+    "Delayedluggage": "Delayed luggage",
+    "Personalbelongings": "Personal belongings, valuables and personal money",
+    "Lossofpassport": "Loss of passport",
+    "Personalaccidents": "Personal accidents"
 }
