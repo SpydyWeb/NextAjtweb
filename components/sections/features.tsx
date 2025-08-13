@@ -9,13 +9,13 @@ import { useRouter } from "next/navigation";
 export function Features() {
     const { t } = useTranslation();
      const router = useRouter();
-   const [featureProducts ,setFeatureProducts]:any = useState(corporateproducts);
+   const [featureProducts ,setFeatureProducts]:any = useState(individualproducts);
   
- const [selected, setSelected] = useState("Corporate");
+ const [selected, setSelected] = useState("Retail");
 
  const handleCardClick = (service: string) => {
     setSelected(service);
-    setFeatureProducts(service==="Corporate"?corporateproducts:individualproducts)
+    setFeatureProducts(service==="Retail"?individualproducts:corporateproducts)
   };
   //   const handleNavigation = () => {
   //   router.push('/motorplan');
