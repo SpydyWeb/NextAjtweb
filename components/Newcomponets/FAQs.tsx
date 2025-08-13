@@ -14,11 +14,11 @@ const FAQ: React.FC = () => {
 
   return (
     <div className="max-w-3xl mx-auto py-10 px-4">
-      <h2 className="text-2xl font-bold text-[#10426C] mb-6">FAQs</h2>
+      <h2 className="text-2xl font-bold text-[#10426C] mb-6">{t("FAQs")}</h2>
       <div className="space-y-3">
   {faqData.map((item, index) => (
     <div
-      key={index}
+      key={item.answer}
       className={`border rounded-lg overflow-hidden transition-all ${
         activeIndex === index ? "border-gray-300" : "bg-gray-50"
       }`}
