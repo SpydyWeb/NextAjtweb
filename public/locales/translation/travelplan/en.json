@@ -65,5 +65,10 @@
     "Personalbelongings": "Personal belongings, valuables and personal money",
     "Lossofpassport": "Loss of passport",
     "Personalaccidents": "Personal accidents",
-    "FAQs":"FAQs"
+    "Basic":"Basic",
+    "Silver":"Silver",
+    "Gold":"Gold",
+    "Platinum":"Platinum",
+    "Schengen":"Schengen"
+
 }

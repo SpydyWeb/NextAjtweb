@@ -1,37 +1,8 @@
 import React, { useState } from "react";
-import { FaPlane } from "react-icons/fa";
-import { Benefit } from "@/lib/utilities";
+import { Benefit, plans, benefits } from "@/lib/utilities";
 import { PiAirplaneTiltFill } from "react-icons/pi";
 import { useTranslation } from "react-i18next";
 type PlanKey = "basic" | "silver" | "gold" | "platinum" | "schengen";
-const plans: { key: PlanKey; label: string; colorClass: string }[] = [
-  {
-    key: "basic",
-    label: "Basic",
-    colorClass: "bg-[#1DA1F2] border-[#1DA1F2] text-white",
-  },
-  {
-    key: "silver",
-    label: "Silver",
-    colorClass: "bg-[#E6E9EC] border-[#E6E9EC] text-gray-800",
-  },
-  {
-    key: "gold",
-    label: "Gold",
-    colorClass: "bg-[#E7C94B] border-[#E7C94B] text-gray-800",
-  },
-  {
-    key: "platinum",
-    label: "Platinum",
-    colorClass: "bg-[#9E9E9E] border-[#9E9E9E] text-white",
-  },
-  {
-    key: "schengen",
-    label: "Schengen",
-    colorClass: "bg-[#7AA0D0] border-[#7AA0D0] text-white",
-  },
-];
-
 const BenefitsTable: React.FC = () => {
   const { t } = useTranslation();
   const [selectedPlan, setSelectedPlan] = useState<PlanKey>("basic");
@@ -41,15 +12,18 @@ const BenefitsTable: React.FC = () => {
       <table className="m-auto">
         <thead>
           <tr>
-            <th className="px-4 py-2 text-left">
-              <div className="text-sky-500 text-2xl text-center">{t("Benefits")}</div>
+            <th className="px-4 sm:px-0 py-2 text-left ">
+              <div className="text-sky-500 text-2xl  align-middle lg:px-4 py-2 ">
+                {t("Benefits")}
+              </div>
             </th>
-            <th className="px-4 py-2 text-left border-l border-sky-400">
-              <div className="flex gap-2">
+            <th className="px-4 py-2 text-left  border-l border-sky-400">
+              <div className="block lg:flex gap-2">
                 {plans.map((plan) => (
                   <button
                     key={plan.key}
-                    onClick={() => setSelectedPlan(plan.key)}
+                    // onClick={() => setSelectedPlan(plan.key)}
+                    onClick={() => setSelectedPlan(plan.key as PlanKey)}
                     className={`flex items-center gap-3 px-3 py-2 md:px-4 md:py-2 rounded-lg border transition-shadow active:scale-95 shadow-md ${plan.colorClass} w-full sm:w-auto`}
                   >
                     <div
@@ -62,7 +36,7 @@ const BenefitsTable: React.FC = () => {
                       <PiAirplaneTiltFill className="w-4 h-4 md:w-[1rem] md:h-[1rem]" />
                     </div>
                     <span className="text-sm md:text-base font-medium">
-                      {plan.label}
+                      {t(plan.label)}
                     </span>
                   </button>
                 ))}
@@ -71,16 +45,16 @@ const BenefitsTable: React.FC = () => {
           </tr>
         </thead>
         <tbody>
-          {Benefit.map((benefit) => (
+          {benefits.map((benefit) => (
             <tr key={benefit.name} className="align-middle">
-              <td className="text-center m-2">
-                <div className="border-b border-gray-500 inline-block p-3">
+              <td className="text-left align-middle px-4 py-2 w-[20rem]">
+                <div className="border-b border-gray-300 pb-2 leading-snug break-words font-semibold text-[#184A7C]">
                   {t(benefit.name)}
                 </div>
               </td>
-              <td className="text-center">
-                <div className="border-b border-dashed border-sky-500 p-3">
-                  {t(benefit.values)}
+              <td className="text-center align-middle  px-6 py-2 w-[12rem] border-l border-sky-400">
+                <div className="border-b border-dashed border-sky-500 pb-2 whitespace-nowrap text-[#184A7C]">
+                  {t(benefit.values[selectedPlan])}
                 </div>
               </td>
             </tr>
