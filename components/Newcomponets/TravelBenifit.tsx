@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { FaPlane } from "react-icons/fa";
 import { Benefit } from "@/lib/utilities";
@@ -6,11 +5,31 @@ import { PiAirplaneTiltFill } from "react-icons/pi";
 import { useTranslation } from "react-i18next";
 type PlanKey = "basic" | "silver" | "gold" | "platinum" | "schengen";
 const plans: { key: PlanKey; label: string; colorClass: string }[] = [
-  { key: "basic", label: "Basic", colorClass: "bg-[#1DA1F2] border-[#1DA1F2] text-white" },
-  { key: "silver", label: "Silver", colorClass: "bg-[#E6E9EC] border-[#E6E9EC] text-gray-800" },
-  { key: "gold", label: "Gold", colorClass: "bg-[#E7C94B] border-[#E7C94B] text-gray-800" },
-  { key: "platinum", label: "Platinum", colorClass: "bg-[#9E9E9E] border-[#9E9E9E] text-white" },
-  { key: "schengen", label: "Schengen", colorClass: "bg-[#7AA0D0] border-[#7AA0D0] text-white" },
+  {
+    key: "basic",
+    label: "Basic",
+    colorClass: "bg-[#1DA1F2] border-[#1DA1F2] text-white",
+  },
+  {
+    key: "silver",
+    label: "Silver",
+    colorClass: "bg-[#E6E9EC] border-[#E6E9EC] text-gray-800",
+  },
+  {
+    key: "gold",
+    label: "Gold",
+    colorClass: "bg-[#E7C94B] border-[#E7C94B] text-gray-800",
+  },
+  {
+    key: "platinum",
+    label: "Platinum",
+    colorClass: "bg-[#9E9E9E] border-[#9E9E9E] text-white",
+  },
+  {
+    key: "schengen",
+    label: "Schengen",
+    colorClass: "bg-[#7AA0D0] border-[#7AA0D0] text-white",
+  },
 ];
 
 const BenefitsTable: React.FC = () => {
@@ -18,8 +37,8 @@ const BenefitsTable: React.FC = () => {
   const [selectedPlan, setSelectedPlan] = useState<PlanKey>("basic");
 
   return (
-    <div className="overflow-x-auto w-[80%] m-auto">
-      <table className="w-[80%] border-collapse">
+    <div className="overflow-x-auto  ">
+      <table className="m-auto">
         <thead>
           <tr>
             <th className="px-4 py-2 text-left">
@@ -54,18 +73,14 @@ const BenefitsTable: React.FC = () => {
         <tbody>
           {Benefit.map((benefit) => (
             <tr key={benefit.name} className="align-middle">
-              <td className="px-4 py-2">
-                <div className="flex justify-center">
-                  <div className="w-[80%] border-b border-gray-500 text-center">
-                    {t(benefit.name)}
-                  </div>
+              <td className="text-center m-2">
+                <div className="border-b border-gray-500 inline-block p-3">
+                  {t(benefit.name)}
                 </div>
               </td>
-              <td className="px-4 py-2 border-l border-sky-400">
-                <div className="flex justify-center">
-                  <div className="w-[80%] border-b border-dotted border-sky-500 text-center">
-                    {t(benefit.values)}
-                  </div>
+              <td className="text-center">
+                <div className="border-b border-dashed border-sky-500 p-3">
+                  {t(benefit.values)}
                 </div>
               </td>
             </tr>
