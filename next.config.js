@@ -4,8 +4,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
-  distDir: "build",
-  output: "export",
+  distDir: ".next",
 };
 
 module.exports = nextConfig;
