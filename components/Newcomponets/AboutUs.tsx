@@ -6,7 +6,7 @@ import { Steps } from "@/lib/utilities";
 import BoardMembers from "../Newcomponets/BoardMembers";
 import { useTranslation } from "react-i18next";
 const AboutUs = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("aboutus");
   return (
     <>
       <div className="flex flex-col min-h-screen font-sans text-[#1c1c1c] bg-white mt-4">

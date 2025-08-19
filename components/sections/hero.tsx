@@ -7,7 +7,7 @@ import { HeroSectionData } from "@/lib/utilities";
 import { useTranslation } from "react-i18next";
 export function Hero() {
   const [activeIndex, setActiveIndex] = useState(0);
-  const { t } = useTranslation();
+  const { t } = useTranslation("hero");
   const activeItem = HeroSectionData[activeIndex];
 
   return (
@@ -54,7 +54,6 @@ export function Hero() {
         {/* Right Image */}
         <div className="flex-shrink-0 mb-0 md:mb-0">
           <div className="w-[20rem] h-[17.5rem] sm:w-[25rem] sm:h-[21.25rem] md:w-[31.25rem] md:h-[26.25rem] lg:w-[37.5rem] lg:h-[31.25rem] mx-auto md:mx-0">
-
             <Link href="/">
               <Image
                 src={t(activeItem.imageSrcKey)}
@@ -79,7 +78,6 @@ export function Hero() {
             />
           ))}
         </div>
-
       </section>
     </section>
   );

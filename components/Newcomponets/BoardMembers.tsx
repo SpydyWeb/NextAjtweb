@@ -5,25 +5,28 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { boardMembers } from "../../lib/utilities";
 const BoardMembers = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("aboutus");
 
   return (
     <div className="px-6 md:px-20 xl:px-[20rem] py-12">
       {/* Vision Section */}
       <div className="flex flex-col md:flex-row items-center gap-10 mb-16">
-  <Image src={WitnessIcon} alt="Witness Icon" className="p-12 w-full md:w-auto" />
-  
-  <div className="max-w-xl text-center md:text-left">
-    <h2 className="text-3xl font-bold text-[#1e3a8a] mb-4">
-      {t("CompanyProfilSubHeader2")}{" "}
-      <span className="text-[#002c60]">{t("Vision")}</span>
-    </h2>
-    <p className="text-gray-700 text-base leading-relaxed">
-      {t("VisionDesc")}
-    </p>
-  </div>
-</div>
+        <Image
+          src={WitnessIcon}
+          alt="Witness Icon"
+          className="p-12 w-full md:w-auto"
+        />
 
+        <div className="max-w-xl text-center md:text-left">
+          <h2 className="text-3xl font-bold text-[#1e3a8a] mb-4">
+            {t("CompanyProfilSubHeader2")}{" "}
+            <span className="text-[#002c60]">{t("Vision")}</span>
+          </h2>
+          <p className="text-gray-700 text-base leading-relaxed">
+            {t("VisionDesc")}
+          </p>
+        </div>
+      </div>
 
       {/* Core Values */}
       <div className="text-center mb-8">
@@ -79,33 +82,32 @@ const BoardMembers = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-12 gap-x-6 justify-items-center">
         {boardMembers.map((member) => (
-  <div
-    key={member.name} // ✅ use unique ID or name
-    className="flex flex-col items-center text-center hover:duration-700 hover:scale-[1.1]"
-  >
-    <div className="relative w-auto md:w-[80%] lg:w-auto h-[15.625rem] flex items-center justify-center">
-      <div className="w-[15rem] h-[15rem]">
-        <Image
-          src={member.image}
-          alt={t(member.name)}
-          width={240}
-          height={240}
-          className="w-full h-full rounded-full"
-        />
-      </div>
-    </div>
+          <div
+            key={member.name} // ✅ use unique ID or name
+            className="flex flex-col items-center text-center hover:duration-700 hover:scale-[1.1]"
+          >
+            <div className="relative w-auto md:w-[80%] lg:w-auto h-[15.625rem] flex items-center justify-center">
+              <div className="w-[15rem] h-[15rem]">
+                <Image
+                  src={member.image}
+                  alt={t(member.name)}
+                  width={240}
+                  height={240}
+                  className="w-full h-full rounded-full"
+                />
+              </div>
+            </div>
 
-    <div className="mt-4">
-      <span className="block font-bold text-[#10426C] text-nowrap text-sm md:text-base md:px-[3.75rem] lg:px-0">
-        {t(member.name)}
-      </span>
-      <span className="block text-sm text-[#10426C]">
-        {t(member.role)}
-      </span>
-    </div>
-  </div>
-))}
-
+            <div className="mt-4">
+              <span className="block font-bold text-[#10426C] text-nowrap text-sm md:text-base md:px-[3.75rem] lg:px-0">
+                {t(member.name)}
+              </span>
+              <span className="block text-sm text-[#10426C]">
+                {t(member.role)}
+              </span>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
