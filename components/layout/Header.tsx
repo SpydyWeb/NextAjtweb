@@ -10,7 +10,7 @@ import logo from "../../public/assets/Images/logo.png";
 import { utilitiesData } from "@/lib/utilities";
 import { IoClose } from "react-icons/io5";
 const Header = () => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation("EServices");
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const [isLangAr, setLangAr] = useState<boolean>(
@@ -22,21 +22,29 @@ const Header = () => {
     document.documentElement.setAttribute("lang", storedLang);
     setLangAr(storedLang === "ar");
   }, []);
-  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const newLang = e.target.value;
+  // const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+  //   const newLang = e.target.value;
+  //   setLangAr(newLang === "ar");
+
+  //   // Update localStorage
+  //   localStorage.setItem("lang", newLang);
+
+  //   i18n.changeLanguage(newLang);
+
+  //   document.documentElement.setAttribute("lang", newLang);
+  //   document.documentElement.dir = newLang === "ar" ? "rtl" : "ltr";
+
+  //   window.dispatchEvent(new Event("storage"));
+  // };
+const handleLanguageChange = () => {
+    const newLang = isLangAr ? "en" : "ar";
     setLangAr(newLang === "ar");
-
-    // Update localStorage
     localStorage.setItem("lang", newLang);
-
     i18n.changeLanguage(newLang);
-
     document.documentElement.setAttribute("lang", newLang);
     document.documentElement.dir = newLang === "ar" ? "rtl" : "ltr";
-
     window.dispatchEvent(new Event("storage"));
   };
-
   const handleNavigation = (path: string) => {
     router.push(path);
   };
@@ -101,7 +109,7 @@ const Header = () => {
             >
               {t("signup")}
             </Link>
-            <div className="relative text-base w-fit">
+            {/* <div className="relative text-base w-fit">
               <select
                 value={lang}
                 onChange={handleLanguageChange}
@@ -111,6 +119,15 @@ const Header = () => {
                 <option value="ar">{t("Right")}</option>
               </select>
               <BsCaretDownFill className="ml-2 absolute top-1/2 right-3 -translate-y-1/2 pointer-events-none text-[#10426c]" />
+            </div> */}
+             <div className="relative text-base w-fit">
+              <button
+                onClick={handleLanguageChange}
+                className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-[#10426c] text-[#10426c] font-semibold hover:bg-[#10426c] hover:text-white transition-colors"
+              >
+            {isLangAr ? t("left") : t("right")}
+
+              </button>
             </div>
             <BsSearch />
           </div>

@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 
 const FAQ: React.FC = () => {
-  const {t}=useTranslation()
+  const {t}=useTranslation("travelplan")
   const [activeIndex, setActiveIndex] = useState<number | null>(0);
 
   const toggleFAQ = (index: number) => {

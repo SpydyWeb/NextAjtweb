@@ -4,7 +4,7 @@ import { PiAirplaneTiltFill } from "react-icons/pi";
 import { useTranslation } from "react-i18next";
 type PlanKey = "basic" | "silver" | "gold" | "platinum" | "schengen";
 const BenefitsTable: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("travelplan");
   const [selectedPlan, setSelectedPlan] = useState<PlanKey>("basic");
 
   return (
@@ -20,11 +20,21 @@ const BenefitsTable: React.FC = () => {
             <th className="px-4 py-2 text-left  border-l border-sky-400">
               <div className="block lg:flex gap-2">
                 {plans.map((plan) => (
+                  // <button
+                  //   key={plan.key}
+                  //   // onClick={() => setSelectedPlan(plan.key)}
+                  //   onClick={() => setSelectedPlan(plan.key as PlanKey)}
+                  //   className={`flex items-center gap-3 px-3 py-2 md:px-4 md:py-2 rounded-lg border transition-shadow active:scale-95 shadow-md ${plan.colorClass} w-full sm:w-auto`}
+                  // >
                   <button
                     key={plan.key}
-                    // onClick={() => setSelectedPlan(plan.key)}
                     onClick={() => setSelectedPlan(plan.key as PlanKey)}
-                    className={`flex items-center gap-3 px-3 py-2 md:px-4 md:py-2 rounded-lg border transition-shadow active:scale-95 shadow-md ${plan.colorClass} w-full sm:w-auto`}
+                    style={{
+                      backgroundColor: plan.bgColor,
+                      borderColor: plan.borderColor,
+                      color: plan.textColor,
+                    }}
+                    className="flex items-center gap-3 px-3 py-2 md:px-4 md:py-2 rounded-lg border transition-shadow active:scale-95 shadow-md w-full sm:w-auto"
                   >
                     <div
                       className={`w-6 h-6 md:w-7 md:h-7 rounded-sm flex items-center justify-center ${

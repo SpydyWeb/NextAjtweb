@@ -1,6 +1,6 @@
 {
-     "left":"EN",
-     "Right":"عربي",
+     "right":"EN",
+     "left":"عربي",
     "MOTORheader": "Motor",
     "MEDICALheader": "Medical",
     "Travelheader": "Travel",

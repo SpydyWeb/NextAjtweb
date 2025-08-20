@@ -4,7 +4,7 @@ import {Advantagess} from "@/lib/utilities";
 import { FaCheck } from "react-icons/fa";
 
 const Advantages: React.FC = () => {
-  const {t}=useTranslation()
+  const {t}=useTranslation("travelplan")
   return (
     <div className="bg-[#184A7C] py-12 px-6 sm:px-8 lg:px-12">
       <div className="max-w-4xl mx-auto px-4 text-center">

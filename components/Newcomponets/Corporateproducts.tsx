@@ -8,7 +8,7 @@ import ProductCard from "../features/product-card";
 import { useTranslation } from "react-i18next"; 
 const Corporateproducts = () => {
    const [selected, setSelected] = useState("");
-  const  { t } = useTranslation();
+  const  { t } = useTranslation("features");
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
  const handleCardClick = (service: string) => {
     setSelected(service);

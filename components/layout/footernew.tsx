@@ -11,7 +11,7 @@ import Image from "next/image";
 import { footernewLinks } from "@/lib/utilities";
 import { useTranslation } from "react-i18next";
 export const FooterNew: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation("footernew");
   const [isLangAr, setLangAr] = useState<boolean>(
     typeof window !== "undefined" && localStorage.getItem("lang") === "ar"
   );

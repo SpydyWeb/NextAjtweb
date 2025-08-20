@@ -4,7 +4,7 @@ import Image from 'next/image';
 import globeImg from '../../public/assets/Images/ImagesIcons/globeImg.png';
 import { useTranslation } from "react-i18next";
 export function Stats() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("stats");
   return (
 
   <section className="relative text-center py-10 px-4">

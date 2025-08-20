@@ -7,7 +7,7 @@ import BenefitsTable from '../Newcomponets/TravelBenifit';
 import { useTranslation } from "react-i18next";
 
 const TravelInsurance: React.FC = () => {
-  const {t}=useTranslation()
+  const {t}=useTranslation("travelplan")
   return (
     <>
       <section className="bg-white">
