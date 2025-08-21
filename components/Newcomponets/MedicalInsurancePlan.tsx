@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
-import travelpageImg from "@/public/assets/Images/ImagesIcons/travelpageImg.jpg";
 import FAQs from "../Newcomponets/FAQs";
 import Advantages from "../Newcomponets/TravelAdvantages";
-import BenefitsTable from "../Newcomponets/TravelBenifit";
+import medicalInsuranceImg from "@/public/assets/Images/ImagesIcons/MedicalinsuranceImg.jpg";
+import HealthCoverage from "../Newcomponets/HealthCoverage";
 import { useTranslation } from "react-i18next";
 
-const TravelInsurance: React.FC = () => {
-  const { t } = useTranslation("travelplan");
+const MedicalInsurance: React.FC = () => {
+  const { t } = useTranslation("medicalinsuranceplan");
   return (
     <>
       <section className="bg-white">
@@ -15,7 +15,7 @@ const TravelInsurance: React.FC = () => {
           <div
             className="relative w-full h-80 sm:h-[28rem] rounded-xl overflow-hidden shadow-lg flex items-center"
             style={{
-              backgroundImage: `url(${travelpageImg.src})`,
+              backgroundImage: `url(${medicalInsuranceImg.src})`,
               backgroundSize: "cover",
               backgroundPosition: "center",
             }}
@@ -23,10 +23,9 @@ const TravelInsurance: React.FC = () => {
             <div className="absolute inset-0 bg-black bg-opacity-40" />
             <div className="relative z-10 p-6 md:p-10 max-w-xl text-white">
               <h2 className="text-2xl md:text-3xl font-bold mb-4">
-                {t("TravelSubheader1")}
+                {t("MedicalSubheader1")}
               </h2>
-              <p className="mb-4 leading-relaxed">{t("TravelSubDesc11")}</p>
-              <p className="leading-relaxed">{t("TravelSubDesc1")}</p>
+              <p className="mb-4 leading-relaxed">{t("MedicalSubDesc11")}</p>
             </div>
           </div>
           <div className="bg-white rounded-2xl shadow-lg p-6 mt-10">
@@ -71,9 +70,7 @@ const TravelInsurance: React.FC = () => {
           </div>
         </div>
       </section>
-      {/* <VisitVisapage/>
-      <HouseHolder/> */}
-      <BenefitsTable />
+      <HealthCoverage />
       <div className="w-full max-w-7xl mx-auto mt-10 px-4">
         <Advantages
           items={[
@@ -81,12 +78,14 @@ const TravelInsurance: React.FC = () => {
             { text: "Advantages_I2" },
             { text: "Advantages_I3" },
             { text: "Advantages_I4" },
+            { text: "Advantages_I5" },
+            { text: "Advantages_I6" },
           ]}
           title="Startyour"
           subtitle="journey"
-          planName="WhetherTravelinsuranceplan"
+          planName="Whethermedicalinsuranceplan"
           buttonText="Insurenow"
-          namespace="travelplan"
+          namespace="medicalinsuranceplan"
         />
       </div>
       <FAQs />
@@ -95,4 +94,4 @@ const TravelInsurance: React.FC = () => {
   );
 };
 
-export default TravelInsurance;
+export default MedicalInsurance;
