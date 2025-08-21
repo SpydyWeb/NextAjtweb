@@ -18,7 +18,7 @@ const Header = () => {
   );
   useEffect(() => {
     const storedLang = localStorage.getItem("lang") || "en";
-    i18n.changeLanguage(storedLang);
+     i18n.changeLanguage(storedLang);
     document.documentElement.setAttribute("lang", storedLang);
     setLangAr(storedLang === "ar");
   }, []);
