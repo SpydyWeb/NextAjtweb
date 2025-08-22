@@ -6,6 +6,7 @@ import VisitvisaImg from "@/public/assets/Images/ImagesIcons/VisitvisaImg.jpg";
 import { useTranslation } from "react-i18next";
 import VisitVisapage from "./VisitVisapage";
 import HospitalizationExpenses from "../Newcomponets/HospitalizationTable";
+import { planContents } from "@/lib/utilities";
 const VisitVisaInsurance: React.FC = () => {
   const { t } = useTranslation("visitvisaplan");
   return (
@@ -74,21 +75,7 @@ const VisitVisaInsurance: React.FC = () => {
       <VisitVisapage />
       <HospitalizationExpenses />
       <div className="w-full max-w-7xl mx-auto mt-10 px-4">
-        <Advantages
-          items={[
-            { text: "Advantages_I1" },
-            { text: "Advantages_I2" },
-            { text: "Advantages_I3" },
-            { text: "Advantages_I4" },
-            { text: "Advantages_I5" },
-            { text: "Advantages_I6" },
-          ]}
-          title="Startyour"
-          subtitle="journey"
-          planName="WhetherVisitinsuranceplan"
-          buttonText="Insurenow"
-          namespace="visitvisaplan"
-        />
+        <Advantages content={planContents?.visitvisaplan} />
       </div>
       <FAQs />
     </>

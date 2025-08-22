@@ -4,6 +4,7 @@ import HouseholderImg from "@/public/assets/Images/ImagesIcons/HouseholderImg.jp
 import FAQs from "../Newcomponets/FAQs";
 import Advantages from "../Newcomponets/TravelAdvantages";
 import HouseHolder from "../Newcomponets/HouseHolder";
+import { planContents } from "@/lib/utilities";
 import { useTranslation } from "react-i18next";
 
 const HouseHolderInsuranceplan: React.FC = () => {
@@ -70,11 +71,11 @@ const HouseHolderInsuranceplan: React.FC = () => {
           </div>
         </div>
       </section>
-      {/* <VisitVisapage/>
-     
-      {/* <BenefitsTable /> */}
       <HouseHolder />
       <div className="w-full max-w-7xl mx-auto mt-10 px-4">
+        <Advantages content={planContents?.householderplan} />
+      </div>
+      {/* <div className="w-full max-w-7xl mx-auto mt-10 px-4">
         <Advantages
           items={[
             { text: "Advantages_I1" },
@@ -88,7 +89,7 @@ const HouseHolderInsuranceplan: React.FC = () => {
           buttonText="Insurenow"
           namespace="householderplans"
         />
-      </div>
+      </div> */}
       <FAQs />
     </>
   );

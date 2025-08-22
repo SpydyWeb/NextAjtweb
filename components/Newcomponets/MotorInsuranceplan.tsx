@@ -4,6 +4,7 @@ import motorplanImg from "@/public/assets/Images/ImagesIcons/MotorplanImg.jpg";
 import FAQs from "../Newcomponets/FAQs";
 import Advantages from "../Newcomponets/TravelAdvantages";
 import InsurancePlans from "../Newcomponets/Motornew";
+import { planContents } from "@/lib/utilities";
 import { useTranslation } from "react-i18next";
 
 const MotorInsuranceplan: React.FC = () => {
@@ -70,27 +71,11 @@ const MotorInsuranceplan: React.FC = () => {
           </div>
         </div>
       </section>
-      {/* <VisitVisapage/>
-      <HouseHolder/> */}
-      {/* <BenefitsTable /> */}
       <InsurancePlans />
       <div className="w-full max-w-7xl mx-auto mt-10 px-4">
-        <Advantages
-          items={[
-            { text: "Advantages_I1" },
-            { text: "Advantages_I2" },
-            { text: "Advantages_I3" },
-            { text: "Advantages_I4" },
-          ]}
-          title="Startyour"
-          subtitle="journey"
-          planName="WhetherMotorinsuranceplan"
-          buttonText="Insurenow"
-          namespace="motorinsuranceplan"
-        />
+        <Advantages content={planContents?.motorplan} />
       </div>
       <FAQs />
-      {/* <InsurancePlans/> */}
     </>
   );
 };

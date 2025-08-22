@@ -4,6 +4,7 @@ import FAQs from "../Newcomponets/FAQs";
 import Advantages from "../Newcomponets/TravelAdvantages";
 import medicalInsuranceImg from "@/public/assets/Images/ImagesIcons/MedicalinsuranceImg.jpg";
 import HealthCoverage from "../Newcomponets/HealthCoverage";
+import { planContents } from "@/lib/utilities";
 import { useTranslation } from "react-i18next";
 
 const MedicalInsurance: React.FC = () => {
@@ -72,24 +73,9 @@ const MedicalInsurance: React.FC = () => {
       </section>
       <HealthCoverage />
       <div className="w-full max-w-7xl mx-auto mt-10 px-4">
-        <Advantages
-          items={[
-            { text: "Advantages_I1" },
-            { text: "Advantages_I2" },
-            { text: "Advantages_I3" },
-            { text: "Advantages_I4" },
-            { text: "Advantages_I5" },
-            { text: "Advantages_I6" },
-          ]}
-          title="Startyour"
-          subtitle="journey"
-          planName="Whethermedicalinsuranceplan"
-          buttonText="Insurenow"
-          namespace="medicalinsuranceplan"
-        />
+        <Advantages content={planContents?.medicalplan} />
       </div>
       <FAQs />
-      {/* <InsurancePlans/> */}
     </>
   );
 };

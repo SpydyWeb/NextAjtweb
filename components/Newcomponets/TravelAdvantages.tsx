@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 type AdvantageItem = { text: string };
 
-type AdvantagesProps = {
+type AdvantagesContent = {
   items: AdvantageItem[];
   title: string;
   subtitle: string;
@@ -13,20 +13,19 @@ type AdvantagesProps = {
   namespace: string;
 };
 
-const Advantages: React.FC<AdvantagesProps> = ({
-  items,
-  title,
-  subtitle,
-  planName,
-  buttonText,
-  namespace,
-}) => {
+type AdvantagesProps = {
+  content: AdvantagesContent;
+};
+
+const Advantages: React.FC<AdvantagesProps> = ({ content }) => {
+  const { items, title, subtitle, planName, buttonText, namespace } = content;
   const { t } = useTranslation([
     "travelplan",
     "motorinsuranceplan",
     "householderplans",
     "medicalinsuranceplan",
-  ]); // use namespace
+    "visitvisaplan",
+  ]);
 
   return (
     <div>
@@ -37,7 +36,7 @@ const Advantages: React.FC<AdvantagesProps> = ({
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {items.map((item, idx) => (
+            {items.map((item) => (
               <div
                 key={item.text}
                 className="relative bg-white rounded-xl pt-14 pb-8 px-6 shadow-md h-[10rem] mb-4"

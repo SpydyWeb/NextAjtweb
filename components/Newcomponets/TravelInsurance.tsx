@@ -4,6 +4,7 @@ import travelpageImg from "@/public/assets/Images/ImagesIcons/travelpageImg.jpg"
 import FAQs from "../Newcomponets/FAQs";
 import Advantages from "../Newcomponets/TravelAdvantages";
 import BenefitsTable from "../Newcomponets/TravelBenifit";
+import { planContents } from "@/lib/utilities";
 import { useTranslation } from "react-i18next";
 
 const TravelInsurance: React.FC = () => {
@@ -71,26 +72,13 @@ const TravelInsurance: React.FC = () => {
           </div>
         </div>
       </section>
-      {/* <VisitVisapage/>
-      <HouseHolder/> */}
       <BenefitsTable />
       <div className="w-full max-w-7xl mx-auto mt-10 px-4">
-        <Advantages
-          items={[
-            { text: "Advantages_I1" },
-            { text: "Advantages_I2" },
-            { text: "Advantages_I3" },
-            { text: "Advantages_I4" },
-          ]}
-          title="Startyour"
-          subtitle="journey"
-          planName="WhetherTravelinsuranceplan"
-          buttonText="Insurenow"
-          namespace="travelplan"
-        />
+        <div className="w-full max-w-7xl mx-auto mt-10 px-4">
+          <Advantages content={planContents?.travelplan} />
+        </div>
       </div>
       <FAQs />
-      {/* <InsurancePlans/> */}
     </>
   );
 };
