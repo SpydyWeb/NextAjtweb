@@ -53,23 +53,23 @@ const HouseHolder: React.FC = () => {
   </h3>
 
   <ul className="text-sm text-gray-700">
-    <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-[#F5F8FB]">
+    <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-gray-100">
       <RiBuilding2Fill className="text-[#2C9CD4] text-lg" />
       <span>{t("BreakageoffixedGlass")}</span>
     </li>
-    <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-gray-200">
+    <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-gray-100">
       <FaHandHolding className="text-[#2C9CD4] text-lg" />
       <span>{t("PublicLiability")}</span>
     </li>
-    <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-[#F5F8FB]">
+    <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-gray-100">
       <GiHouse className="text-[#2C9CD4] text-lg" />
       <span>{t("LossofRent")}</span>
     </li>
-    <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-gray-200">
+    <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-gray-100">
       <MdOutlinePersonalInjury className="text-[#2C9CD4] text-lg" />
       <span>{t("RemovalofPersonalEffects")}</span>
     </li>
-    <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-[#F5F8FB]">
+    <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-gray-100]">
       <GiHouseKeys className="text-[#2C9CD4] text-lg" />
       <span>{t("Theftofkeys")}</span>
     </li>
