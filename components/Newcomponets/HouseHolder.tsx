@@ -16,7 +16,7 @@ const HouseHolder: React.FC = () => {
   return (
     <div className="px-6 sm:px-8 lg:px-[20rem] py-10 space-y-10">
       {/* Coverage Section */}
-      <div className="rounded-lg border border-[#2C9CD4] shadow-md overflow-hidden">
+      <div className="rounded-lg border  shadow-md overflow-hidden">
         <div className="bg-[#184A7C] text-white px-6 py-4 text-lg font-semibold">
           {t("Coverage")}
         </div>
@@ -47,33 +47,35 @@ const HouseHolder: React.FC = () => {
       </div>
 
       {/* Additional Coverages */}
-      <div className="bg-white rounded-lg border shadow-md p-6">
-        <h3 className="text-[#184A7C] font-semibold mb-4">
-          {t("AdditionalCoverages")}
-        </h3>
-        <ul className="space-y-4 text-sm text-gray-700">
-          <li className="flex items-center gap-3">
-            <RiBuilding2Fill className="text-[#2C9CD4] text-lg" />
-            <span>{t("BreakageoffixedGlass")}</span>
-          </li>
-          <li className="flex items-center gap-3">
-            <FaHandHolding className="text-[#2C9CD4] text-lg" />
-            <span>{t("PublicLiability")}</span>
-          </li>
-          <li className="flex items-center gap-3">
-            <GiHouse className="text-[#2C9CD4] text-lg" />
-            <span>{t("LossofRent")}</span>
-          </li>
-          <li className="flex items-center gap-3">
-            <MdOutlinePersonalInjury className="text-[#2C9CD4] text-lg" />
-            <span>{t("RemovalofPersonalEffects")}</span>
-          </li>
-          <li className="flex items-center gap-3">
-            <GiHouseKeys className="text-[#2C9CD4] text-lg" />
-            <span>{t("Theftofkeys")}</span>
-          </li>
-        </ul>
-      </div>
+     <div className="bg-white rounded-xl border shadow-md overflow-hidden">
+  <h3 className="text-[#184A7C] font-semibold px-6 pt-6 pb-4">
+    {t("AdditionalCoverages")}
+  </h3>
+
+  <ul className="text-sm text-gray-700">
+    <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-[#F5F8FB]">
+      <RiBuilding2Fill className="text-[#2C9CD4] text-lg" />
+      <span>{t("BreakageoffixedGlass")}</span>
+    </li>
+    <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-gray-200">
+      <FaHandHolding className="text-[#2C9CD4] text-lg" />
+      <span>{t("PublicLiability")}</span>
+    </li>
+    <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-[#F5F8FB]">
+      <GiHouse className="text-[#2C9CD4] text-lg" />
+      <span>{t("LossofRent")}</span>
+    </li>
+    <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-gray-200">
+      <MdOutlinePersonalInjury className="text-[#2C9CD4] text-lg" />
+      <span>{t("RemovalofPersonalEffects")}</span>
+    </li>
+    <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-[#F5F8FB]">
+      <GiHouseKeys className="text-[#2C9CD4] text-lg" />
+      <span>{t("Theftofkeys")}</span>
+    </li>
+  </ul>
+</div>
+
     </div>
   );
 };

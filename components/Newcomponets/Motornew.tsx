@@ -53,25 +53,27 @@ const InsurancePlans: React.FC = () => {
       </div>
 
       {/* Additional Coverages */}
-      <div className="bg-white rounded-lg border shadow-md p-6">
-        <h3 className="text-[#184A7C] font-semibold mb-4">
-          {t("AdditionalCoverages")}
-        </h3>
-        <ul className="space-y-4 text-sm text-gray-700">
-          <li className="flex items-center gap-3">
-            <FaGlobeAsia className="text-[#2C9CD4] text-lg" />
-            <span>{t("GeographicalExtension")}</span>
-          </li>
-          <li className="flex items-center gap-3">
-            <FaUserShield className="text-[#2C9CD4] text-lg" />
-            <span> {t("PersonalAccident")}</span>
-          </li>
-          <li className="flex items-center gap-3">
-            <FaCar className="text-[#2C9CD4] text-lg" />
-            <span> {t("ReplacementCar")}</span>
-          </li>
-        </ul>
-      </div>
+      <div className="bg-white rounded-lg border shadow-md overflow-hidden">
+  <h3 className="text-[#184A7C] font-semibold px-6 pt-6 pb-4">
+    {t("AdditionalCoverages")}
+  </h3>
+
+  <ul className="text-sm text-gray-700">
+    <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-gray-100">
+      <FaGlobeAsia className="text-[#2C9CD4] text-lg" />
+      <span>{t("GeographicalExtension")}</span>
+    </li>
+    <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-gray-100">
+      <FaUserShield className="text-[#2C9CD4] text-lg" />
+      <span>{t("PersonalAccident")}</span>
+    </li>
+    <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-gray-100">
+      <FaCar className="text-[#2C9CD4] text-lg" />
+      <span>{t("ReplacementCar")}</span>
+    </li>
+  </ul>
+</div>
+
     </div>
   );
 };

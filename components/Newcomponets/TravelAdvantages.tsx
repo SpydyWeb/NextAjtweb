@@ -40,7 +40,7 @@ const Advantages: React.FC<AdvantagesProps> = ({
             {items.map((item, idx) => (
               <div
                 key={item.text}
-                className="relative bg-white rounded-xl pt-14 pb-8 px-6 shadow-md"
+                className="relative bg-white rounded-xl pt-14 pb-8 px-6 shadow-md h-[10rem] mb-4"
               >
                 <div className="absolute -top-8 left-1/2 -translate-x-1/2">
                   <div className="w-14 h-14 rounded-full bg-[#2C9CD4] border-[6px] border-white flex items-center justify-center shadow">

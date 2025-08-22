@@ -1,13 +1,14 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
-
+import { useTranslation } from "react-i18next";
 const VisitVisapage: React.FC = () => {
+  const { t } = useTranslation("visitvisaplan");
   return (
     <div className="px-6 sm:px-8 lg:px-[20rem] py-10">
       <div className="rounded-lg border shadow-md overflow-hidden">
         {/* Header */}
         <div className="bg-[#184A7C] text-white px-6 py-4 text-lg font-semibold">
-          The benefits and limit of coverage
+          {t("Thebenefitsandlimitofcoverage")}
         </div>
 
         {/* Body */}
@@ -16,12 +17,8 @@ const VisitVisapage: React.FC = () => {
           <div className="flex items-start gap-3">
             <FaCheck className="text-[#2C9CD4] text-sm mt-1" />
             <div>
-              <p className="text-[#2C9CD4] font-semibold">SR 100,000</p>
-              <p className="text-gray-600 mt-1">
-                The maximum benefits limit for each person for the duration of
-                the policy and that includes lower limits specified in this
-                policy
-              </p>
+              <p className="text-[#2C9CD4] font-semibold">{t("SR")}</p>
+              <p className="text-gray-600 mt-1">{t("Srmaximumbenefits")}</p>
             </div>
           </div>
 
@@ -30,10 +27,10 @@ const VisitVisapage: React.FC = () => {
             <FaCheck className="text-[#2C9CD4] text-sm mt-1" />
             <div>
               <p className="text-[#2C9CD4] font-semibold">
-                Up to the policy limit
+                {t("Uptothepolicylimit")}
               </p>
               <p className="text-gray-600 mt-1">
-                The expenses of examination and treatment of emergency cases
+                {t("Theexpensesemergencycases")}
               </p>
             </div>
           </div>
