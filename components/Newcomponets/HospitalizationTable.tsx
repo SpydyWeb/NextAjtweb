@@ -6,7 +6,7 @@ const HospitalizationTable: React.FC = () => {
   const { t } = useTranslation("visitvisaplan");
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-12 py-6">
+   <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:pl-[7rem] lg:pr-[10rem] py-6">
       <h2 className="text-center text-[#184A7C] font-bold text-lg sm:text-xl md:text-2xl mb-6 sm:mb-10">
         {t("HospitalizationExpenses")}
       </h2>
@@ -14,29 +14,28 @@ const HospitalizationTable: React.FC = () => {
         <table className="w-full border-separate border-spacing-0 text-sm sm:text-base">
           <thead>
             <tr>
-              <th className="text-left text-sky-600 text-base sm:text-lg md:text-xl pb-3 sm:pb-4 pr-2 sm:pr-4">
+              <th className="px-4 sm:px-0 py-2 text-left text-sky-500 text-2xl lg:px-4 py-2 ">
                 {t("Benefits")}
               </th>
-              <th className="text-left text-sky-600 text-base sm:text-lg md:text-xl pb-3 sm:pb-4 border-l-2 border-sky-400 pl-3 sm:pl-6"></th>
+                <th className="px-4 py-2 text-left border-sky-400 rtl:border-r ltr:border-l"></th>
             </tr>
           </thead>
-
-          <tbody>
-            {Hospitalizationbenefits.map((benefit) => (
-              <tr key={benefit.name}>
-                <td className="align-top pr-3 sm:pr-6 w-[60%]">
-                  <div className="border-b border-gray-400 py-2 sm:py-3 text-[#184A7C] font-medium leading-snug text-xs sm:text-sm md:text-base break-words">
-                    {t(benefit.name)}
-                  </div>
-                </td>
-                <td className="align-top pl-3 sm:pl-6 border-l-2 border-sky-400 w-[40%]">
-                  <div className="border-b border-dashed border-sky-500 py-2 sm:py-3 text-[#184A7C] text-xs sm:text-sm md:text-base whitespace-normal sm:whitespace-nowrap">
-                    {t(benefit.value)}
-                  </div>
-                </td>
-              </tr>
-            ))}
-          </tbody>
+ <tbody>
+  {Hospitalizationbenefits.map((benefit) => (
+    <tr key={benefit.name} className="align-middle">
+      <td className="text-left align-middle px-2 sm:px-4 py-2 w-3/5">
+        <div className="border-b border-gray-300 pb-2 sm:pb-3 leading-snug break-words font-semibold text-[#184A7C] text-xs sm:text-sm md:text-base">
+          {t(benefit.name)}
+        </div>
+      </td>
+      <td className="text-center align-middle px-2 sm:px-6 py-2 w-2/5 border-sky-400 rtl:border-r ltr:border-l">
+        <div className="border-b border-dashed border-sky-500 pb-2 sm:pb-3 whitespace-normal sm:whitespace-nowrap lg:whitespace-nowrap text-[#184A7C] text-xs sm:text-sm md:text-base">
+          {t(benefit.value)}
+        </div>
+      </td>
+    </tr>
+  ))}
+</tbody>
         </table>
       </div>
     </div>

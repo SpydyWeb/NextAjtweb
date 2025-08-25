@@ -10,7 +10,7 @@ import logo from "../../public/assets/Images/logo.png";
 import { utilitiesData } from "@/lib/utilities";
 import { IoClose } from "react-icons/io5";
 const Header = () => {
-  const { t, i18n } = useTranslation("EServices");
+  const { t, i18n } = useTranslation("header");
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const [isLangAr, setLangAr] = useState<boolean>(

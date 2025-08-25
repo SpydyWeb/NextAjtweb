@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Benefit, plans, benefits } from "@/lib/utilities";
+import { plans, benefits } from "@/lib/utilities";
 import { PiAirplaneTiltFill } from "react-icons/pi";
 import { useTranslation } from "react-i18next";
 type PlanKey = "basic" | "silver" | "gold" | "platinum" | "schengen";
@@ -17,15 +17,9 @@ const BenefitsTable: React.FC = () => {
                 {t("Benefits")}
               </div>
             </th>
-            <th className="px-4 py-2 text-left  border-l border-sky-400">
+                 <th className="px-4 py-2 text-left border-sky-400 rtl:border-r ltr:border-l">
               <div className="block lg:flex gap-2">
                 {plans.map((plan) => (
-                  // <button
-                  //   key={plan.key}
-                  //   // onClick={() => setSelectedPlan(plan.key)}
-                  //   onClick={() => setSelectedPlan(plan.key as PlanKey)}
-                  //   className={`flex items-center gap-3 px-3 py-2 md:px-4 md:py-2 rounded-lg border transition-shadow active:scale-95 shadow-md ${plan.colorClass} w-full sm:w-auto`}
-                  // >
                   <button
                     key={plan.key}
                     onClick={() => setSelectedPlan(plan.key as PlanKey)}
@@ -62,7 +56,7 @@ const BenefitsTable: React.FC = () => {
                   {t(benefit.name)}
                 </div>
               </td>
-              <td className="text-center align-middle  px-6 py-2 w-[12rem] border-l border-sky-400">
+              <td className="text-center align-middle px-6 py-2 w-[12rem] border-sky-400 rtl:border-r ltr:border-l">
                 <div className="border-b border-dashed border-sky-500 pb-2 whitespace-nowrap text-[#184A7C]">
                   {t(benefit.values[selectedPlan])}
                 </div>
