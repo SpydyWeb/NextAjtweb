@@ -125,7 +125,7 @@ const handleLanguageChange = () => {
                 onClick={handleLanguageChange}
                 className="w-10 h-10 flex items-center justify-center rounded-full border-2 border-[#10426c] text-[#10426c] font-semibold hover:bg-[#10426c] hover:text-white transition-colors"
               >
-            {isLangAr ? t("left") : t("right")}
+            {isLangAr ? t("right") : t("left")}
 
               </button>
             </div>

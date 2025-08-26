@@ -1,14 +1,13 @@
 import React from "react";
 import { FaFireAlt } from "react-icons/fa";
-import { FaShieldAlt } from "react-icons/fa";
-import { FaKey } from "react-icons/fa";
-import { GiWaterDrop, GiHouseKeys } from "react-icons/gi";
 import { MdOutlineWaterDamage } from "react-icons/md";
 import { BsSnow } from "react-icons/bs";
 import { RiBuilding2Fill } from "react-icons/ri";
 import { FaHandHolding } from "react-icons/fa";
 import { GiHouse } from "react-icons/gi";
-import { MdOutlinePersonalInjury } from "react-icons/md";
+import { BsExclamationTriangle } from "react-icons/bs";
+import { LiaKeySolid } from "react-icons/lia";
+import { PiHouse } from "react-icons/pi";
 import { useTranslation } from "react-i18next";
 
 const HouseHolder: React.FC = () => {
@@ -39,7 +38,7 @@ const HouseHolder: React.FC = () => {
               <span>{t("Impactcollision")}</span>
             </li>
             <li className="flex items-start gap-3">
-              <FaShieldAlt className="text-[#2C9CD4] text-lg mt-1" />
+              <BsExclamationTriangle className="text-[#2C9CD4] text-lg mt-1" />
               <span>{t("MaliciousAct")}</span>
             </li>
           </ul>
@@ -66,11 +65,11 @@ const HouseHolder: React.FC = () => {
       <span>{t("LossofRent")}</span>
     </li>
     <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-gray-100">
-      <MdOutlinePersonalInjury className="text-[#2C9CD4] text-lg" />
+      <PiHouse className="text-[#2C9CD4] text-lg" />
       <span>{t("RemovalofPersonalEffects")}</span>
     </li>
     <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-gray-100]">
-      <GiHouseKeys className="text-[#2C9CD4] text-lg" />
+      <LiaKeySolid className="text-[#2C9CD4] text-lg" />
       <span>{t("Theftofkeys")}</span>
     </li>
   </ul>

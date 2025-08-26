@@ -1,12 +1,10 @@
 import React from "react";
-import { GiBabyBottle } from "react-icons/gi";
 import { FaTooth, FaGlasses } from "react-icons/fa";
-import { MdOutlineHealthAndSafety, MdPsychology } from "react-icons/md";
 import { FaEarListen } from "react-icons/fa6";
-import { GiHealthNormal } from "react-icons/gi";
-import { GiSyringe } from "react-icons/gi";
+import { GiHealthNormal, GiSyringe,GiBrain,GiBabyBottle } from "react-icons/gi";
 import { FaSkull } from "react-icons/fa";
-
+import { RiHeartPulseLine } from "react-icons/ri";
+import { TbDental } from "react-icons/tb";
 import { useTranslation } from "react-i18next";
 
 const HealthCoverage: React.FC = () => {
@@ -28,7 +26,7 @@ const HealthCoverage: React.FC = () => {
               <span>{t("PregnancyChildbirth")}</span>
             </li>
             <li className="flex items-start gap-3">
-              <FaTooth className="text-[#2C9CD4] text-lg mt-1" />
+              <TbDental className="text-[#2C9CD4] text-lg mt-1" />
               <span>{t("Dental")}</span>
             </li>
             <li className="flex items-start gap-3">
@@ -36,7 +34,7 @@ const HealthCoverage: React.FC = () => {
               <span>{t("MedicalEyeglasses")}</span>
             </li>
             <li className="flex items-start gap-3">
-              <MdOutlineHealthAndSafety className="text-[#2C9CD4] text-lg mt-1" />
+              <RiHeartPulseLine className="text-[#2C9CD4] text-lg mt-1" />
               <span>{t("ChronicPreExisting")}</span>
             </li>
             <li className="flex items-start gap-3">
@@ -52,7 +50,7 @@ const HealthCoverage: React.FC = () => {
               <span>{t("Vaccinations")}</span>
             </li>
             <li className="flex items-start gap-3">
-              <MdPsychology className="text-[#2C9CD4] text-lg mt-1" />
+              <GiBrain className="text-[#2C9CD4] text-lg mt-1" />
               <span>{t("PsychologicalDisorders")}</span>
             </li>
             <li className="flex items-start gap-3">

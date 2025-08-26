@@ -5,10 +5,12 @@ import Image from "next/image";
 import {individualproducts} from '@/lib/utilities';
 import Contactus from "../layout/Contactus";
 import ProductCard from "../features/product-card";
+import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 const IndividualSection = () => {
      const [selected, setSelected] = useState("");
     const { t } = useTranslation("features");
+      const router = useRouter();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
  const handleCardClick = (service: string) => {
     setSelected(service);
@@ -16,6 +18,9 @@ const IndividualSection = () => {
 //   const handleCardClick = (title: string) => {
 //   setSelectedProduct(title);
 // };
+  const handleNavigation = (url: string) => {
+    router.push(url);
+  };
   return (
     <>
     <div className="mt-4 w-full  border-gray-200 bg-white">
@@ -43,7 +48,7 @@ const IndividualSection = () => {
           onProductClick={handleCardClick}
         />
       ))} */}
-  {individualproducts.map(({ title, icon, description }) => {
+  {individualproducts.map(({ title, icon, description, url }:any) => {
     const isSelected = selected === title;
 
     return (
@@ -77,7 +82,9 @@ const IndividualSection = () => {
           <span className="mb-2 font-medium text-sm underline text-white">
             {t("Learnmore")}
           </span>
-          <button className="bg-white text-[#10426C] rounded-full font-semibold px-4 py-2">
+          <button className="bg-white text-[#10426C] rounded-full font-semibold px-4 py-2"  
+          onClick={() => handleNavigation(url)}
+          >
             {t("insurenow")}
           </button>
         </div>

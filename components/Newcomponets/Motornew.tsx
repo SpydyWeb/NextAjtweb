@@ -1,9 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { FaCheck } from "react-icons/fa";
-import { FaGlobeAsia } from "react-icons/fa";
-import { FaUserShield } from "react-icons/fa";
-import { FaCar } from "react-icons/fa";
+import { FaCheck,FaUserShield, FaCar  } from "react-icons/fa";
+import { CiGlobe } from "react-icons/ci";
 import { motorcomprehensive, motorliability } from "@/lib/utilities";
 
 const InsurancePlans: React.FC = () => {
@@ -60,7 +58,7 @@ const InsurancePlans: React.FC = () => {
 
   <ul className="text-sm text-gray-700">
     <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-gray-100">
-      <FaGlobeAsia className="text-[#2C9CD4] text-lg" />
+      <CiGlobe className="text-[#2C9CD4] text-lg" />
       <span>{t("GeographicalExtension")}</span>
     </li>
     <li className="flex items-center gap-3 p-4 odd:bg-white even:bg-gray-100">
