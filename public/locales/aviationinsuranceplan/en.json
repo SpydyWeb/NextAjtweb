@@ -1,0 +1,64 @@
+{
+  "AviationSubheader1": "Aviation Liability Insurance",
+  "AviationSubDesc11": "The Aviation Liability  policy from Aljazira Takaful covers the insured legal responsibility resulting from his operational activity inside the airport that may lead to material or bodily damages against Third parties.",
+
+  "StartYourJourneyNow": "Start Your journey Now!",
+  "Insurenow": "Insure Now!",
+
+  "MotorComprehensiveInsurance": "Motor Comprehensive Insurance",
+  "Policycoversdesc": "Policy covers financial losses or damages to private vehicles by any of the following perils:",
+
+  "MotorThirdPartyLiabilityInsurance": "Motor Third Party Liability Insurance",
+  "Policycoversdesc1": "Policy covers all financial losses that are legally payable to third parties by the Insured as a result of an accident caused by the insured car up to Saudi Riyals 10,000,000. The cover includes:",
+
+  "AdditionalCoverages": "Additional Coverages (to be added upon request):",
+  "GeographicalExtension": "Geographical Extension coverage to include the GCC States.",
+  "PersonalAccident": "Personal Accident Benefit for Driver and Passengers",
+  "ReplacementCar": "Replacement Car Extension",
+
+  "AccidentalDamage": "Accidental Damage",
+  "Collision": "Collision",
+  "Overturn": "Overturn",
+  "FireandTheft": "Fire and Theft",
+  "NaturalHazard": "Natural Hazard",
+  "ThirdPartyLiability": "Third Party Liability",
+  "MaliciousAct": "Malicious Act",
+
+  "Thedeath": "The death or physical injury of any third party person.",
+  "Materiallosses": "Material losses of third party properties.",
+  "Whetheraviationinsuranceplan": "Whether you're looking for the best Aviation Liability Insurance Plan, click Now on the button and start the journey...",
+
+  "Advantages_I1": "All of our products are compliant with the Islamic Sharia Law",
+  "Advantages_I2": "Competitive prices.",
+  "Advantages_I3": "Excellence in providing professional services",
+  "Advantages_I4": "Easy claim submission through website.",
+
+  "productliability":"Product Liability",
+  "theft":"Theft",
+  "workerscompensation":"Worker's Compensation",
+  "professionalindemnity":"Professional Indemnity",
+  "grouptravelrisks":"Group Travel Risks",
+  "fidelityguarantee":"Fidelity Guarantee",
+  "money":"Money",
+  "personalaccidentsant":"Personal Accidents",
+  "publicliability":"Public Liability",
+
+  "AdditionalCoverage":"Additional Coverage (to be added upon request):",
+  "StorageRisk":"Storage risk",
+  "DebrisRemoval": "Debris removal",
+  "SurroundingProperties": "Surrounding and existing properties",
+  "ConstructionEquipment": "Construction equipments",
+  "MainCoverages":"Main Coverages",
+  "NationalID": "National ID",
+  "Email": "Email",
+  "PhoneNumber": "Phone Number",
+  "BirthDate": "Birth Date",
+  "Typesofpolicies":"Types of Policies:",
+
+  
+  "GeneralAviationLiability": "General Aviation Liability",
+  "GroundServicesLiability": "Ground Services Liability",
+  "AirportLiability": "Airport Liability",
+  "AirportStevedoringLiability": "Airport Stevedoring Liability",
+  "AircraftMaintenanceLiability": "Aircraft Maintenance Liability"
+}

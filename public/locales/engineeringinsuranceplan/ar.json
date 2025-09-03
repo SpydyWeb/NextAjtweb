@@ -1,0 +1,51 @@
+{
+  "EngineeringInsuranceHeader": "التأمين الهندسي",
+  "EngineeringSubheader1": "تأمين جميع مخاطر المقاولين",
+  "EngineeringSubDesc11": "تغطي الوثيقة جميع الأضرار والخسائر المادية المفاجئة وغير المتوقعة التي قد تتعرض لها المشاريع الهندسية لأي سبب بخلاف الأسباب المستثناة صراحةً في الوثيقة.",
+  "StartYourJourneyNow": "ابدأ رحلتك الآن!",
+  "Insurenow": "تأمين الآن!",
+
+  "MotorComprehensiveInsurance": "التأمين الشامل للسيارات",
+  "Policycoversdesc": "تغطي هذه الوثيقة الخسائر المالية أو الأضرار التي تلحق بالمركبات الخاصة نتيجة لأي من المخاطر التالية:",
+
+  "MotorThirdPartyLiabilityInsurance": "تأمين المسؤولية تجاه الطرف الثالث للسيارات",
+  "Policycoversdesc1": "تغطي هذه الوثيقة جميع الخسائر المالية المستحقة قانونًا على المؤمَّن له للغير نتيجة حادث تسبب فيه المؤمَّن عليه، وذلك حتى مبلغ 10,000,000 ريال سعودي. وتشمل التغطية:",
+
+  "AdditionalCoverages": "التغطيات الإضافية (سيتم إضافتها عند الطلب):",
+  "GeographicalExtension": "- التوسع الجغرافي ليشمل دول مجلس التعاون الخليجي.",
+  "PersonalAccident": "تعويض الحوادث الشخصية للسائق والركاب",
+  "ReplacementCar": "تمديد سيارة بديلة",
+
+  "AccidentalDamage": "الضرر العرضي",
+  "Collision": "تصادم",
+  "Overturn": "انقلاب",
+  "FireandTheft": "الحريق والسرقة",
+  "NaturalHazard": "المخاطر الطبيعية",
+  "ThirdPartyLiability": "مسؤولية الطرف الثالث",
+  "MaliciousAct": "الفعل الخبيث",
+
+  "Thedeath": "وفاة أو إصابة جسدية لأي طرف ثالث.",
+  "Materiallosses": "الخسائر المادية في ممتلكات الغير.",
+  "WhetherEngineeringinsuranceplan": "سواء كنت تبحث عن أفضل تأمين ضد جميع المخاطر للمقاولين، انقر الآن على الزر وابدأ الرحلة...",
+  "Advantages_I1": "جميع منتجاتنا متوافقة مع أحكام الشريعة الإسلامية.",
+  "Advantages_I2": "أسعار تنافسية.",
+  "Advantages_I3": "التميز في تقديم الخدمات المهنية.",
+  "Advantages_I4": "تقديم المطالبات بسهولة عبر الموقع الإلكتروني.",
+
+
+
+   "ContractorRisk": "تأمين جميع مخاطر المقاولين",
+  "ErectionRisk": "تأمين جميع مخاطر التركيب",
+  "ElectronicEquipment": "تأمين المعدات الإلكترونية",
+  "BoilersPressureVessels": "تأمين الغلايات وأوعية الضغط",
+  "MachineryBreakdown": "تأمين أعطال الماكينات",
+  "ContractorsPlantMachinery": "تأمين معدات وآليات المقاولين",
+  "DeteriorationofStocks": "تأمين تلف المخزون",
+  
+  "AdditionalCoverage":"التغطية الإضافية (سيتم إضافتها عند الطلب):",
+
+  "StorageRisk": "مخاطر التخزين",
+  "DebrisRemoval": "إزالة الأنقاض",
+  "SurroundingProperties": "الممتلكات المحيطة والقائمة",
+  "ConstructionEquipment": "معدات البناء"
+}
