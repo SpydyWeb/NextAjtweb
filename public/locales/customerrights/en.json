@@ -1,0 +1,48 @@
+{
+    "CustomerRights":"Customer Rights",
+    "CustomerRightsDescription":" Customers’ rights and duties relate to protecting individuals againstthe risks they may face, the common rights and duties of customers are  outlined below:",
+    "insurancepolicy":"The right to a clear insurance policy",
+    "insurancepolicydescription":"  The customer should be able to understand the details of the  insurance policy, such as coverage, conditions, exclusions, and indemnity amounts.",
+    "transparency":"The right to transparency",
+    "transparencydescription":" The insurance company must provide full and clear information  about the insurance coverage, insurance fees, and any additional  conditions that may apply.",
+    "grievance":"The right to grievance",
+    "grievancedescription":" In case of a dispute about the amount of compensation or any issue with the insurance services, the customer has the right to file a complaint or grievance with the insurance company or the regulatory authorities as follows:",
+    "callcenter":"Call Center Toll-Free Number",
+    "callcenternumber":"800 30 40 400",
+    "complaintsemail":"Complaints Email",
+    "complaintsemailaddress":"info@ajt.com.sa",
+    "socialmedia":"Social Media",
+    "socialmedianame":"AJT_Care",
+    "website":"Website",
+    "websiteurl":"www.aljaziratatakful.com.sa",
+
+
+  "complaintProcessDescription": "Once a complaint is submitted through any of our official channels, you will receive a complaint reference number. You may use the reference number to inquiry about the status of your complaint. If you are not satisfied with settlement of the complaint, you can contact:",
+  
+  "cchi": "Council of Cooperative Health Insurance (CCHI)",
+  "cchiNumber": "920001177",
+  
+  "insuranceAuthority": "Insurance Authority (IA)",
+  "insuranceAuthorityUrl": "https://care.ia.gov.sa",
+  
+  "insuranceDisputesCommittee": "General Secretarial of the Committees for Resolution of Insurance Disputes and Violation:",
+  "insuranceDisputesCommitteeUrl": "www.idc.gov.sa",
+  "insuranceDisputesCommitteeDescription": "Disputes and Violation",
+  
+
+  "fullDisclosureTitle": "Full disclosure of information:",
+  "fullDisclosureDescription": "The customer must provide the insurance company with true and accurate information about health status, property, or any details that may affect the terms of the insurance coverage.",
+  
+  "accidentReportingTitle": "Reporting of accidents as soon as they occur:",
+  "accidentReportingDescription": "The customer must report accidents or damages that may arise to the insurer as soon as possible and provide all required documentation to verify the claim.",
+  
+  "complianceTitle": "Compliance with terms and conditions:",
+  "complianceDescription": "The customer must comply with all conditions stipulated in the insurance contract, such as maintaining the insured property or following safety guidelines.",
+  
+  "cooperationTitle": "Cooperate with the company in investigations:",
+  "cooperationDescription": "The customer must cooperate with the insurance company in the event of an accident or insured risk and provide the necessary documentation to prove the case.",
+  "noMisleadingInfoTitle": "Duty not to conceal or provide misleading information:",
+  "noMisleadingInfoDescription": "The customer must provide the insurance company with true and accurate information about health status, property, or any details that may affect the terms of the insurance coverage. Read the terms and conditions of the product to understand its coverage and limitations before purchase."
+    
+
+}

@@ -1,5 +1,6 @@
 {
     "faqs": "FAQs",
+    "faqsdesc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
     "protSavings": "PROTECTION & SAVINGS",
     "howCanIContactTheCompany": "How can I contact the company?",
     "whereAreAljTakafulBranchesLocated": "Where are Aljazira Takaful branches located?",
@@ -29,8 +30,8 @@
     "canTheAmountOfTheClaimOrCancellationBeDeliveredByCheque": "Can the amount of the claim or cancellation be delivered by cheque?",
     "whatIsTheProcessingTimeForClaim": "What is the processing time for a claim?",
     "canTheStatusOfTheClaimBeFollowed": "Can the status of the claim be followed ?",
-    "inTheEventOfAnAccidentAndTheInsuredDrivingLicenseIsExpiredIsTheAccidentCovered": "In the event of an accident and the insured driving license is expired, is the accident covered?",
-    "isItPossibleToBenefitFromTheVehicleInsIfTheVehicleRegistrationHasExpired": "Is it possible to benefit from the vehicle insurance if the vehicle registration has expired?",
+    "inTheEventOfAnAccidentAndTheInsuredDrivingLicenseIsExpiredIsTheAccidentCovered": "In the event of an accident and the insured driving license is expired, is the accident covered? In the event of an accident and the insureddriving license is expired, is the accident covered?",
+    "isItPossibleToBenefitFromTheVehicleInsIfTheVehicleRegistrationHasExpired": "Is it possible to benefit from the vehicle insurance if the vehicle",
     "whatAreTheDocRequiredToCancelTheInsInTheEventOfTransferringTheOwnershipOfTheVehicleToAnotherOwner": "What are the documents required to cancel the insurance in the event of transferring the ownership of the vehicle to another owner?",
     "whatAreTheDocRequiredToCancelVehicleInsInCaseOfChangingTheInsPol": "What are the documents required to cancel vehicle insurance in case of changing the Insurance policy?",
     "whenWillTheAmountBeRefundedAfterCancelingTheInsPol": "When will the amount be refunded after canceling the insurance policy?",

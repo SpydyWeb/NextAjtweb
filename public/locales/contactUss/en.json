@@ -1,0 +1,38 @@
+{
+    "ContactUs":"Contact Us",
+    "GetInTouch":"Get in Touch",
+    "FullName":"Full Name",
+    "Email":"E-mail",
+    "Message":"Message",
+    "Send":"Send",
+    "ContactDetails":"Contact Details",
+    "EmailAddress":"Email",
+    "EmailValue":"info@ajt.com.sa",
+    "Phone":"Phone",
+    "PhoneValue":"966 126688877",
+    "FreeToll":"Free Toll",
+    "FreeTollValue":"8003040400",
+    "WorkingHours":"Working Hours",
+    "WorkingHoursValue":"Sunday - Thursday",
+    "WorkingHoursTime":"9:00 AM - 5:00 PM",
+    "Branches":"Branches",
+    "LocateUs":"LOCATE US",
+
+   
+
+  "Western_Title": "Western",
+  "Western_Subtitle": "Head Office - Jeddah",
+  "Western_Address1": "Hira Street, Al Salamah, Jeddah, U-Zone",
+  "Western_Address2": "Building Al Salama, 4516-23324, Kingdom of Saudi Arabia",
+  "Western_Phone": "8003040400",
+
+  "Eastern_Title": "Eastern",
+  "Eastern_Subtitle": "Al Khobar",
+  "Eastern_Address1": "King Saud Branch Rd, Al Haddad District",
+  "Eastern_Phone": "8003040400",
+
+  "Central_Title": "Central - Riyadh",
+  "Central_Subtitle": "",
+  "Central_Address1": "Al Dammam Road, Al Yarmouk District",
+  "Central_Phone": "8003040400"
+}

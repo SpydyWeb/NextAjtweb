@@ -1,0 +1,17 @@
+{
+  "CareerHeader":"Career" ,
+  "Careerdesc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." ,
+  "FullName":"Full Name" ,
+  "Dateofbirth":"Date Of Birth" ,
+  "Gender":"Gender" ,
+  "City":"City" ,
+  "Levelofeducation":"Level of Education" ,
+  "Mobilenumber":"Mobile Number" ,
+  "Email":"Email" ,
+  "UploadCV":"Upload CV" ,
+  "Send":"Send" ,
+  "Male":"Male",
+  "Female":"Female" ,
+  "":"" ,
+  "":"" 
+}

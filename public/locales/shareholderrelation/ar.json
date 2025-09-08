@@ -1,0 +1,86 @@
+{
+  "ShareHolderHeader": "علاقات المساهمين",
+  "ShareHolderdesc": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسيسينغ إليت، سِد دو إيوسمد تيمبور إنسيديدونت أوت لابوري إت دولوري ماغنا أليكا.",
+  "ShareHolderName": "الجزيرة تداول",
+  "ShareHolderCompany": "شركة الجزيرة تكافل تعاوني",
+  "ShareHolderLastUpdated": "آخر تحديث : 29-08-2025 14:59:36",
+  "ShareHolder1YHistoricalPrices": "أسعار العام الماضي",
+  "ShareHolderSymbol": "الرمز : الجزيرة تكافل",
+  "ShareHolderSINCode": "رمز ISIN : SA13AG53T618",
+  "ShareHolderExchange": "السوق : السوق المالية السعودية",
+  "ShareHolderSector": "القطاع : التأمين",
+
+
+    "JAZIRATAKAFUL": "الجزيرة تكافل",
+  "LastUpdated": "آخر تحديث",
+  "LastUpdatedvalue": "28-08-2025 14:59:36",
+  "Volume": "الحجم: 47,967",
+  "Trades": "الصفقات: 189",
+
+  "CompanyProfile": "الملف التعريفي للشركة",
+  "StockOverview": "نظرة عامة على السهم والرسوم البيانية المتقدمة",
+  "NormalizedFinancials": "البيانات المالية الموحدة والنسب",
+  "InvestmentCalculator": "حاسبة الاستثمار",
+  "Disclosures": "الإفصاحات",
+  "News": "الأخبار",
+  "ExchangeAnnouncement": "إعلانات السوق",
+  "CorporateAction": "الإجراءات المؤسسية",
+  "FinancialEventsCalendar": "تقويم الأحداث المالية",
+
+  "CompanyInformation": "شركة الجزيرة تكافل تعاوني (المعروفة أيضًا باسم: الجزيرة تكافل) هي شركة مساهمة عامة مدرجة في السوق المالية السعودية (تداول) منذ يوليو 2013. تعمل الجزيرة تكافل ضمن قطاع التأمين مع التركيز على التأمين متعدّد الفروع. يقع مقر الجزيرة تكافل في جدة، المملكة العربية السعودية، وقد تأسست في يوليو 2013.",
+
+  "Address": "العنوان",
+  "Building": "مبنى رقم 3217، امتداد رقم 8048، شارع حراء، حي السلامة",
+  "ShortAddress": "العنوان المختصر",
+  "PostalCode": "JESC3217 الرمز البريدي 23525 جدة، المملكة العربية السعودية",
+  "Tel": "هاتف",
+  "TelNumber": "+966 12 6688877",
+  "Fax": "فاكس",
+  "FaxNumber": "+966 12 6677284",
+  "Website": "الموقع الإلكتروني",
+  "WebsiteURL": "https://aljaziratakaful.com.sa",
+  "Email": "البريد الإلكتروني",
+  "EmailAddress": "IR.inquires@ajt.com.sa",
+
+  "Contacts": "جهات الاتصال",
+  "ManagementBoardMembers": "الإدارة وأعضاء مجلس الإدارة",
+  "CompanyInformationh": "معلومات الشركة",
+
+   "EstablishedDate": "تاريخ التأسيس",
+  "EstablishedDateValue": "03-07-2013",
+  "ListedDate": "تاريخ الإدراج",
+  "ListedDateValue": "21-07-2013",
+  "FinancialYearEnd": "نهاية السنة المالية",
+  "FinancialYearEndValue": "ديسمبر",
+  "Auditor": "المدقق",
+  "AuditorFirm": "شركة PKF البسام محاسبون قانونيون",
+
+
+   "BoardMember1Name": "نايف عبدالكريم العبدالكريم",
+  "BoardMember1Role": "رئيس مجلس الإدارة",
+  "BoardMember1Date": "11-08-2025",
+
+  "BoardMember2Name": "صاجر عبداللطيف ندرشاه",
+  "BoardMember2Role": "الرئيس التنفيذي",
+  "BoardMember2Date": "03-07-2013",
+
+  "BoardMember3Name": "محمد عبدالرحمن علي المعصو",
+  "BoardMember3Role": "عضو مجلس الإدارة",
+  "BoardMember3Date": "17-07-2025",
+
+  "BoardMember4Name": "إبراهيم محمد الحُرابي",
+  "BoardMember4Role": "عضو مجلس الإدارة",
+  "BoardMember4Date": "30-05-2021",
+
+  "BoardMember5Name": "نايف مسند المسند",
+  "BoardMember5Role": "عضو مجلس الإدارة",
+  "BoardMember5Date": "30-05-2021",
+
+  "BoardMember6Name": "أشرف عدنان بسيـسو",
+  "BoardMember6Role": "عضو مجلس الإدارة",
+  "BoardMember6Date": "30-05-2021",
+
+  "BoardMember7Name": "سامي جدعان المهيّد",
+  "BoardMember7Role": "عضو مجلس الإدارة",
+  "BoardMember7Date": "30-05-2021"
+}

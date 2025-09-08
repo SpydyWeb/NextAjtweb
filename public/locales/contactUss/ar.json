@@ -1,0 +1,36 @@
+{
+  "ContactUs": "اتصل بنا",
+  "GetInTouch": "ابقى على تواصل",
+  "FullName": "الاسم الكامل",
+  "Email": "البريد الإلكتروني",
+  "Message": "الرسالة",
+  "Send": "إرسال",
+  "ContactDetails": "تفاصيل الاتصال",
+  "EmailAddress": "البريد الإلكتروني",
+  "EmailValue": "info@ajt.com.sa",
+  "Phone": "الهاتف",
+  "PhoneValue": "966 126688877",
+  "FreeToll": "الرقم المجاني",
+  "FreeTollValue": "8003040400",
+  "WorkingHours": "ساعات العمل",
+  "WorkingHoursValue": "الأحد - الخميس",
+  "WorkingHoursTime": "9:00 ص - 5:00 م",
+  "Branches": "الفروع",
+  "LocateUs": "موقعنا",
+
+  "Western_Title": "المنطقة الغربية",
+  "Western_Subtitle": "المقر الرئيسي - جدة",
+  "Western_Address1": "شارع حراء، السلامة، جدة، يو-زون",
+  "Western_Address2": "مبنى السلامة، 4516-23324، المملكة العربية السعودية",
+  "Western_Phone": "8003040400",
+
+  "Eastern_Title": "المنطقة الشرقية",
+  "Eastern_Subtitle": "الخبر",
+  "Eastern_Address1": "طريق الملك سعود الفرعي، حي الحداد",
+  "Eastern_Phone": "8003040400",
+
+  "Central_Title": "المنطقة الوسطى - الرياض",
+  "Central_Subtitle": "",
+  "Central_Address1": "طريق الدمام، حي اليرموك",
+  "Central_Phone": "8003040400"
+}

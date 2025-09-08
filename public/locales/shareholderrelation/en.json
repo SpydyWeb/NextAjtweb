@@ -1,0 +1,85 @@
+{
+  "ShareHolderHeader": " Shareholder Relation",
+  "ShareHolderdesc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "ShareHolderName": "ALJAZIRA TDWL",
+  "ShareHolderCompany": " Aljazira Takaful Taawuni Co",
+  "ShareHolderLastUpdated": "Last Updated : 29-08-2025 14:59:36",
+  "ShareHolder1YHistoricalPrices": "1Y Historical Prices",
+  "ShareHolderSymbol": "Symbol : JAZIRA TAKAFUL",
+  "ShareHolderSINCode": "SIN Code : SA13AG53T618",
+  "ShareHolderExchange": "Exchange : Saudi Exchange",
+  "ShareHolderSector": "Sector : Insurance",
+
+  "JAZIRATAKAFUL": " JAZIRA TAKAFUL",
+  "LastUpdated": "Last Updated",
+  "LastUpdatedvalue":"28-08-2025 14:59:36",
+  "Volume": "Volume: 47,967",
+  "Trades": "Trades: 189",
+
+
+  "CompanyProfile": "Company profile",
+  "StockOverview": "Stock overview & Advanced charts",
+  "NormalizedFinancials": "Normalized Financials & Ratios",
+  "InvestmentCalculator": "Investment Calculator",
+  "Disclosures": "Disclosures",
+  "News": "News",
+  "ExchangeAnnouncement": "Exchange Announcement",
+  "CorporateAction": "Corporate Action",
+  "FinancialEventsCalendar": "Financial Events Calendar",
+  "CompanyInformation": "Aljazira Takaful Taawuni Co (also known as: Jazira Takaful) is a public company, listed on Saudi Stock Exchange Tadawul since July 2013. Jazira Takaful operates within the Insurance sector  focusing on Multi-line Insurance. Jazira Takaful is based in Jeddah, Saudi Arabia and was established in July 2013.",
+
+  "Address": "Address",
+  "Building": "Building No. 3217 Extension No. 8048 Hira Street Al-Salama neighborhood",
+  "ShortAddress": "Short Address",
+  "PostalCode": "JESC3217 PC 23525 Jeddah KSA",
+  "Tel": "Tel ",
+  "TelNumber": "+966 12 6688877",
+  "Fax": "Fax",
+  "FaxNumber": "+966 12 6677284",
+  "Website": "Website",
+  "WebsiteURL": "https://aljaziratakaful.com.sa",
+  "Email": "Email",
+  "EmailAddress": "IR.inquires@ajt.com.sa",
+
+  "Contacts": "Contacts",
+  "ManagementBoardMembers": "Management & Board Members",
+  "CompanyInformationh": "Company Information",
+
+
+  "EstablishedDate": "Established Date",
+  "EstablishedDateValue": "03-07-2013",
+  "ListedDate": "Listed Date",
+  "ListedDateValue": "03-07-2013",
+  "FinancialYearEnd": "Financial Year End",
+  "FinancialYearEndValue": "December",
+  "Auditor": "Auditor",
+  "AuditorFirm": "PKF Al Bassam Chartered Accountants",
+
+ "BoardMember1Name": "Naif Abdulkareem Al Abdulkareem",
+  "BoardMember1Role": "Chairman",
+  "BoardMember1Date": "11-08-2025",
+
+  "BoardMember2Name": "Sager Abdullatif Nadershah",
+  "BoardMember2Role": "CEO",
+  "BoardMember2Date": "03-07-2013",
+
+  "BoardMember3Name": "Mohammed Abdulrahman Ali Almasou",
+  "BoardMember3Role": "Board Member",
+  "BoardMember3Date": "17-07-2025",
+
+  "BoardMember4Name": "Ibrahim Muhammad Al-Hurabi",
+  "BoardMember4Role": "Board Member",
+  "BoardMember4Date": "30-05-2021",
+
+  "BoardMember5Name": "Naif Mesned Al-Mesned",
+  "BoardMember5Role": "Board Member",
+  "BoardMember5Date": "30-05-2021",
+
+  "BoardMember6Name": "Ashraf Adnan Bseisu",
+  "BoardMember6Role": "Board Member",
+  "BoardMember6Date": "30-05-2021",
+
+  "BoardMember7Name": "Sami Jadaan Almehaid",
+  "BoardMember7Role": "Board Member",
+  "BoardMember7Date": "30-05-2021"
+}
