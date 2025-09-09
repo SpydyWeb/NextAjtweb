@@ -23,7 +23,7 @@ const ContactUs: React.FC = () => {
         <h2 className="text-center text-2xl sm:text-3xl font-semibold text-[#1D3557] mb-8">
           {t("ContactUs")}
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
             <h3 className="text-[#1D3557] text-lg sm:text-xl font-semibold mb-4">
               {t("GetInTouch")}
@@ -31,7 +31,7 @@ const ContactUs: React.FC = () => {
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label className="block text-xs text-[#1D3557] mb-1">
+                <label className="block text-md text-[#1D3557] mb-1">
                   {t("FullName")}
                 </label>
                 <input
@@ -44,7 +44,7 @@ const ContactUs: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-xs text-[#1D3557] mb-1">
+                <label className="block text-md text-[#1D3557] mb-1">
                   {t("Email")}
                 </label>
                 <input
@@ -58,7 +58,7 @@ const ContactUs: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-xs text-[#1D3557] mb-1">
+                <label className="block text-md text-[#1D3557] mb-1">
                   {t("Message")}
                 </label>
                 <textarea
@@ -92,7 +92,7 @@ const ContactUs: React.FC = () => {
                   <MdEmail />
                 </span>
                 <div>
-                  <div className="text-sm text-[#1D3557] font-medium">
+                  <div className="text-sm text-sky-600 font-medium">
                     {t("EmailAddress")}
                   </div>
                   <div className="text-gray-600">{t("EmailValue")}</div>
@@ -104,7 +104,7 @@ const ContactUs: React.FC = () => {
                   <FaPhone />
                 </span>
                 <div>
-                  <div className="text-sm text-[#1D3557] font-medium">
+                  <div className="text-sm text-sky-600 font-medium">
                     {t("Phone")}
                   </div>
                   <div className="text-gray-600">{t("PhoneValue")}</div>
@@ -116,7 +116,7 @@ const ContactUs: React.FC = () => {
                   <FaPhone />
                 </span>
                 <div>
-                  <div className="text-sm text-[#1D3557] font-medium">
+                  <div className="text-sm text-sky-600 font-medium">
                     {t("FreeToll")}
                   </div>
                   <div className="text-gray-600">{t("FreeTollValue")}</div>
@@ -128,7 +128,7 @@ const ContactUs: React.FC = () => {
                   <FaClock />
                 </span>
                 <div>
-                  <div className="text-sm text-[#1D3557] font-medium">
+                  <div className="text-sm text-sky-600 font-medium">
                     {t("WorkingHours")}
                   </div>
                   <div className="text-gray-600">
