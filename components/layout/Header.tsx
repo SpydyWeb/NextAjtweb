@@ -100,7 +100,7 @@ const handleLanguageChange = () => {
             ))}
           </div>
           <div className="hidden lg:flex lg:pl-[5px] items-center gap-4 text-lg text-[#2e3b55]">
-            <Link href="/inquiryform" className="underline hover:text-blue-600">
+            <Link href="/" className="underline hover:text-blue-600">
               {t("login")}
             </Link>
             <Link

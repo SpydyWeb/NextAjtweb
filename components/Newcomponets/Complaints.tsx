@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from "react";
 import { FaArrowRight, FaChevronDown } from "react-icons/fa";
 import Image from "next/image";
@@ -11,7 +11,7 @@ type ComplaintProps = {
   nextStep: () => void;
 };
 const Complaints: React.FC<ComplaintProps> = ({  complaintStep, setComplaintStep, nextStep }) => {
-    
+ 
   const { t } = useTranslation("inquiryform");
 
   return (
@@ -155,8 +155,18 @@ const Complaints: React.FC<ComplaintProps> = ({  complaintStep, setComplaintStep
                 >
                   <span>←</span> {t("Back")}
                 </button>
-                <button
+                {/* <button
                   type="submit"
+                  className="flex items-center gap-2 bg-[#1D3557] text-white px-6 py-2 rounded-md "
+                >
+                  {t("Send")} →
+                </button> */}
+                <button
+                  type="button"
+                  onClick={() => {
+                    setComplaintStep(1);
+                    // here you can also trigger API call if needed
+                  }}
                   className="flex items-center gap-2 bg-[#1D3557] text-white px-6 py-2 rounded-md "
                 >
                   {t("Send")} →

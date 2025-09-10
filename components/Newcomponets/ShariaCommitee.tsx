@@ -28,22 +28,23 @@ const ShariahSupervision = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {members.map((member, idx) => (
-            <div key={idx} className="text-center">
+            <div key={member.name} className="text-center">
               <div className="flex justify-center mb-4">
                 <Image
                   src={member.img}
                   alt={member.name}
-                  width={300}
+                  width={300} 
                   height={300}
-                  className="rounded-full object-cover shadow-md"
+                  className="w-[18.75rem] h-[18.75rem] rounded-full object-cover shadow-md"
                 />
               </div>
+
               <h4 className="font-bold text-[#1D3557] mb-4">
                 {t(member.name)}
               </h4>
               <ul className="text-gray-600 text-sm space-y-2 text-left list-disc list-inside">
                 {member.points.map((point, i) => (
-                  <li key={i}>{t(point)}</li>
+                  <li key={point}>{t(point)}</li>
                 ))}
               </ul>
             </div>
