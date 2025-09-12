@@ -182,7 +182,10 @@ const Faqs: React.FC = () => {
                 }}
                 aria-current={active ? "page" : undefined}
                 className={[
-                  "px-5 py-2.5 rounded-md text-sm font-medium transition-colors border focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400",
+                  "w-32 h-12 sm:w-36 sm:h-12 md:w-40 md:h-12 lg:w-48 lg:h-12",
+                  "flex items-center justify-center px-4 rounded-md text-sm sm:text-base font-medium transition-colors border",
+                  "whitespace-wrap",
+                  "focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400",
                   active
                     ? "bg-sky-500 border-sky-500 text-white"
                     : "bg-gray-100 border-gray-200 text-gray-700",

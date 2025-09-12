@@ -1,42 +1,41 @@
 "use client";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import ProductLiabilityImg from "@/public/assets/Images/ImagesIcons/ProductLiabilityImg.jpg";
 import FAQs from "../Newcomponets/FAQs";
 import Advantages from "../Newcomponets/TravelAdvantages";
-import ProductLiabilityCoverage from "@/components/Newcomponets/ProductLiabilityCoverages"; 
+import ProductLiabilityCoverage from "@/components/Newcomponets/ProductLiabilityCoverages";
 import { planContents } from "@/lib/utilities";
 import { useTranslation } from "react-i18next";
-import {buttons} from "@/lib/utilities";
+import { buttons } from "@/lib/utilities";
 const ProductLiabilityInsurance: React.FC = () => {
   const { t } = useTranslation("productliabilityinsuranceplan");
-    const [activeTab, setActiveTab] = useState("productliability");
+  const [activeTab, setActiveTab] = useState("productliability");
 
   return (
     <>
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-4 lg:px-8 py-10">
-              <h2 className="text-2xl md:text-3xl font-bold text-center text-[#1D3557] mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-center text-[#1D3557] mb-6">
             {/* {t("EngineeringInsuranceHeader")} */}
           </h2>
-        <div className="mb-8">
-<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-2">
-  {buttons.map((tab) => (
-    <button
-      key={tab.key}
-      onClick={() => setActiveTab(tab.key)}
-      className={`px-4 py-2 text-sm sm:text-base font-medium rounded-md transition-colors text-center ${
-        activeTab === tab.key
-          ? "bg-[#1D3557] text-white"
-          : "bg-gray-200 text-gray-800"
-      }`}
-    >
-      {t(tab.label)}
-    </button>
-  ))}
+   <div className="mb-8">
+  <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-9 gap-2">
+    {buttons.map((tab) => (
+      <button
+        key={tab.key}
+        onClick={() => setActiveTab(tab.key)}
+        className={`w-full px-3 py-2 text-xs sm:text-sm font-medium rounded-md transition-colors text-center h-10 sm:h-12
+          ${activeTab === tab.key ? "bg-[#1D3557] text-white" : "bg-gray-200 text-gray-800"}`}
+      >
+        {t(tab.label)}
+      </button>
+    ))}
+  </div>
 </div>
 
 
-</div>
+
+
           <div
             className="relative w-full h-80 sm:h-[28rem] rounded-xl overflow-hidden shadow-lg flex items-center"
             style={{
@@ -58,63 +57,72 @@ const ProductLiabilityInsurance: React.FC = () => {
               {t("StartYourJourneyNow")}
             </h3>
 
-             <form className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-      <div className="flex flex-col">
-        <label
-          htmlFor="nationalId"
-          className="mb-1 text-sm font-medium text-gray-700"
-        >
-          {t("NationalID")}
-        </label>
-        <input
-          id="nationalId"
-          name="nationalId"
-          type="text"
-          placeholder="National ID"
-          className="border border-sky-300 rounded-md px-4 py-2 placeholder-sky-400 
+            <form className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="flex flex-col">
+                <label
+                  htmlFor="nationalId"
+                  className="mb-1 text-sm font-medium text-gray-700"
+                >
+                  {t("NationalID")}
+                </label>
+                <input
+                  id="nationalId"
+                  name="nationalId"
+                  type="text"
+                  placeholder="National ID"
+                  className="border border-sky-300 rounded-md px-4 py-2 placeholder-sky-400 
                      focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
-      </div>
-      <div className="flex flex-col">
-        <label htmlFor="email" className="mb-1 text-sm font-medium text-gray-700">
-          {t("Email")}
-        </label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          placeholder="Enter your email"
-          className="border border-sky-300 rounded-md px-4 py-2 placeholder-sky-400 
+                />
+              </div>
+              <div className="flex flex-col">
+                <label
+                  htmlFor="email"
+                  className="mb-1 text-sm font-medium text-gray-700"
+                >
+                  {t("Email")}
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Enter your email"
+                  className="border border-sky-300 rounded-md px-4 py-2 placeholder-sky-400 
                      focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
-      </div>
-      <div className="flex flex-col">
-        <label htmlFor="phone" className="mb-1 text-sm font-medium text-gray-700">
-          {t("PhoneNumber")}
-        </label>
-        <input
-          id="phone"
-          name="phone"
-          type="tel"
-          placeholder="Enter your Phone Number"
-          className="border border-sky-300 rounded-md px-4 py-2 placeholder-sky-400 
+                />
+              </div>
+              <div className="flex flex-col">
+                <label
+                  htmlFor="phone"
+                  className="mb-1 text-sm font-medium text-gray-700"
+                >
+                  {t("PhoneNumber")}
+                </label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="Enter your Phone Number"
+                  className="border border-sky-300 rounded-md px-4 py-2 placeholder-sky-400 
                      focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
-      </div>
-      <div className="flex flex-col">
-        <label htmlFor="dob" className="mb-1 text-sm font-medium text-gray-700">
-          {t("BirthDate")}
-        </label>
-        <input
-          id="dob"
-          name="dob"
-          type="text"
-          placeholder="DD / MM / YYYY"
-          className="border border-sky-300 rounded-md px-4 py-2 placeholder-sky-400 
+                />
+              </div>
+              <div className="flex flex-col">
+                <label
+                  htmlFor="dob"
+                  className="mb-1 text-sm font-medium text-gray-700"
+                >
+                  {t("BirthDate")}
+                </label>
+                <input
+                  id="dob"
+                  name="dob"
+                  type="text"
+                  placeholder="DD / MM / YYYY"
+                  className="border border-sky-300 rounded-md px-4 py-2 placeholder-sky-400 
                      focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
-      </div>
-    </form>
+                />
+              </div>
+            </form>
 
             <div className="flex justify-center mt-6">
               <button
@@ -127,7 +135,7 @@ const ProductLiabilityInsurance: React.FC = () => {
           </div>
         </div>
       </section>
-      <ProductLiabilityCoverage/>
+      <ProductLiabilityCoverage />
       <div className="w-full max-w-7xl mx-auto mt-10 px-4">
         <div className="w-full max-w-7xl mx-auto mt-10 px-4">
           <Advantages content={planContents?.productliabilityinsuranceplan} />
