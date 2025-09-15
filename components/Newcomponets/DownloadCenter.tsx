@@ -52,9 +52,9 @@ const DownloadCenter: React.FC = () => {
         onClick={() => setActive(tab.key)}
         aria-current={activeTab ? "page" : undefined}
         className={[
-          "w-32 sm:w-36 md:w-36 lg:w-44 h-12 flex-shrink-0",
+          "w-32 sm:w-36 md:w-32 lg:w-32 h-12 flex-shrink-0",
           "flex items-center justify-center",
-          "rounded-md text-sm md:text-base font-medium transition-colors",
+          "rounded-md text-sm  font-medium transition-colors",
           "border",
           activeTab
             ? "bg-[#1D3557] border-[#1D3557] text-white"
