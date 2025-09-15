@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import travelpageImg from "@/public/assets/Images/ImagesIcons/travelpageImg.jpg";
+import travelpageImg from "@/public/assets/Images/Retail/Retail-Travel.png";
 import FAQs from "../Newcomponets/FAQs";
 import Advantages from "../Newcomponets/TravelAdvantages";
 import BenefitsTable from "../Newcomponets/TravelBenifit";
@@ -12,18 +12,20 @@ const TravelInsurance: React.FC = () => {
   return (
     <>
       <section className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 lg:px-8 py-10">
+        <div>
+
+        </div>
+        <div className="">
+          {/* relative w-full h-80 sm:h-[28rem] rounded-xl overflow-hidden shadow-lg flex items-center */}
           <div
-            className="relative w-full h-80 sm:h-[28rem] rounded-xl overflow-hidden shadow-lg flex items-center"
+            className="h-screen backgroun-cover bg-no-repeat"
             style={{
               backgroundImage: `url(${travelpageImg.src})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
+              backgroundPosition: "center right"
             }}
           >
-            <div className="absolute inset-0 bg-black bg-opacity-40" />
-            <div className="relative z-10 p-6 md:p-10 max-w-xl text-white">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            <div className="relative z-10 left-2 md:left-[10%] top-[15%] max-w-sm text-black text-lg space-y-7">
+              <h2 className="text-2xl md:text-4xl font-bold mb-4 text-[#10426c]">
                 {t("TravelSubheader1")}
               </h2>
               <p className="mb-4 leading-relaxed">{t("TravelSubDesc11")}</p>
