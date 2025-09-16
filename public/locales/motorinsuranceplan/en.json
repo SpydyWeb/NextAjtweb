@@ -4,7 +4,7 @@
   "MotorSubheader1": "Motor Insurance",
   "MotorSubDesc11": "Motor Insurance covers all financial losses and damages resulting from accidental damages to private vehicles.Aljazira takaful provides a variety of products as below:",
 
-  "Secureyourtripnow": "Secure Your Trip Now",
+  "Secureyourtripnow": "Secure Now.",
   "Insurenow": "Insure Now!",
 
   "MotorComprehensiveInsurance": "Motor Comprehensive Insurance",
@@ -33,5 +33,9 @@
   "Advantages_I1": "All of our products are compliant with the Islamic Sharia Law",
   "Advantages_I2": "Competitive prices.",
   "Advantages_I3": "Excellence in providing professional services",
-  "Advantages_I4": "Easy claim submission through website."
+  "Advantages_I4": "Easy claim submission through website.",
+     "NationalID": "National ID",
+  "Email": "Email",
+  "PhoneNumber": "Phone Number",
+  "BirthDate": "Birth Date"
 }

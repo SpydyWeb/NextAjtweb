@@ -10,7 +10,7 @@
 
   "WhetherVisitinsuranceplan": "Whether you're looking for the best Medical Insurance for Visitors , click Now on the button and start the journey...",
 
-  "Secureyourtripnow": "Secure Your Trip Now",
+  "Secureyourtripnow": "Secure Now.",
   "Insurenow": "Insure Now!",
   "Advantages": "Advantages",
   "Advantages_I1": "All of our products are compliant with the Islamic Sharia Law",
@@ -43,5 +43,9 @@
   "repatriation": "Repatriation of body to the country of origin",
   "emergencylimit4": "Up to SR 10,000 during policy term",
   "scopeofcoverage": "Scope of coverage",
-  "kingdomofsaudiarabia": "Kingdom of Saudi Arabia"
+  "kingdomofsaudiarabia": "Kingdom of Saudi Arabia",
+      "NationalID": "National ID",
+  "Email": "Email",
+  "PhoneNumber": "Phone Number",
+  "BirthDate": "Birth Date"
 }

@@ -2,7 +2,7 @@
   "HouseSubheader1": "Householder Insurance",
   "HouseSubDesc11": "Policy is designed to compensate your financial losses due to an accidental damage to your house and its contents.",
 
-  "Secureyourtripnow": "Secure Your Trip Now",
+  "StartYourJourneyNow": "Start Your Journey",
   "Insurenow": "Insure Now!",
 
   "Coverage": "Coverage including the below:",
@@ -24,5 +24,9 @@
   "Advantages_I3": "Excellence in providing professional services",
   "Advantages_I4": "Easy claim submission through website.",
 
-  "Whetherhouseinsuranceplan": "Whether you're looking for the best House Holder insurance plan, click Now on the button and start the journey..."
+  "Whetherhouseinsuranceplan": "Whether you're looking for the best House Holder insurance plan, click Now on the button and start the journey...",
+    "NationalID": "National ID",
+  "Email": "Email",
+  "PhoneNumber": "Phone Number",
+  "BirthDate": "Birth Date"
 }

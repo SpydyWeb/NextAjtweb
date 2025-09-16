@@ -78,6 +78,11 @@
   "Gold": "ذهب",
   "Platinum": "البلاتين",
   "Schengen": "شنغن",
+        "MainCoverages":"التغطيات الرئيسية",
+  "NationalID": "الهوية الوطنية",
+  "Email": "بريد إلكتروني",
+  "PhoneNumber": "رقم التليفون",
+  "BirthDate": "تاريخ الميلاد",
 
   "": ""
 }

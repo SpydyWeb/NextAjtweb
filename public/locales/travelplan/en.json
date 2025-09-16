@@ -76,6 +76,10 @@
   "Gold": "Gold",
   "Platinum": "Platinum",
   "Schengen": "Schengen",
+        "NationalID": "National ID",
+  "Email": "Email",
+  "PhoneNumber": "Phone Number",
+  "BirthDate": "Birth Date",
 
   "": ""
 }
