@@ -54,15 +54,13 @@ const handleLanguageChange = () => {
   return (
     <>
       <header className="bg-white shadow-sm w-full px-6 py-3">
-        <div className="max-w-[100rem] mx-auto flex items-center justify-between mr-[2rem]">
+        <div className="max-w-[100rem] mx-auto flex items-center justify-between mr-[2rem] relative z-10">
           {/* Logo */}
           <Link href="/">
             <Image
               src={logo}
-              width={250}
-              height={250}
               alt="AlJAZIRA TAKAFUL"
-              className="w-[15rem] h-[3rem] lg:ml-[2rem]"
+              className="w-[15rem] h-auto lg:ml-[2rem]"
             />
           </Link>
           <div className="lg:hidden block">
