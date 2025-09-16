@@ -131,7 +131,7 @@ const handleLanguageChange = () => {
           </div>
         </div>
         {menuOpen && (
-          <div className="lg:hidden mt-4 px-6 space-y-4 border border-[azure] bg-[azure] sm:ml-[10rem] md:ml-[2rem]">
+          <div className="lg:hidden mt-4 px-6 space-y-4 border border-[azure] bg-[azure] sm:ml-[10rem] md:ml-[2rem] relative z-10">
             {Object.entries(utilitiesData).map(([key, section]) => (
               <div key={key} className="group relative">
                 <p className="text-[#10426c] font-semibold cursor-pointer">
