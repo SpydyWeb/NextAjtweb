@@ -40,7 +40,7 @@ const EngineeringInsurance: React.FC = () => {
   </div>
 </div>
 </div>
- <div className="max-w-7xl mx-auto px-4 lg:px-8 py-10 " >
+ <div className="max-w-7xl mx-auto px-4 lg:px-8 py-10 lg:mb-[12rem]" >
 
              
              <Image
@@ -77,7 +77,8 @@ const EngineeringInsurance: React.FC = () => {
           </div> */}
          <div className="w-full mx-auto mb-10">
             <div className="max-w-7xl mx-auto -mt-16 lg:-mt-24 relative z-20 px-4">
-              <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8">
+              {/* <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8"> */}
+                     <div className=" bg-white rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 w-full sm:w-[105%] md:w-[110%] lg:w-[115%]  ml-0 sm:ml-[-20px] md:ml-[-40px] lg:ml-[-70px]">
                 <h3 className="text-lg md:text-xl font-bold text-[#1D3557] mb-6">
                   {t("StartYourJourneyNow")}
                 </h3>
