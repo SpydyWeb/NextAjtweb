@@ -5,10 +5,12 @@ import Image from "next/image";
 import {corporateproducts} from '@/lib/utilities';
 import Contactus from "../layout/Contactus";
 import ProductCard from "../features/product-card";
+import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next"; 
 const Corporateproducts = () => {
    const [selected, setSelected] = useState("");
   const  { t } = useTranslation("features");
+  const router = useRouter();
   const [selectedProduct, setSelectedProduct] = useState<string | null>(null);
  const handleCardClick = (service: string) => {
     setSelected(service);
@@ -16,6 +18,9 @@ const Corporateproducts = () => {
 //   const handleCardClick = (title: string) => {
 //   setSelectedProduct(title);
 // };
+  const handleNavigation = (url: string) => {
+    router.push(url);
+  };
   return (
     <>
 {/* <div className="mt-4 w-[300px] sm:w-[350px] md:w-full mx-auto  bg-white"> */}
@@ -46,7 +51,7 @@ const Corporateproducts = () => {
           onProductClick={handleCardClick}
         />
       ))} */}
-     {corporateproducts.map(({ title, icon, description }) => {
+     {corporateproducts.map(({ title, icon, description,url}) => {
   const isSelected = selected === title;
 
   return (
@@ -80,7 +85,8 @@ const Corporateproducts = () => {
               <span className="mb-2 font-medium text-sm underline text-white">
                 {t("Learnmore")}
               </span>
-              <button className="bg-white text-[#10426C] rounded-full font-semibold px-4 py-2">
+              <button className="bg-white text-[#10426C] rounded-full font-semibold px-4 py-2
+              "  onClick={() => handleNavigation(url)}>
                 {t("insurenow")}
               </button>
             </div>
