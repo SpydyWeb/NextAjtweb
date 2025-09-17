@@ -1,64 +1,63 @@
 "use client";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import FAQs from "../Newcomponets/FAQs";
 import Advantages from "../Newcomponets/TravelAdvantages";
-import EngineeringCoverages from '@/components/Newcomponets/EngineeringCoverages';
+import EngineeringCoverages from "@/components/Newcomponets/EngineeringCoverages";
 import EngineeringImg from "@/public/assets/Images/ImagesIcons/EngineeringImg.jpeg";
 import { planContents } from "@/lib/utilities";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import CorporateEngineeringImg from "@/public/assets/Images/Corporate/Corporate-Engineering.png";
-import {tabs} from "@/lib/utilities";
+import { tabs } from "@/lib/utilities";
 const EngineeringInsurance: React.FC = () => {
   const { t } = useTranslation("engineeringinsuranceplan");
-    const [activeTab, setActiveTab] = useState("contractors");
+  const [activeTab, setActiveTab] = useState("contractors");
 
   return (
     <>
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-4 lg:px-8 py-10">
-              <h2 className= " relative z-10 text-2xl md:text-3xl font-bold text-center text-[#1D3557] mb-6">
+          <h2 className=" relative z-10 text-2xl md:text-3xl font-bold text-center text-[#1D3557] mb-6">
             {t("EngineeringInsuranceHeader")}
           </h2>
-      <div className="mb-8">
+          <div className="mb-8">
             <div className="relative z-10 flex flex-col items-center justify-center h-full px-6 text-center">
               {/* Buttons Grid */}
               <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-2 mb-6 w-full max-w-7xl">
-    {tabs.map((tab) => (
-      <button
-        key={tab.key}
-        onClick={() => setActiveTab(tab.key)}
-        className={` text-sm sm:text-base font-medium rounded-md transition-colors ${
-          activeTab === tab.key
-            ? "bg-[#1D3557] text-white"
-            : "bg-gray-200 text-gray-800"
-        }`}
-      >
-        {t(tab.label)}
-      </button>
-    ))}
-  </div>
-</div>
-</div>
- <div className="max-w-7xl mx-auto px-4 lg:px-8 py-10 lg:mb-[12rem]" >
-
-             
-             <Image
-               src={CorporateEngineeringImg}
-               alt="Corporate Aviation"
-               fill
+                {tabs.map((tab) => (
+                  <button
+                    key={tab.key}
+                    onClick={() => setActiveTab(tab.key)}
+                    className={` text-sm sm:text-base font-medium rounded-md transition-colors ${
+                      activeTab === tab.key
+                        ? "bg-[#1D3557] text-white"
+                        : "bg-gray-200 text-gray-800"
+                    }`}
+                  >
+                    {t(tab.label)}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="max-w-7xl mx-auto px-4 lg:px-8 py-10 lg:mb-[12rem]">
+            <Image
+              src={CorporateEngineeringImg}
+              alt="Corporate Aviation"
+              fill
               //  className="absolute inset-0 w-full h-full text-transparent"
-               priority  
-             />
-                                 <div className="relative z-10 p-10 md:p-20 max-w-lg text-black text-lg text-justify ml-0 lg:ml-[-11rem] mt-4 ">
-                     <h2 className="text-2xl md:text-2xl font-bold mb-4 text-sky-600 whitespace-nowrap">
-  {t("EngineeringSubheader1")}
-</h2>
-                     <p className="mt-4 text-base md:text-lg  text-wrap leading-relaxed">
-                       {t("EngineeringSubDesc11")}
-                     </p>
-                   </div>
-                 </div>
+              priority
+            />
+            <div className="relative z-10 p-10 md:p-20 max-w-lg text-black text-lg text-justify ml-0 lg:ml-[-11rem] mt-4 ">
+              <h2 className="text-xl sm:text-2xl md:text-2xl font-bold mb-4 text-sky-600 sm:whitespace-normal md:whitespace-nowrap">
+                {t("EngineeringSubheader1")}
+              </h2>
+
+              <p className="mt-4 text-base md:text-lg  text-wrap leading-relaxed">
+                {t("EngineeringSubDesc11")}
+              </p>
+            </div>
+          </div>
           {/* <div
             className="relative w-full h-80 sm:h-[28rem] rounded-xl overflow-hidden shadow-lg flex items-center"
             style={{
@@ -75,10 +74,10 @@ const EngineeringInsurance: React.FC = () => {
               <p className="mb-4 leading-relaxed">{t("EngineeringSubDesc11")}</p>
             </div>
           </div> */}
-         <div className="w-full mx-auto mb-10">
+          <div className="w-full mx-auto mb-10">
             <div className="max-w-7xl mx-auto -mt-16 lg:-mt-24 relative z-20 px-4">
               {/* <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8"> */}
-                     <div className=" bg-white rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 w-full sm:w-[105%] md:w-[110%] lg:w-[115%]  ml-0 sm:ml-[-20px] md:ml-[-40px] lg:ml-[-70px]">
+              <div className=" bg-white rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 w-full sm:w-[105%] md:w-[110%] lg:w-[115%]  ml-0 sm:ml-[-20px] md:ml-[-40px] lg:ml-[-70px]">
                 <h3 className="text-lg md:text-xl font-bold text-[#1D3557] mb-6">
                   {t("StartYourJourneyNow")}
                 </h3>
@@ -162,7 +161,7 @@ const EngineeringInsurance: React.FC = () => {
           </div>
         </div>
       </section>
-      <EngineeringCoverages/>
+      <EngineeringCoverages />
       <div className="w-full max-w-7xl mx-auto mt-10 px-4">
         <div className="w-full max-w-7xl mx-auto mt-10 px-4">
           <Advantages content={planContents?.engineeringinsuranceplan} />

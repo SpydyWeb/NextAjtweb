@@ -25,7 +25,7 @@ const AviationInsurance: React.FC = () => {
             />
 
             <div className="relative z-10 p-10 md:p-20 max-w-lg text-black text-lg text-justify ml-0 lg:ml-[-11rem] mt-4 ">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-[#10426c] whitespace-nowrap ">
+              <h2 className="text-xl sm:text-2xl md:text-2xl font-bold mb-4 text-sky-600 sm:whitespace-normal md:whitespace-nowrap">
                 {t("AviationSubheader1")}
               </h2>
               <p className="mt-4 text-base md:text-lg  text-wrap leading-relaxed">
@@ -37,7 +37,7 @@ const AviationInsurance: React.FC = () => {
           <div className="w-full mx-auto mb-4">
             <div className="max-w-7xl mx-auto -mt-16 lg:-mt-24 relative z-20 px-4">
               {/* <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8"> */}
-                     <div className=" bg-white rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 w-full sm:w-[105%] md:w-[110%] lg:w-[115%]  ml-0 sm:ml-[-20px] md:ml-[-40px] lg:ml-[-70px]">
+              <div className=" bg-white rounded-2xl shadow-2xl p-4 sm:p-6 md:p-8 w-full sm:w-[105%] md:w-[110%] lg:w-[115%]  ml-0 sm:ml-[-20px] md:ml-[-40px] lg:ml-[-70px]">
                 <h3 className="text-lg md:text-xl font-bold text-[#1D3557] mb-6">
                   {t("StartYourJourneyNow")}
                 </h3>
