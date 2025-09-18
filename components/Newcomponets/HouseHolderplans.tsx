@@ -14,7 +14,7 @@ const HouseHolderInsuranceplan: React.FC = () => {
     <>
       <section className="bg-white">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
-          <div className="max-w-7xl mx-auto px-4 lg:px-8 py-10 lg:mb-[20rem]">
+          <div className="max-w-7xl mx-auto px-4 lg:px-8 py-10 lg:mb-[20rem] rtl:mb-[22rem]">
             <Image
               src={RetailHouseHolderImg}
               alt="Corporate Aviation"
@@ -35,7 +35,7 @@ const HouseHolderInsuranceplan: React.FC = () => {
           <div className="w-full mx-auto mb-10">
             <div className="max-w-7xl mx-auto -mt-16 lg:-mt-24 relative z-20 px-4">
               {/* <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8"> */}
-              <div className="bg-white rounded-2xl shadow-2xl p-[1rem] sm:p-[1.5rem] md:p-[2rem] w-full sm:w-[105%] md:w-[110%] lg:w-[115%] ml-0 sm:ml-[-1.25rem] md:ml-[-2.5rem] lg:ml-[-5.125rem]">
+              <div className="bg-white rounded-2xl shadow-2xl p-[1rem] sm:p-[1.5rem] md:p-[2rem] w-full sm:w-[105%] md:w-[110%] lg:w-[115%] ms-0 sm:ms-[-1.25rem] md:ms-[-2.5rem] lg:ms-[-5.125rem]">
                 <h3 className="text-lg md:text-xl font-bold text-[#1D3557] mb-6">
                   {t("StartYourJourneyNow")}
                 </h3>
