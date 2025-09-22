@@ -1,0 +1,40 @@
+{
+  "Malpracticeheader1": "أخطاء الممارسة الطبية",
+  "Malpracticeheader2": "تغطي الوثيقة المسؤولية القانونية للمؤمن عليه الناتجة عن الأخطاء المهنية أو الإهمال أو السهو كمهنيين طبيين",
+
+  "Whethermalpracticesuranceplan": "سواء كنت تبحث عن أفضل تأمين ضد أخطاء الممارسة الطبية للزوار، اضغط الآن على الزر وابدأ الرحلة...",
+  
+  "Secureyourtripnow": "أمّن الآن.",
+  "Insurenow": "أمّن الآن!",
+  "Advantages": "المزايا",
+  "Advantages_I1": "جميع منتجاتنا متوافقة مع أحكام الشريعة الإسلامية",
+  "Advantages_I2": "أسعار تنافسية.",
+  "Advantages_I3": "التميز في تقديم الخدمات المهنية",
+  "Advantages_I4": "سهولة تقديم المطالبات عبر الموقع الإلكتروني.",
+  "Advantages_I5": "شبكة طبية واسعة تغطي جميع أنحاء المملكة.",
+  "Advantages_I6": "خدمات اعتماد المطالبات الطبية على مدار الساعة طوال أيام الأسبوع.",
+
+  "qualifiedmalpracticeSpecialties": "التخصصات المؤهلة",
+  "malpracticeInsuranceSubtitle": "لتأمين أخطاء الممارسة الطبية:",
+  
+  "NationalID": "الهوية الوطنية",
+  "Email": "البريد الإلكتروني",
+  "PhoneNumber": "رقم الهاتف",
+  "BirthDate": "تاريخ الميلاد",
+
+  "mainCoverageTitle": "التغطية الرئيسية المقدمة من",
+  "malpracticePolicyTitle": "وثيقة التأمين ضد أخطاء الممارسة الطبية:",
+  "compensationCoverage": "التعويض الذي تصدره اللجان أو المحاكم المختصة ضد الممارس الطبي.",
+  "legalExpensesCoverage": "المصاريف والتكاليف القانونية المتعلقة بالدفاع و/أو تسوية أي مطالبة.",
+  "insuranceDuration": "التأمين متاح لمدة سنة واحدة أو 3 سنوات أو 5 سنوات.",
+  "compensationLimitsText": "حدود التعويض السنوي المتاحة تتراوح",
+  "compensationLimitsRange": "من 100,000 ريال سعودي إلى 500,000 ريال سعودي.",
+
+  "surgeons": "الجراحون",
+  "doctors": "الأطباء",
+  "anesthetist": "أخصائي التخدير",
+  "pharmacists": "الصيادلة",
+  "nurses": "الممرضون",
+  "paramedicsAndTechnicians": "المسعفون والفنيون",
+  "MedicalProfessionals":"المختصون الطبيون"
+}
