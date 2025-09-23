@@ -1,0 +1,83 @@
+{
+ "MedicaldomesticSubheader1": "تأمين طبي",
+  "MedicaldomesticSubheader2": "العمالة المنزلية",
+  "MedicaldomesticSubDesc11": "يتم إصدار وثيقة التأمين الطبي للزائرين كجزء من متطلبات تأشيرة الزيارة للقادمين إلى المملكة العربية السعودية، حيث توفر الرعاية الطبية للحالات الطارئة من خلال شبكة واسعة من المستشفيات والعيادات الطبية.",
+
+  "Secureyourtripnow":" تأمين الآن.",
+
+  "StartYourJourneyNow": "ابدأ رحلتك",
+  "Insurenow": "تأمين الآن!",
+  "CoverageIncluding": "التغطية تشمل ما يلي:",
+  "PregnancyChildbirth": "الحمل والولادة.",
+  "Dental": "الأسنان.",
+  "MedicalEyeglasses": "النظارات الطبية.",
+  "ChronicPreExisting": "الأمراض المزمنة والموجودة مسبقاً.",
+  "HearingAid": "معينات السمع.",
+  "Physiotherapy": "العلاج الطبيعي.",
+  "Vaccinations": "التطعيمات وفقًا لوزارة الصحة.",
+  "PsychologicalDisorders": "الاضطرابات النفسية الحادة وغير الحادة (المزمنة).",
+  "RepatriationOfCorpse": "تكاليف تجهيز وإعادة جثمان المؤمن عليه إلى بلد الإقامة المحدد في عقد العمل.",
+
+  "Advantages_I1": "جميع منتجاتنا متوافقة مع أحكام الشريعة الإسلامية",
+  "Advantages_I2": "أسعار تنافسية.",
+  "Advantages_I3": "التميز في تقديم الخدمات المهنية",
+  "Advantages_I4": "تقديم المطالبات بسهولة عبر الموقع الإلكتروني.",
+  "Advantages_I5": "شبكة طبية واسعة تغطي المملكة بأكملها.",
+  "Advantages_I6": "خدمات الموافقة على المطالبات الطبية على مدار الساعة طوال أيام الأسبوع.",
+  "Whethermedicaldomestichelperplan": "سواء كنت تبحث عن أفضل مساعد طبي في المنزل، انقر على الزر الآن وابدأ رحلتك...",
+  "MainCoverages": "التغطيات الرئيسية",
+  "NationalID": "الهوية الوطنية",
+  "Email": "بريد إلكتروني",
+  "PhoneNumber": "رقم التليفون",
+  "BirthDate": "تاريخ الميلاد",
+
+   "Policycoveragelimit": "حدود ومزايا التغطية التأمينية",
+  "Policycoveragelimitvalue": "100,000 ريال سعودي خلال فترة الوثيقة",
+
+  "Emergencycasestreatment": "المصاريف الخاصة بالكشف ومعالجة الحالات الطارئة",
+  "Emergencycasestreatmentvalue": "حتى الحد الأقصى لهذه الوثيقة (بدون مساهمة مالية)",
+
+  "Hospitaladmissionexpenses": "مصاريف دخول المستشفى",
+  "Hospitaladmissionexpensesvalue": "حد الإقامة اليومية للمريض (غرفة مشتركة) بحد أقصى 600 ريال سعودي في اليوم، وتشمل الأدوية والمستلزمات الطبية التي تُصرف بأمر الطبيب. وحد الإقامة اليومية للمرافق (غرفة مشتركة) بحد أقصى 150 ريال سعودي في اليوم (بدون مساهمة مالية)",
+
+  "Ambulancetransportationexpenses": "مصاريف نقل الإسعاف",
+  "Ambulancetransportationexpensesvalue": "حتى 1,000 ريال سعودي (بدون مساهمة مالية)",
+
+  "Outpatienttreatmentexpenses": "مصاريف العلاج الخارجي",
+  "Outpatienttreatmentexpensesvalue": "بحد أقصى 4 زيارات (مراكز الرعاية الأولية 0–5%، وبحد أقصى 25 ريال سعودي)",
+
+  "Vaccinationsandexaminations": "مصاريف التطعيمات والفحوصات",
+  "Vaccinationsandexaminationsvalue": "وفقاً للإجراءات الوقائية التي تحددها وزارة الصحة (بدون مساهمة مالية)",
+
+  "Dentaltreatmentexpenses": "مصاريف علاج الأسنان",
+  "Dentaltreatmentexpensesvalue": "غير مشمول",
+
+  "Eyeglassexpenses": "مصاريف النظارات الطبية",
+  "Eyeglassexpensesvalue": "غير مشمول",
+
+  "Pregnancyandchildbirthexpenses": "مصاريف الحمل والولادة",
+  "Pregnancyandchildbirthexpensesvalue": "غير مشمول",
+
+  "Injuriesresultingfromtrafficaccidents": "مصاريف الإصابات الناتجة عن حوادث السير",
+  "Injuriesresultingfromtrafficaccidentsvalue": "حتى الحد الأقصى لهذه الوثيقة (بدون مساهمة مالية)",
+
+  "Emergencydialysisexpenses": "مصاريف الغسيل الكلوي الطارئ",
+  "Emergencydialysisexpensesvalue": "حتى الحد الأقصى لهذه الوثيقة (بدون مساهمة مالية)",
+
+  "Medicationcosts": "تكاليف الأدوية",
+  "Medicationcostsvalue": "وفقاً لدليل الأدوية التأميني (بدون مساهمة مالية)",
+
+  "Costsofreturning": "تكاليف إعادة جثمان المتوفى إلى موطنه الأصلي",
+  "Costsofreturningvalue": "حتى 10,000 ريال سعودي (بدون مساهمة مالية)",
+
+  "RangeoftheCoverage": "نطاق التغطية",
+  "RangeoftheCoveragevalue": "المملكة العربية السعودية",
+
+   "Copayment": "المبلغ المشترك",
+  "Consultation": "الاستشارة",
+  "Laboratoryservices": "خدمات المختبر",
+  "Radiologyandotherservices": "الأشعة والخدمات الأخرى",
+  "NoCopayment": "بدون مبلغ مشترك",
+  "UpTo200SAR1": "حتى 200 ريال سعودي بنسبة 1٪",
+  "WithNoUpperLimit30": "بدون حد أعلى بنسبة 30٪"
+}
