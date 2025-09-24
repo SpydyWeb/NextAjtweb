@@ -45,5 +45,17 @@
     "CustomerCare":"Customer Care",
     "AboutUs":"About Us",
     "Carrer":"Carrer",
-    "Contact":"Contact"
+    "Contact":"Contact",
+
+    "ReportaFraud":"Report a Fraud",
+    "FAQs":"FAQs",
+    "CustomerRights":"Customer Rights",
+    "InquiryComplaints":"Inquiry & Complaints",
+    "DownloadCenter":"Download Center",
+    "ShareHolder":"Share Holder",
+    "ShariaCommittee":"Sharia Committee",
+    "ContactUs":"Contact Us",
+    "":"",
+    "":"",
+    "":""
 }
