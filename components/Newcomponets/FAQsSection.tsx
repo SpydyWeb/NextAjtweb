@@ -6,15 +6,15 @@ import { FAQ_DATA } from "@/lib/utilities";
 type TabKey = "motor" | "visitvisa" | "medical" | "protection" | "contacts";
 
 const TABS: { key: TabKey; label: string }[] = [
-  { key: "motor", label: "Motor" },
-  { key: "visitvisa", label: "Visit Visa" },
+  { key: "motor", label: "motor" },
+  { key: "visitvisa", label: "vsitVisa" },
   { key: "medical", label: "Medical" },
-  { key: "protection", label: "Protection & Savings" },
-  { key: "contacts", label: "Contacts" },
+  { key: "protection", label: "protSavings" },
+  { key: "contacts", label: "CONTACTDETAILS" },
 ];
 
 const Faqs: React.FC = () => {
-  const { t } = useTranslation("FAQs");
+  const { t } = useTranslation("faqs");
 
   const [activeTab, setActiveTab] = useState<TabKey>("motor");
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -191,7 +191,7 @@ const Faqs: React.FC = () => {
                     : "bg-gray-100 border-gray-200 text-gray-700",
                 ].join(" ")}
               >
-                {tab.label}
+                {t(tab.label)}
               </button>
             );
           })}

@@ -20,7 +20,7 @@
     "weMadeYourPolRenewalSoEasyAllWhatYouNeedToDoIsToFillTheReferralFormInThisWebsiteOrCallOurTollFreeNumberWhereYouWillHaveASpecializedRelationManagerToServeYou": "We made your policy renewal so easy, all what you need to do is to fill the referral form in this website or call our toll-free number (8003040400) where you will have a specialized relationship manager to serve you.",
     "weSimplifiedTheProcessOfAlterAndMadeItSoEasyForYouToDoAllRequiredAltWhileSittingInTheOfficeWithVeryEasyAndSecureWay": "We simplified the process of alteration and made it so easy for you to do all required alteration while sitting in the office with a very easy and a secure way.",
     "weOnlyOfferMedInsForBusinesses": "We only offer medical insurance for Businesses (SME’s and Corporate).",
-    "motor": "MOTOR",
+    "motor": "Motor",
     "howToIssueVehicleInsPol": "How to issue a vehicle insurance policy?",
     "whatAreTheDocRequiredToIssueVehicleInsPol": "What are the documents required to issue a vehicle insurance policy?",
     "isTheNajmDisAppliedIfThereIsPastRecordOfNoAccidents": "Is the Najm discount applied if there is a past record of No accidents?",
@@ -68,14 +68,14 @@
     "effDateStartsOnTheDateTheCompanyAcceptsTheRiskOfCoveredEventEffDateIsStipulatedOnContractSchedule": "Effective date starts on the date the company accepts the risk of covered event . effective date is stipulated on contract schedule",
     "outstandingPremCanBePaidThroughBankTransferMADAOrThroughOneOfAljaziraBranches": "Outstanding premiums can be paid through bank transfer , MADA or through one of aljazira branches",
     "directDebitMandateOrStandingOrder": "Direct debit mandate or standing order",
-    "vsitVisa": "VISIT VISA",
+    "vsitVisa": "Visit Visa",
     "howCanIIssueVisitVisaMedicalInsPol": "How can I issue a visit visa medical insurance policy?",
     "howCanIExtendMyVisitVisaMedicalInsPol": "How can I extend my visit visa medical insurance policy?",
     "howCanICancelTheVisitorVisaMedicalInsPol": "How can I cancel the visitor visa medical insurance policy?",
     "youCanIssueVisitorVisaMedicalInsPolicyThroughTheEnjazWebsite": "You can issue a visitor visa medical insurance policy through the Enjaz website.",
     "youCanExtendTheVisitVisaMedicalInsPolicyThroughTheWebsiteOfUnderInsureNowSectionVisitVisa": "You can extend the visit visa medical insurance policy through the website of under “insure now” section - visit visa",
     
-    "CONTACTDETAILS": "CONTACT",
+    "CONTACTDETAILS": "CONTACTS",
     "ContactTheCompanyAdd1": "You can contact us through the following channels:",
     "ContactTheCompanyAdd2": "Toll Free: 8003040400",
     "ContactTheCompanyAdd3": "The official Twitter account: @AljaziraTakaful",
@@ -114,5 +114,8 @@
     "VisitorVisaMedicalPoint3": "You provide us with the following documents:",
     "VisitorVisaMedicalPoint4": "A copy of the IBAN.",
     "VisitorVisaMedicalPoint5": "Insurance policy number.",
-    "VisitorVisaMedicalPoint6": "National ID/Iqama number"
+    "VisitorVisaMedicalPoint6": "National ID/Iqama number",
+    "Medical":"MEDICAL"
+
+    
 }
