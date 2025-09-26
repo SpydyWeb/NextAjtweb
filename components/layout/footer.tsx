@@ -14,7 +14,7 @@ import { footerLinks } from '@/lib/utilities';
 import { useTranslation } from 'react-i18next';
 
 export function Footer() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("footer");
 
   const socialLinks = [
     {

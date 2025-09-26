@@ -3,8 +3,9 @@ import React, { useRef } from 'react';
 import { logos } from '@/lib/utilities';
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
+import { BsChevronRight ,BsChevronLeft} from "react-icons/bs";
 const Ourclients = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("ourclients");
  const scrollRef = useRef<HTMLDivElement | null>(null);;
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
@@ -28,9 +29,9 @@ const Ourclients = () => {
   {/* Left Arrow */}
   <button
     onClick={() => scroll('left')}
-    className="hidden md:flex absolute -left-6 top-1/2 -translate-y-1/2 bg-white border border-gray-300 rounded-full w-12 h-12 z-10 shadow-lg items-center justify-center"
+    className="hidden lg:flex absolute -left-6 top-1/2 -translate-y-1/2 bg-white border border-gray-300 rounded-full w-12 h-12 md: z-10 shadow-lg items-center justify-center"
   >
-    &#8249;
+    <BsChevronLeft />
   </button>
 
   {/* Scrollable Logo Carousel */}
@@ -68,9 +69,9 @@ const Ourclients = () => {
   {/* Right Arrow */}
   <button
     onClick={() => scroll('right')}
-    className="hidden md:flex absolute -right-6 top-1/2 -translate-y-1/2 bg-white border border-gray-300 rounded-full w-12 h-12 z-10 shadow-lg items-center justify-center"
+    className="hidden lg:flex absolute -right-6 top-1/2 -translate-y-1/2 bg-white border border-gray-300 rounded-full w-12 h-12 z-10 shadow-lg items-center justify-center"
   >
-    &#8250;
+    <BsChevronRight />
   </button>
 </div>
 

@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 const Dateformat = 'DD/MM/YYYY';
 
 const LatestNews = () => {
-   const { t  } = useTranslation();
+   const { t  } = useTranslation("latestnews");
   return (
     <section className="text-center py-12 px-4 bg-white">
       <h3 className="text-3xl font-bold text-[#10426C] mb-2">{t('LatestNews')}</h3>
@@ -17,7 +17,7 @@ const LatestNews = () => {
         {newsData.map((item, idx) => (
   <div
     key={item.id}
-    className="relative bg-white border border-gray-200 rounded-2xl shadow-md p-6 text-left py-[2.5rem]"
+    className="relative bg-white border border-gray-200 rounded-2xl shadow-md p-6 text-left py-[2.5rem] mb-[2rem]"
   >
     {/* ID Badge Bubble */}
     <div

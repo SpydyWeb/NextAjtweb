@@ -37,7 +37,7 @@ const Medicaldomestictable: React.FC = () => {
 
             <tr>
               <td className="relative text-left px-2 sm:px-4 py-2 align-middle w-1/3 sm:w-1/4 md:w-1/5">
-                <div className="leading-snug break-words font-semibold text-[#184A7C] text-xs sm:text-sm md:text-base lg:text-lg border-b border-solid border-gray-500 pb-6 sm:pb-10 mt-[1.6em] rtl:mt-0 pb-2 sm:pb-3">
+                <div className="leading-snug break-words font-semibold text-[#184A7C] text-xs sm:text-sm md:text-base lg:text-lg border-b border-solid border-gray-500 pb-6 sm:pb-10 mt-[3em] rtl:mt-[1.5em] pb-2 sm:pb-3">
                   {t("Hospitaladmissionexpenses")}
                 </div>
                 <div className="absolute top-0 bottom-0 right-0 w-px bg-sky-500 rtl:right-auto rtl:left-0"></div>
