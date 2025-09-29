@@ -14,7 +14,7 @@ const TABS: { key: TabKey; label: string }[] = [
 ];
 
 const Faqs: React.FC = () => {
-  const { t } = useTranslation("faqs");
+  const { t } = useTranslation("frequentlyaskedquestions");
 
   const [activeTab, setActiveTab] = useState<TabKey>("motor");
   const [openIndex, setOpenIndex] = useState<number | null>(0);
