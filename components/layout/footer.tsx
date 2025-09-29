@@ -50,7 +50,7 @@ export function Footer() {
   return (
      <>
     {/* <hr className="h-[2px] mt-0 sm:block hidden mx-24" /> */}
-    <hr className="h-[0.125rem] bg-[#0000008f] mt-0 w-[95%] mx-auto" />
+    <hr className="h-[0.1rem] bg-[#0000008f] mt-0 w-[95%] mx-auto" />
    <footer className="bg-white text-[#10426c] text-sm ">
   {/* <div className="max-w-[1250px] mx-auto px-4 lg:px-8 py-12"> */}
   <div className="mx-auto px-4 lg:px-8 py-12 max-w-full sm:max-w-[40rem] md:max-w-[48rem] lg:max-w-[112.5rem]">
