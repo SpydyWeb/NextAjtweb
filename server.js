@@ -1,7 +1,7 @@
 const { createServer } = require("http");
 const next = require("next");
 
-const dev = true; // production
+const dev = false; // production
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
