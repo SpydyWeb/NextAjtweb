@@ -42,7 +42,15 @@ const ShariahSupervision = () => {
               <h4 className="font-bold text-[#1D3557] mb-4">
                 {t(member.name)}
               </h4>
-              <ul className="text-gray-600 text-sm space-y-2 text-left list-disc list-inside">
+              {/* <ul className="text-gray-600 text-sm space-y-2 text-left list-disc list-inside">
+                {member.points.map((point, i) => (
+                  <li key={point}>{t(point)}</li>
+                ))}
+              </ul> */}
+              <ul
+                className="text-gray-600 text-sm space-y-2 list-disc ps-5 text-justify"
+                dir="auto"
+              >
                 {member.points.map((point, i) => (
                   <li key={point}>{t(point)}</li>
                 ))}
