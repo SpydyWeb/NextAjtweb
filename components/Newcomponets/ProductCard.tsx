@@ -201,8 +201,8 @@ const ProductCard: React.FC = () => {
       <Ourclients />
       <LatestNews />
       <Contactus /> */}
-      <Footer />
-      <FooterCard />
+      {/* <Footer />
+      <FooterCard /> */}
     </>
   );
 };

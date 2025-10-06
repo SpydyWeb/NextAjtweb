@@ -112,10 +112,10 @@ const Homepage2: React.FC = () => {
           {/* HERO AREA: LEFT FORM + RIGHT BANNER */}
           <div className="mt-8 grid grid-cols-1 md:grid-cols-12 gap-6">
             {/* LEFT FORM */}
-            <div className="md:col-span-4">
+             <div className="md:col-span-4">
               <div className="bg-[#E6F6FB] rounded-xl p-6 md:p-8 h-[30rem] md:h-full">
                 <h4 className="text-lg font-semibold text-[#10426C] mb-1 py-2">
-                  {t("InsureYourCarNow")}
+                  {t(selectedProduct?.formTitle)}
                 </h4>
                 <p className="text-md text-[#2c6b82] mb-6">
                   {t("FreeAddonsWithThirdPartyCover")}⚡
@@ -202,13 +202,13 @@ const Homepage2: React.FC = () => {
           </div>
         </div>
       </div>
-
-      <Stats />
+<br/>
+      {/* <Stats />
       <Ourclients />
       <LatestNews />
       <Contactus />
       <Footer />
-      <FooterCard />
+      <FooterCard /> */}
     </>
   );
 };
