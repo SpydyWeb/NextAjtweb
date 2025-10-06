@@ -28,11 +28,11 @@
   "PhoneNumberPlaceholder": "أدخل رقم هاتفك",
   "NationalIDPlaceholder": "أدخل رقم بطاقتك الوطنية",
 
-  "Ourservice": "خدمتنا",
-  "Exploreproducts": "استكشف مجموعتنا الواسعة من المنتجات",
-  "RetailProducts": "منتجات التجزئة",
-  "CorporateProducts": "منتجات الشركات",
-
+   "Ourservice":"خدمتنا",
+    "Exploreproducts":"استكشف مجموعتنا الواسعة من المنتجات",
+    "RetailProducts":"الافراد",
+    "CorporateProducts":"الشركات",
+   
   "Medical": "طبي",
   "MedicalDescription": "لوريم إيبسوم دولور سيت أميت، كونسيكتيتور أديبيسينغ إيليت، سيد دو إيوسمود تيمبور.",
   "Motor": "محرك",
