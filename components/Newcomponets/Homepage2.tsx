@@ -27,7 +27,6 @@ const Homepage2: React.FC = () => {
   const router = useRouter();
 
   const handleCategoryClick = (service: "Retail" | "Corporate") => {
-    debugger
     setCategory(service);
     const products =
       service === "Retail" ? individualproducts1 : corporateproducts1;
@@ -35,7 +34,6 @@ const Homepage2: React.FC = () => {
   };
 
   const handleProductClick = (product: any) => {
-    debugger
     setSelectedProduct(product);
   };
 
