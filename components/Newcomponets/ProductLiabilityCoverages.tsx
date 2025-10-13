@@ -6,7 +6,7 @@ export default function ProductLiabilityCoverage() {
   const { t } = useTranslation("productliabilityinsuranceplan");
 
   return (
-    <div className="flex items-center justify-center  bg-white">
+    <div className="flex items-center justify-center  bg-white px-4 lg:px-0">
       <div className="rounded-lg border shadow-sm overflow-hidden max-w-2xl w-full">
         {/* Header */}
         <div className=" bg-[#2C9CD4] text-white text-center py-3 font-medium text-2xl">
