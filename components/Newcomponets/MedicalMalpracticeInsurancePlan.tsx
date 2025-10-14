@@ -32,7 +32,7 @@ const MedicalMalpracticeInsurance: React.FC = () => {
             </div>
           </div>
 
-          <div className="w-full mx-auto mb-10">
+          <div className="w-full mx-auto mb-10 px-4 lg:px-0">
             <div className="max-w-7xl mx-auto -mt-16 lg:-mt-24 relative z-20 px-4">
               {/* <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8"> */}
               <div className="bg-white rounded-2xl shadow-2xl p-[1rem] sm:p-[1.5rem] md:p-[2rem] w-full sm:w-[105%] md:w-[110%] lg:w-[115%] ms-0 sm:ms-[-1.25rem] md:ms-[-2.5rem] lg:ms-[-5.125rem]">

@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 export default function MalpracticeCoverageCard() {
    const { t } =useTranslation("medicalmalpracticeinsuranceplan")
   return (
+    <div className="px-4">
     <div className="max-w-3xl mx-auto bg-white rounded-lg shadow border">
       {/* Header */}
       <div className="bg-[#17406D] text-white text-center py-4 px-6 rounded-lg">
@@ -43,6 +44,7 @@ export default function MalpracticeCoverageCard() {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 }

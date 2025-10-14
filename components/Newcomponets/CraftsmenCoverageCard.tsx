@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 export default function CraftsmenCoverageCard() {
   const { t } = useTranslation("craftsmenInsuranceplan")
   return (
+    <div className="px-4">
     <div className="max-w-2xl mx-auto bg-white rounded-lg shadow border">
       {/* Header */}
       <div className="bg-[#17406D] text-white text-center py-4 px-6 rounded-t-lg">
@@ -28,6 +29,7 @@ export default function CraftsmenCoverageCard() {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 }
