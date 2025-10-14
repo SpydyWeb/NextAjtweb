@@ -7,7 +7,7 @@ const MarineCoveragesCard: React.FC = () => {
   const { t } = useTranslation("marineinsuranceplan");
 
   return (
-    <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+    <div className="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch px-4 lg:px-0">
       {/* Card 1 */}
       <div className="border rounded-lg shadow-sm overflow-hidden flex flex-col h-full">
         <div className="bg-[#1D3557] text-white text-center py-3 font-medium text-lg">

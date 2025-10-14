@@ -44,8 +44,8 @@ const EngineeringInsurance: React.FC = () => {
             <Image
               src={CorporateEngineeringImg}
               alt="Corporate Aviation"
-              fill
-              //  className="absolute inset-0 w-full h-full text-transparent"
+              // fill
+              className="absolute inset-0 w-full h-full text-transparent mt-[110px]"
               priority
             />
             <div className="relative z-10 p-10 md:p-20 max-w-lg text-black text-lg text-justify ml-0 lg:ml-[-11rem] mt-4 ">

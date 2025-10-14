@@ -6,7 +6,8 @@ import { useTranslation } from "react-i18next";
 const MainCoveragesCard: React.FC = () => {
   const { t } = useTranslation("propertyinsuranceplan");
   return (
-    <div className="max-w-md mx-auto border rounded-lg shadow-sm overflow-hidden">
+    <div className="px-4 lg:px-0">
+    <div className="max-w-md mx-auto border rounded-lg shadow-sm overflow-hidden ">
       {/* Header */}
       <div className="bg-[#2BA6DF] text-white text-center py-2 font-medium text-lg">
         {t("MainCoverages")}
@@ -21,6 +22,7 @@ const MainCoveragesCard: React.FC = () => {
           </li>
         ))}
       </ul>
+    </div>
     </div>
   );
 };

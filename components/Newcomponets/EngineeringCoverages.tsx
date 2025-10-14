@@ -6,7 +6,7 @@ export default function AdditionalCoverageCard() {
   const { t } = useTranslation("engineeringinsuranceplan");
 
   return (
-    <div className="flex items-center justify-center  bg-white">
+    <div className="flex items-center justify-center  bg-white px-4 lg:px-0">
       <div className="rounded-lg border shadow-sm overflow-hidden max-w-2xl w-full">
         {/* Header */}
         <div className="px-6 py-4 text-[#184A7C] font-semibold">

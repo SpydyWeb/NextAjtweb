@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 export default function ProtectionAndSavingsCards() {
   const { t } = useTranslation("protectionandsavingsplan");
   return (
-    <div className="max-w-4xl mx-auto space-y-6">
+    <div className="max-w-4xl mx-auto space-y-6 px-4">
       {/* Card 1 - Plan Benefits */}
       <div className="border rounded-lg shadow bg-white">
         <div className="bg-sky-500 text-white p-4 rounded-t-lg">
