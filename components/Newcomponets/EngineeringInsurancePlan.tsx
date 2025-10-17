@@ -45,7 +45,7 @@ const EngineeringInsurance: React.FC = () => {
               src={CorporateEngineeringImg}
               alt="Corporate Aviation"
               // fill
-              className="absolute inset-0 w-full h-full text-transparent mt-[110px]"
+              className="absolute inset-0 w-full h-full text-transparent mt-[6.275rem]"
               priority
             />
             <div className="relative z-10 p-10 md:p-20 max-w-lg text-black text-lg text-justify ml-0 lg:ml-[-11rem] mt-4 ">
@@ -74,7 +74,7 @@ const EngineeringInsurance: React.FC = () => {
               <p className="mb-4 leading-relaxed">{t("EngineeringSubDesc11")}</p>
             </div>
           </div> */}
-          <div className="w-full mx-auto mb-10">
+          <div className="w-full mx-auto mb-10 px-4 lg:px-0">
             <div className="max-w-7xl mx-auto -mt-16 lg:-mt-24 relative z-20 px-4">
               {/* <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8"> */}
               <div className="bg-white rounded-2xl shadow-2xl p-[1rem] sm:p-[1.5rem] md:p-[2rem] w-full sm:w-[105%] md:w-[110%] lg:w-[115%] ms-0 sm:ms-[-1.25rem] md:ms-[-2.5rem] lg:ms-[-5.125rem]">
