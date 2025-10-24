@@ -1,9 +1,8 @@
 "use client";
 import React from "react";
-import { FiCheck } from "react-icons/fi";
 import ReportFraudForm from "@/components/Newcomponets/ReportFraudForm";
 import { useTranslation } from "react-i18next";
-
+import { FaCheck } from "react-icons/fa";
 const ReportFraud: React.FC = () => {
   const { t } = useTranslation("reportafraud");
   return (
@@ -34,21 +33,21 @@ const ReportFraud: React.FC = () => {
               <ul className="space-y-4 text-gray-700 text-sm sm:text-base leading-7">
                 <li className="flex items-start gap-3">
                   <span className="mt-1 text-sky-500">
-                    <FiCheck aria-hidden />
+                    <FaCheck aria-hidden />
                   </span>
                   <span className="text-[#1D3557]">{t("fraudul1li1")}</span>
                 </li>
 
                 <li className="flex items-start gap-3">
                   <span className="mt-1 text-sky-500">
-                    <FiCheck aria-hidden />
+                    <FaCheck aria-hidden />
                   </span>
                   <span className="text-[#1D3557]">{t("fraudul1li2")}</span>
                 </li>
 
                 <li className="flex items-start gap-3">
                   <span className="mt-1 text-sky-500">
-                    <FiCheck aria-hidden />
+                    <FaCheck aria-hidden />
                   </span>
                   <span className="text-[#1D3557]">{t("fraudul1li3")}</span>
                 </li>
@@ -66,7 +65,7 @@ const ReportFraud: React.FC = () => {
               <ul className="space-y-4 text-gray-700 text-sm sm:text-base leading-7">
                 <li className="flex items-start gap-3">
                   <span className="mt-1 text-sky-500">
-                    <FiCheck aria-hidden />
+                    <FaCheck aria-hidden />
                   </span>
                   <span className="text-[#1D3557]">{t("fraudp2")}</span>
                 </li>

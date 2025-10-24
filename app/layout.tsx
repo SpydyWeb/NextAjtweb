@@ -12,6 +12,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Modern Next.js App",
   description: "A comprehensive Next.js application with proper folder structure",
+  icons: {
+    icon: "/Aljazira.png",
+  }
 };
 
 export default function RootLayout({

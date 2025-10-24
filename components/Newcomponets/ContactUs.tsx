@@ -19,15 +19,15 @@ const ContactUs: React.FC = () => {
 
   return (
     <section className="w-full bg-white py-12 px-4 justify-center">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-7xl">
         <h2 className="text-center text-2xl sm:text-3xl font-semibold text-[#1D3557] mb-8">
           {t("ContactUs")}
         </h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2  gap-12 items-start sm:ml-0 md:ml-0 lg:ml-[250px]">
           <div className="bg-white rounded-2xl shadow-xl p-6 sm:p-8">
             <h3 className="text-[#1D3557] text-lg sm:text-xl font-semibold mb-4">
               {t("GetInTouch")}
-            </h3>
+            </h3> 
 
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>

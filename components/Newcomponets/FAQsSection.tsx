@@ -2,8 +2,29 @@
 import React, { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
 import { useTranslation } from "react-i18next";
-import { FAQ_DATA } from "@/lib/utilities";
+import Image from "next/image";
+import Appstore from '../../public/assets/Images/ImagesIcons/Appstore.png';
+import Playstore from '../../public/assets/Images/ImagesIcons/playstore.webp';
+
+
 type TabKey = "motor" | "visitvisa" | "medical" | "protection" | "contacts";
+
+export type QAItem = {
+  question: string;
+  answer: string;
+  ansdesc2?: { answer2: string }[];
+  ansdesc?: { answer1: string }[];
+  listItems?: { item: string }[];
+  multipleItems?: { item: string }[];
+};
+
+export type FAQDataType = {
+  motor: QAItem[];
+  visitvisa: QAItem[];
+  medical: QAItem[];
+  protection: QAItem[];
+  contacts: QAItem[];
+};
 
 const TABS: { key: TabKey; label: string }[] = [
   { key: "motor", label: "motor" },
@@ -13,146 +34,238 @@ const TABS: { key: TabKey; label: string }[] = [
   { key: "contacts", label: "CONTACTDETAILS" },
 ];
 
+export  const FAQ_DATA:FAQDataType= {
+    motor: [
+      {
+        question: "howToIssueVehicleInsPol",
+        answer: "yourThirdPartyVehicleInsPolCanBeIssuedInVerySimplifiedWayAllWhatYouNeedToDoIsToFollowTheSimpleStepsOnMotorSectionToGetYourPolAndYouCanIssueCompInsPolByVisitingOneOfOurBranches",
+      },
+      {
+        question: "whatAreTheDocRequiredToIssueVehicleInsPol",
+        answer: "itsVeryEasyToIssueThirdPartyVehicleInsWithoutTheNeedOfAnyDocOnMotorSectionForCompVehicleInsItRequiresVehicleInspectionOnly",
+      },
+      {
+        question: "isTheNajmDisAppliedIfThereIsPastRecordOfNoAccidents",
+        answer: "yesTheNajmDiscountIsAppliedIfThereIsPastRecordOfNoAccidentsAndYouCanFindOutTheDiscountForYourDocumentsThroughTheNajmWebsite",
+      },
+      {
+        question: "canVehicleInsurancePolBePrinted",
+        answer: "youCanPrintCopyOfTheInsPolicyThroughTheElectronicServices",
+      },
+        {
+        question: "whatAreTheDocRequiredToSubClaim",
+        answer: "TheDocRequiredPoint1",
+         listItems: [
+        { item: "TheDocRequiredPoint2" },
+        { item: "TheDocRequiredPoint3" },
+        { item: "TheDocRequiredPoint4" },
+        { item: "TheDocRequiredPoint5" },
+        { item: "TheDocRequiredPoint6" },
+        { item: "TheDocRequiredPoint7" },
+      ],
+      },
+       {
+        question: "inTheEventOfAnAccidentIsTheVehicleCompensatedOrRepaired",
+        answer: "yesIfTheInsIsAgainstThirdPartiesTheThirdPartyWillBeCompensatedIfTheInsuranceIsComprehensiveTheInsured’sVehicleWillBeRepairedAndTheThirdPartyWillBeCompensatedIfThereIsThirdParty",
+      },
+       {
+        question: "canTheAmountOfTheClaimOrCancellationBeDeliveredByCheque",
+        answer: "noAmountCanBeDeliveredByChequeButByBankTransfer",
+      },
+       {
+        question: "whatIsTheProcessingTimeForClaim",
+        answer: "theStatutoryPeriodForProcessingTheClaimIsDaysFromTheDateOfReceivingCompleteClaimDoc",
+      },
+       {
+        question: "canTheStatusOfTheClaimBeFollowed",
+        answer: "youCanContactUsByCallingTheTollFreeNumberAndInquireAboutYourClaim",
+      },
+       {
+        question: "inTheEventOfAnAccidentAndTheInsuredDrivingLicenseIsExpiredIsTheAccidentCovered",
+        answer: "toCoverTheAccidentTheLicenseMustBeRenewedWithin50WorkingDaysFromTheDateOfTheAccidentInOrderToCompensateTheInjuredPerson",
+        
+      },
+      {
+        question: "isItPossibleToBenefitFromTheVehicleInsIfTheVehicleRegistrationHasExpired",
+        answer: "yesYouCanBenefitFromVehicleInsAndYouCanAlsoRegisterForVehicleInsAndRenewYourVehicleRegistrationLater",
+      },
+      {
+        question: "whatAreTheDocRequiredToCancelTheInsInTheEventOfTransferringTheOwnershipOfTheVehicleToAnotherOwner",
+        answer: "CanceltheinsurancePoint1",
+        ansdesc:[
+          { answer1:"CanceltheinsurancePoint6", },
+        ],
+         
+        listItems: [
+        { item: "CanceltheinsurancePoint2" },
+        { item: "CanceltheinsurancePoint3" },
+        { item: "CanceltheinsurancePoint4" }, 
+        { item: "CanceltheinsurancePoint5" }, 
+          ],
+         
+      },
+      {
+        question: "whatAreTheDocRequiredToCancelVehicleInsInCaseOfChangingTheInsPol",
+        answer: "RequiredToCancelVehiclePoint1",
+           ansdesc:[
+          { answer1:"RequiredToCancelVehiclePoint4", },
+        ],
+         
+        listItems: [
+        { item: "RequiredToCancelVehiclePoint2" },
+        { item: "RequiredToCancelVehiclePoint3" }, 
+          ],
+      
+      },
+      {
+        question: "whenWillTheAmountBeRefundedAfterCancelingTheInsPol",
+        answer: "inTheEventThatCancellationReqIsSubTheRefundedAmountWillBeTransferredToYourAccountWithin3WorkingDaysFromTheDateOfCancellation",
+      },
+      {
+        question: "canInsBeTransferred",
+        answer: "theInsCantBeTransferredButItCanBeCanceledAndRefundedAccordingToTheTermsAndConditionsOfThePol",
+      },
+      {
+        question: "doesTheVehicleInsPolCoverAccidentsOutsideTheKingdomOfSaudiArabia",
+        answer: "theThirdPartyInsPolDoesNotCoverAccidentsOutsideTheKingdomOfSaudiArabia",
+      },
+    ],
+    visitvisa: [
+      {
+        question: "howCanIIssueVisitVisaMedicalInsPol",
+        answer: "youCanIssueVisitorVisaMedicalInsPolicyThroughTheEnjazWebsite",
+      },
+      {
+        question: "howCanIExtendMyVisitVisaMedicalInsPol",
+        answer: "youCanExtendTheVisitVisaMedicalInsPolicyThroughTheWebsiteOfUnderInsureNowSectionVisitVisa",
+      },
+      {
+        question: "howCanICancelTheVisitorVisaMedicalInsPol",
+        answer: "VisitorVisaMedicalPoint1",
+           ansdesc2:[
+          { answer2:"VisitorVisaMedicalPoint2", },
+        ],
+         listItems: [
+        { item: "VisitorVisaMedicalPoint3" },
+        { item: "VisitorVisaMedicalPoint4" },
+        { item: "VisitorVisaMedicalPoint5" },
+        { item: "VisitorVisaMedicalPoint6" },
+      ],
+    },
+  ],
+    medical: [
+      {
+        question: "howCanIApplyMedicalIns",
+        answer: "yourMedInsPolCanBeIssuedInAVerySimplifiedWayAllWhatYouNeedToDoIsToRegisterYourReqInTheMedSectionOrByCallingOurTollFreeNo",
+      },
+      {
+        question: "whatAreTheMinimumRequirementsForAcquiringSMEHealthInsQuot",
+        answer: "EquirementsForAcquiringPoint1",
+          listItems: [  
+          {item:"EquirementsForAcquiringPoint2"},
+          {item:"EquirementsForAcquiringPoint3"},
+          ]
+      },
+       {
+        question: "whatHospAreCoveredByMyMedIns",
+        answer: "HospAreCoveredPoint1",
+         multipleItems: [  
+          {item:"HospAreCoveredPoint2"},
+          {item:"HospAreCoveredPoint3"},
+
+          ]
+
+      },
+      {
+        question: "howCanIRenewMyInsPol",
+        answer: "weMadeYourPolRenewalSoEasyAllWhatYouNeedToDoIsToFillTheReferralFormInThisWebsiteOrCallOurTollFreeNumberWhereYouWillHaveASpecializedRelationManagerToServeYou",
+      },
+       {
+        question: "canIDoMyAltRemotelyWithoutVisitingTheBranch",
+        answer: "weSimplifiedTheProcessOfAlterAndMadeItSoEasyForYouToDoAllRequiredAltWhileSittingInTheOfficeWithVeryEasyAndSecureWay",
+      },
+      {
+        question: "doYouHaveIndAndFamilyMedIns",
+        answer: "weOnlyOfferMedInsForBusinesses",
+      },
+      
+    ],
+    protection: [
+      {
+        question: "howCanIContactTheCompany",
+        answer: "yesContractHolderHasTheRightToChangeToAnyOtherInvestmentStrategyProvidedByTheCompany",
+      },
+    {
+        question: "whatHappensIfPolHolderWishesToCancelPol",
+        answer: "thisWillResultInFullEncashmentOfInvestmentAmountBeforeExpiryDateOfPolAfterDeductionOfCancellationFeesAndOtherFeesAsStipulatedInContractSchedule",
+      },
+     {
+        question: "whatAreTheFactorsUsedToDecideSumCover",
+        answer: "sumCoverDpendsOnAgeAnnualIncomeAndHealthCondition",
+      },
+     {
+        question: "canPolHolderWithdrawFromInvestmentAmountDuringPolicyTerm",
+        answer: "yesAfterTwoYearsOfPolEffDateThroughServiceCalledPartialWithdrawalAndSubjectToTermsAndCond",
+      },
+    {
+        question: "isPossibleToPayAdvancedPayments",
+        answer: "yesAdvancedPaymentsPossibleWithLimitOf12InstallmentsInAdvanceSubjectToCompanyApprovalSuchAmountWillBeAddedToInvestmentAmounts",
+      },{
+        question: "canPolHolderChangeBeneficiariesDuringPolTerm",
+        answer: "yesBeforeOccurrenceOfCoveredEventConsentOfExistingBeneficiaryNotNeeded",
+      },
+    {
+        question: "whenThePolIsEffAndBenefitsCanBeUsed",
+        answer: "effDateStartsOnTheDateTheCompanyAcceptsTheRiskOfCoveredEventEffDateIsStipulatedOnContractSchedule",
+      },{
+        question: "howToPayOutstandingPremiums",
+        answer: "outstandingPremCanBePaidThroughBankTransferMADAOrThroughOneOfAljaziraBranches",
+      },
+    {
+        question: "howToPayPremiums",
+        answer: "directDebitMandateOrStandingOrder",
+      },
+    ],
+    contacts: [
+      {
+        question: "howCanIContactTheCompany",
+        answer: "ContactTheCompanyAdd1",
+        listItems: [
+        { item: "ContactTheCompanyAdd2" },
+        { item: "ContactTheCompanyAdd3" },
+        { item: "ContactTheCompanyAdd4" },
+        { item: "ContactTheCompanyAdd5" },
+      ],
+      },
+      {
+        question: "whereAreAljTakafulBranchesLocated",
+        answer: "youCanFindOutAboutAlJazeeraTakafulBranchesAndAgentsThroughTheWebsite",
+      },
+      {
+        question: "whatIsTheWayToApplyForJobInAljTakafulCompany",
+        answer: "youCanApplyForJobViaEmail",
+      },
+      {
+        question: "whatIsTheMethodOfFilingComplaint",
+        answer: "youCanSubmitComplaintThroughTheFollowingMeans",
+        listItems:[
+          { item: "MethodOfFilingComplaintAdd2" },
+          { item: "MethodOfFilingComplaintAdd3" },
+          { item: "MethodOfFilingComplaintAdd4" },
+          { item: "MethodOfFilingComplaintAdd5" }
+        ]
+      },
+    ],
+  };
+
 const Faqs: React.FC = () => {
   const { t } = useTranslation("frequentlyaskedquestions");
-
   const [activeTab, setActiveTab] = useState<TabKey>("motor");
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggleAccordion = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
-  const accordionData = [
-    {
-      question: t("howToIssueVehicleInsPol"),
-      answer: t(
-        "yourThirdPartyVehicleInsPolCanBeIssuedInVerySimplifiedWayAllWhatYouNeedToDoIsToFollowTheSimpleStepsOnMotorSectionToGetYourPolAndYouCanIssueCompInsPolByVisitingOneOfOurBranches"
-      ),
-    },
-    {
-      question: t("whatAreTheDocRequiredToIssueVehicleInsPol"),
-      answer: t(
-        "itsVeryEasyToIssueThirdPartyVehicleInsWithoutTheNeedOfAnyDocOnMotorSectionForCompVehicleInsItRequiresVehicleInspectionOnly"
-      ),
-    },
-    {
-      question: t("isTheNajmDisAppliedIfThereIsPastRecordOfNoAccidents"),
-      answer: t(
-        "yesTheNajmDiscountIsAppliedIfThereIsPastRecordOfNoAccidentsAndYouCanFindOutTheDiscountForYourDocumentsThroughTheNajmWebsite"
-      ),
-    },
-    {
-      question: t("canVehicleInsurancePolBePrinted"),
-      answer: t("youCanPrintCopyOfTheInsPolicyThroughTheElectronicServices"),
-    },
-    {
-      question: t("whatAreTheDocRequiredToSubClaim"),
-      answer: (
-        <div>
-          <p>{t("TheDocRequiredPoint1")}</p>
-          {/* <ul> */}
-          <ul>
-            <li>{t("TheDocRequiredPoint2")}</li>
-            <li>{t("TheDocRequiredPoint3")}</li>
-            <li>{t("TheDocRequiredPoint4")}</li>
-            <li>{t("TheDocRequiredPoint5")}</li>
-            <li>{t("TheDocRequiredPoint6")}</li>
-            <li>{t("TheDocRequiredPoint7")}</li>
-          </ul>{" "}
-        </div>
-      ),
-    },
-    {
-      question: t("inTheEventOfAnAccidentIsTheVehicleCompensatedOrRepaired"),
-      answer: t(
-        "yesIfTheInsIsAgainstThirdPartiesTheThirdPartyWillBeCompensatedIfTheInsuranceIsComprehensiveTheInsured’sVehicleWillBeRepairedAndTheThirdPartyWillBeCompensatedIfThereIsThirdParty"
-      ),
-    },
-    {
-      question: t("canTheAmountOfTheClaimOrCancellationBeDeliveredByCheque"),
-      answer: t("noAmountCanBeDeliveredByChequeButByBankTransfer"),
-    },
-    {
-      question: t("whatIsTheProcessingTimeForClaim"),
-      answer: t(
-        "theStatutoryPeriodForProcessingTheClaimIsDaysFromTheDateOfReceivingCompleteClaimDoc"
-      ),
-    },
-    {
-      question: t("canTheStatusOfTheClaimBeFollowed"),
-      answer: t(
-        "youCanContactUsByCallingTheTollFreeNumberAndInquireAboutYourClaim"
-      ),
-    },
-    {
-      question: t(
-        "inTheEventOfAnAccidentAndTheInsuredDrivingLicenseIsExpiredIsTheAccidentCovered"
-      ),
-      answer: t(
-        "toCoverTheAccidentTheLicenseMustBeRenewedWithin50WorkingDaysFromTheDateOfTheAccidentInOrderToCompensateTheInjuredPerson"
-      ),
-    },
-    {
-      question: t(
-        "isItPossibleToBenefitFromTheVehicleInsIfTheVehicleRegistrationHasExpired"
-      ),
-      answer: t(
-        "yesYouCanBenefitFromVehicleInsAndYouCanAlsoRegisterForVehicleInsAndRenewYourVehicleRegistrationLater"
-      ),
-    },
-    {
-      question: t(
-        "whatAreTheDocRequiredToCancelTheInsInTheEventOfTransferringTheOwnershipOfTheVehicleToAnotherOwner"
-      ),
-      answer: (
-        <div>
-          <p>{t("CanceltheinsurancePoint1")}</p>
-          <ul>
-            <li>{t("CanceltheinsurancePoint2")}</li>
-            <li>{t("CanceltheinsurancePoint3")}</li>
-            <li>{t("CanceltheinsurancePoint4")}</li>
-            <li>{t("CanceltheinsurancePoint5")}</li>
-          </ul>
-          <p>{t("CanceltheinsurancePoint6")}</p>
-        </div>
-      ),
-    },
-    {
-      question: t(
-        "whatAreTheDocRequiredToCancelVehicleInsInCaseOfChangingTheInsPol"
-      ),
-      answer: (
-        <div>
-          <p>{t("RequiredToCancelVehiclePoint1")}</p>
-          <ul>
-            <li>{t("RequiredToCancelVehiclePoint2")}</li>
-            <li>{t("RequiredToCancelVehiclePoint3")}</li>
-          </ul>{" "}
-          <p>{t("RequiredToCancelVehiclePoint4")}</p>{" "}
-        </div>
-      ),
-    },
-    {
-      question: t("whenWillTheAmountBeRefundedAfterCancelingTheInsPol"),
-      answer: t(
-        "inTheEventThatCancellationReqIsSubTheRefundedAmountWillBeTransferredToYourAccountWithin3WorkingDaysFromTheDateOfCancellation"
-      ),
-    },
-    {
-      question: t("canInsBeTransferred"),
-      answer: t(
-        "theInsCantBeTransferredButItCanBeCanceledAndRefundedAccordingToTheTermsAndConditionsOfThePol"
-      ),
-    },
-    {
-      question: t(
-        "doesTheVehicleInsPolCoverAccidentsOutsideTheKingdomOfSaudiArabia"
-      ),
-      answer: t(
-        "theThirdPartyInsPolDoesNotCoverAccidentsOutsideTheKingdomOfSaudiArabia"
-      ),
-    },
-  ];
 
   const items = FAQ_DATA[activeTab];
 
@@ -222,13 +335,78 @@ const Faqs: React.FC = () => {
                   />
                 </button>
 
-                {open && (
-                  <div className="bg-white px-4 sm:px-6 py-4 border-t border-gray-200">
-                    <div className="text-gray-600 leading-7 text-sm sm:text-base">
-                      {t(qa.answer)}
-                    </div>
-                  </div>
-                )}
+              {open && (
+  <div className="bg-white px-4 sm:px-6 py-4 border-t border-gray-200">
+    <div className="text-gray-600 leading-7 text-sm sm:text-base">
+      {t(qa.answer)}
+    </div>
+     {qa.ansdesc2 && qa.ansdesc2.length > 0 && (
+      <div className="mt-2 text-gray-600 leading-7 text-sm sm:text-base">
+        {qa.ansdesc2.map((descItem) => (
+          <div key={descItem.answer2} className="">
+            {t(descItem.answer2)}
+          </div>
+        ))}
+      </div>
+    )}
+ {qa.multipleItems && qa.multipleItems.length > 0 && (
+  <div className="mt-2 text-gray-600 leading-7 text-sm sm:text-base">
+    {qa.multipleItems.map((item) => (
+      <div key={item.item} className="">
+        {t(item.item)}
+      </div>
+    ))}
+    <div className="flex items-center gap-4 mt-4 pl-10">
+      <a
+        href="https://apps.apple.com/us/app/mynextcare/id1039800748"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          className="footer-stores w-32 h-auto"
+          src={Appstore} 
+          alt="App Store"
+          width={50}
+          height={50}
+        />
+      </a>
+
+      <a
+        href="https://play.google.com/store/apps/details?id=com.nextcare.app&hl=en"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          className="footer-stores w-32 h-auto"
+          src={Playstore} 
+          alt="Google Play"
+           width={50}
+          height={50}
+        />
+      </a>
+    </div>
+  </div>
+)}
+    {qa.listItems && qa.listItems.length > 0 && (
+      <div className="mt-2 text-gray-600 leading-7 text-sm sm:text-base">
+        {qa.listItems.map((listItem) => (
+          <div key={listItem.item} className="pl-10">
+            {t(listItem.item)}
+          </div>
+        ))}
+      </div>
+    )}
+     {qa.ansdesc && qa.ansdesc.length > 0 && (
+      <div className="mt-2 text-gray-600 leading-7 text-sm sm:text-base">
+        {qa.ansdesc.map((descItem) => (
+          <div key={descItem.answer1} className="">
+            {t(descItem.answer1)}
+          </div>
+        ))}
+      </div>
+    )}
+  </div>
+)}
               </div>
             );
           })}
