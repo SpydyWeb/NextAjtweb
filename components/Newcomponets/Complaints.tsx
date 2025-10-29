@@ -4,6 +4,7 @@ import { FaArrowRight, FaChevronDown } from "react-icons/fa";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { complaintssteps } from "@/lib/utilities";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 type ComplaintProps = {
   complaintStep: number;
@@ -92,9 +93,10 @@ const Complaints: React.FC<ComplaintProps> = ({  complaintStep, setComplaintStep
               <button
                 type="button"
                 onClick={nextStep}
-                className="flex items-center justify-center gap-2 bg-[#1D3557] text-white px-6 py-2 rounded-md font-semibold "
+                className="relative flex items-center justify-center bg-[#1D3557] text-white px-20 py-3 rounded-md font-semibold"
               >
-                {t("NextBtn")} <FaArrowRight />
+                 <span>{t("NextBtn")}</span> 
+                  <FaArrowRightLong className="absolute right-5 text-[16px]" />
               </button>
             </form>
           )}
@@ -148,13 +150,13 @@ const Complaints: React.FC<ComplaintProps> = ({  complaintStep, setComplaintStep
                 />
               </div>
               <div className="flex items-center justify-between mt-6">
-                <button
+                {/* <button
                   type="button"
                   onClick={() => setComplaintStep(complaintStep - 1)}
                   className="flex items-center gap-2 text-[#1D3557] font-medium"
                 >
                   <span>←</span> {t("Back")}
-                </button>
+                </button> */}
                 {/* <button
                   type="submit"
                   className="flex items-center gap-2 bg-[#1D3557] text-white px-6 py-2 rounded-md "
@@ -167,9 +169,9 @@ const Complaints: React.FC<ComplaintProps> = ({  complaintStep, setComplaintStep
                     setComplaintStep(1);
                     // here you can also trigger API call if needed
                   }}
-                  className="flex items-center gap-2 bg-[#1D3557] text-white px-6 py-2 rounded-md "
+                  className="flex items-center gap-2 bg-[#1D3557] text-white px-20 py-3 rounded-md "
                 >
-                  {t("Send")} →
+                  {t("Send")} 
                 </button>
               </div>
             </form>

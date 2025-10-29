@@ -1,4 +1,4 @@
-import React from "react";
+import React ,{useState} from "react";
 import { useTranslation } from "react-i18next";
 import {
   companyInformation,
@@ -7,9 +7,16 @@ import {
 } from "../../lib/utilities";
 import { ImArrowUp } from "react-icons/im";
 
+
+
 export default function CompanyProfileScreen() {
   const { t } = useTranslation("shareholderrelation");
+  const [selectedSection, setSelectedSection] = useState(companyProfileSections[0]);
 
+  const sectionData =
+  companyInformation[selectedSection as keyof typeof companyInformation];
+  const managementsectionData =
+  managementBoardMembers[selectedSection as keyof typeof managementBoardMembers];
   return (
     <div className="min-h-screen bg-white">
       <header className="w-full bg-[#184A7C]">
@@ -40,17 +47,30 @@ export default function CompanyProfileScreen() {
       <main className="mx-auto max-w-[73.75rem] px-4 py-6">
         <div className="grid grid-cols-12 gap-6">
           <aside className="col-span-12 md:col-span-4 lg:col-span-3 space-y-3">
-            <div className="w-full rounded-xl px-3 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium border text-white bg-[#184A7C] border-[#184A7C] shadow-inner ">
+            {/* <div className="w-full rounded-xl px-3 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium border text-white bg-[#184A7C] border-[#184A7C] shadow-inner ">
               {t("CompanyProfile")}
-            </div>
-            {companyProfileSections.map((item, idx) => (
+            </div> */}
+            {/* {companyProfileSections.map((item, idx) => (
               <div
                 key={idx}
                 className="w-full rounded-xl px-3 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium border text-slate-700 hover:text-slate-900 bg-[#EFF3F6] border-[#E6EAEE]"
               >
                 {t(item)}
               </div>
-            ))}
+            ))} */}
+             {companyProfileSections.map((item, idx) => (
+            <button
+              key={item}
+              onClick={() => setSelectedSection(item)} // when clicked, set that one section
+              className={`w-full text-left rounded-xl px-3 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm font-medium border ${
+                selectedSection === item
+                  ? "bg-[#184A7C] text-[#184A7C] border-[#184A7C]  text-white shadow-inner"
+                  : "text-slate-700 hover:text-slate-900 bg-[#EFF3F6] border-[#E6EAEE]"
+              }`}
+            >
+              {t(item)}
+            </button>
+          ))}
           </aside>
           <section className="col-span-12 md:col-span-8 lg:col-span-9 space-y-8">
             <div>
@@ -60,14 +80,12 @@ export default function CompanyProfileScreen() {
               <div className="px-4 py-4 text-sm sm:text-base lg:text-lg space-y-2 border border-[#E6EAEE] rounded-b-xl text-gray-600">
                 {t("CompanyInformation")}
 
-                {companyInformation.map(([label, value], i) => (
-                  <p key={i} className="text-gray-600">
-                    <span className="font-medium text-gray-500">
-                      {t(label)}:{" "}
-                    </span>
-                    {t(value)}
-                  </p>
-                ))}
+            {sectionData?.map(([label, value], i) => (
+        <p key={i} className="text-gray-600">
+          <span className="font-medium text-gray-500">{t(label)}: </span>
+          {t(value)}
+        </p>
+      ))}
               </div>
             </div>
             <div>
@@ -75,7 +93,7 @@ export default function CompanyProfileScreen() {
                 {t("ManagementBoardMembers")}
               </h2>
               <div className="px-4 py-4 text-sm sm:text-base lg:text-lg space-y-2 border border-[#E6EAEE] rounded-b-xl">
-                {managementBoardMembers.map(([name, role, date], idx) => (
+                {managementsectionData.map(([name, role, date], idx) => (
                   <div
                     key={idx}
                     className="flex flex-wrap items-center gap-x-2"

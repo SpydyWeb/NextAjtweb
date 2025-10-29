@@ -1,6 +1,7 @@
 'use client';
 import React from "react";
 import { FaArrowRight, FaChevronDown } from "react-icons/fa";
+import { FaArrowLeftLong,FaArrowRightLong } from "react-icons/fa6";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { inquirysteps } from "@/lib/utilities";
@@ -83,13 +84,14 @@ const Inquiry: React.FC<InquiryProps> = ({ inquiryStep, setInquiryStep, nextStep
                   className="w-full border border-gray-300 rounded-md px-4 py-2 mt-1 focus:outline-none focus:ring-2 focus:ring-[#1D3557]"
                 />
               </div>
-              <button
-                type="button"
-                onClick={nextStep}
-                className="flex items-center justify-center gap-2 bg-[#1D3557] text-white px-6 py-2 rounded-md font-semibold"
-              >
-                {t("NextBtn")} <FaArrowRight />
-              </button>
+                  <button
+                  type="button"
+                  onClick={nextStep}
+                  className="relative flex items-center justify-center bg-[#1D3557] text-white px-20 py-3 rounded-md font-semibold h"
+                >
+                  <span>  {t("NextBtn")} </span>
+                  <FaArrowRightLong className="absolute right-5 text-[16px]" />
+                </button>
             </form>
           )}
 
@@ -144,12 +146,13 @@ const Inquiry: React.FC<InquiryProps> = ({ inquiryStep, setInquiryStep, nextStep
                 />
               </div>
               <button
-                type="button"
-                onClick={nextStep}
-                className="flex items-center justify-center gap-2 bg-[#1D3557] text-white px-6 py-2 rounded-md font-semibold "
-              >
-                {t("NextBtn")} <FaArrowRight />
-              </button>
+                  type="button"
+                  onClick={nextStep}
+                  className="relative flex items-center justify-center bg-[#1D3557] text-white px-20 py-3 rounded-md font-semibold "
+                >
+                  <span>{t("NextBtn")}</span>
+                  <FaArrowRightLong className="absolute right-5 text-[16px]" />
+                </button>
             </form>
           )}
 
@@ -209,13 +212,17 @@ const Inquiry: React.FC<InquiryProps> = ({ inquiryStep, setInquiryStep, nextStep
                   onClick={() => setInquiryStep(inquiryStep - 1)}
                   className="flex items-center gap-2 text-[#1D3557] font-medium"
                 >
-                  <span>←</span> {t("Back")}
+                  <span><FaArrowLeftLong /></span>
+                  <span className="underline">{t("Back")}</span>
                 </button>
                 <button
                   type="submit"
-                  className="flex items-center gap-2 bg-[#1D3557] text-white px-6 py-2 rounded-md "
+                  className="relative flex items-center justify-center bg-[#1D3557] text-white px-10 sm:px-[5rem] py-3 rounded-md font-semibold"
                 >
-                  {t("Send")} →
+                     <span>
+                    {t("Send")}
+                  </span>
+                  <FaArrowRightLong className="absolute right-5 text-[16px]" />
                 </button>
               </div>
             </form>
