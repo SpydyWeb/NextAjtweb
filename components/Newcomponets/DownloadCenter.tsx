@@ -90,7 +90,7 @@ const DownloadCenter: React.FC = () => {
                   href={it.href}
                   download
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreferrer" 
                   className="inline-flex items-center gap-1 text-sky-600 hover:text-sky-700 text-sm font-medium"
                 >
                   <FiDownload className="text-base" />
