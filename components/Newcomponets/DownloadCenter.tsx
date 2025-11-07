@@ -18,6 +18,8 @@ type TabKey =
 //   filename?: string;
 // };
 
+
+
 const TABS: { key: TabKey; label: string }[] = [
   { key: "motor", label: "motor" },
   { key: "medical", label: "medical" },
